@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -62,10 +67,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kaM-9I-CHP">
                                 <rect key="frame" x="28" y="598" width="48" height="48"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-I9-tR6">
-                                <rect key="frame" x="313" y="608" width="34" height="28"/>
-                                <state key="normal" title="אודות"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                                     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sq-5c-HoG">
                                 <rect key="frame" x="131" y="509" width="113" height="20.5"/>
                                 <constraints>
@@ -75,13 +76,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rnR-Qo-KPi">
-                                <rect key="frame" x="268" y="34" width="76" height="61"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="TOU-48-5Sk"/>
-                                    <constraint firstAttribute="height" constant="61" id="j79-SN-VxC"/>
-                                </constraints>
-                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="תודה" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79p-In-7u9">
+                                <rect key="frame" x="38" y="34" width="299" height="61"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name=".ArialHebrewDeskInterface" family=".Arial Hebrew Desk Interface" pointSize="29"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="https://www.2help.org.il/" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X4S-bu-yne" userLabel="linkTo2Help,org.il">
                                 <rect key="frame" x="100" y="608" width="175" height="28"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -93,22 +93,30 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dac-e1-7ky">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyV-IA-Owj">
+                                <rect key="frame" x="299" y="598" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.1736111111111111" blue="0.89583333333333337" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="אודות">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dac-e1-7ky">
                                 <rect key="frame" x="87" y="400" width="201" height="47"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="J7V-eM-eAY"/>
                                     <constraint firstAttribute="width" constant="201" id="rXF-tP-JhI"/>
                                 </constraints>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="לתרומה מהירה">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="23"/>
+                                <state key="normal" title="לתרומה מהירה"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -121,28 +129,40 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rnR-Qo-KPi">
+                                <rect key="frame" x="261" y="34" width="76" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="TOU-48-5Sk"/>
+                                    <constraint firstAttribute="height" constant="61" id="j79-SN-VxC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.3923611111111111" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WyV-IA-Owj" secondAttribute="trailing" constant="28" id="2F1-2j-Cz4"/>
                             <constraint firstItem="X4S-bu-yne" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3Q2-9J-ecP"/>
                             <constraint firstItem="TpT-Uy-HW6" firstAttribute="centerY" secondItem="4sq-5c-HoG" secondAttribute="centerY" id="4zk-oY-0Eu"/>
                             <constraint firstItem="Dac-e1-7ky" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="58B-wV-gkw"/>
+                            <constraint firstItem="79p-In-7u9" firstAttribute="height" secondItem="rnR-Qo-KPi" secondAttribute="height" id="5NI-6R-zIK"/>
+                            <constraint firstItem="WyV-IA-Owj" firstAttribute="height" secondItem="kaM-9I-CHP" secondAttribute="height" id="6BF-2I-4so"/>
+                            <constraint firstItem="WyV-IA-Owj" firstAttribute="width" secondItem="kaM-9I-CHP" secondAttribute="width" id="6GY-9Z-Nuh"/>
                             <constraint firstItem="4sq-5c-HoG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="489" id="724-sR-DQm"/>
+                            <constraint firstItem="79p-In-7u9" firstAttribute="centerY" secondItem="rnR-Qo-KPi" secondAttribute="centerY" id="A5u-ve-c2Z"/>
+                            <constraint firstItem="79p-In-7u9" firstAttribute="centerX" secondItem="3J8-hY-eXS" secondAttribute="centerX" id="AWf-lP-0eP"/>
                             <constraint firstItem="kaM-9I-CHP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="BdL-rw-UMx"/>
                             <constraint firstItem="4sq-5c-HoG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="C4H-ze-YaB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VFh-I9-tR6" secondAttribute="trailing" constant="28" id="Eaq-ge-9Yc"/>
+                            <constraint firstItem="3J8-hY-eXS" firstAttribute="leading" secondItem="79p-In-7u9" secondAttribute="trailing" constant="-337" id="EL3-wN-UgD"/>
                             <constraint firstItem="4sq-5c-HoG" firstAttribute="leading" secondItem="TpT-Uy-HW6" secondAttribute="trailing" id="IwF-fr-X54"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X4S-bu-yne" secondAttribute="bottom" constant="31" id="Lcx-bt-4ES"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rnR-Qo-KPi" secondAttribute="trailing" constant="31" id="LiU-7M-MWL"/>
                             <constraint firstItem="Dac-e1-7ky" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mnb-T9-Nh2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VFh-I9-tR6" secondAttribute="bottom" constant="31" id="TeB-6Q-Zbl"/>
+                            <constraint firstItem="rnR-Qo-KPi" firstAttribute="leading" secondItem="79p-In-7u9" secondAttribute="trailing" constant="-76" id="Wa5-qi-eVT"/>
                             <constraint firstItem="rnR-Qo-KPi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="ZFL-RG-ZIK"/>
                             <constraint firstItem="3J8-hY-eXS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZTk-vg-WXM"/>
                             <constraint firstItem="3J8-hY-eXS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="4" id="ZrB-ce-HZw"/>
                             <constraint firstItem="GJN-F5-1Ys" firstAttribute="centerY" secondItem="4sq-5c-HoG" secondAttribute="centerY" id="bYs-rz-BnE"/>
                             <constraint firstItem="3J8-hY-eXS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cVc-xh-GcL"/>
-                            <constraint firstItem="VFh-I9-tR6" firstAttribute="centerY" secondItem="X4S-bu-yne" secondAttribute="centerY" id="ljI-kr-XH6"/>
                             <constraint firstItem="GJN-F5-1Ys" firstAttribute="leading" secondItem="4sq-5c-HoG" secondAttribute="trailing" id="qwL-zP-bz2"/>
+                            <constraint firstItem="WyV-IA-Owj" firstAttribute="centerY" secondItem="X4S-bu-yne" secondAttribute="centerY" id="sN8-2P-zJ2"/>
                             <constraint firstItem="kaM-9I-CHP" firstAttribute="centerY" secondItem="X4S-bu-yne" secondAttribute="centerY" id="tDX-NN-egt"/>
                             <constraint firstItem="Dac-e1-7ky" firstAttribute="top" secondItem="rnR-Qo-KPi" secondAttribute="bottom" constant="305" id="uG3-TG-rXB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3J8-hY-eXS" secondAttribute="trailing" id="va8-h2-POB"/>
@@ -150,6 +170,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="logoGifImageView" destination="rnR-Qo-KPi" id="8Bt-Yr-9yJ"/>
+                        <outlet property="quickDonationBtn" destination="Dac-e1-7ky" id="4ul-Xc-7iI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,6 +183,5 @@
     <resources>
         <image name="__1" width="953" height="543"/>
         <image name="facebookLogo" width="48" height="48"/>
-        <image name="logo" width="60" height="60"/>
     </resources>
 </document>

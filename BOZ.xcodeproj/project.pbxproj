@@ -16,6 +16,8 @@
 		9A99C8AC203C93FA0057D607 /* BOZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8AB203C93FA0057D607 /* BOZTests.swift */; };
 		9A99C8B7203C93FA0057D607 /* BOZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8B6203C93FA0057D607 /* BOZUITests.swift */; };
 		ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC49203E0BDC00457A61 /* MainViewController.swift */; };
+		ADB9EC50203E303F00457A61 /* GifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC4F203E303F00457A61 /* GifImageView.swift */; };
+		ADB9EC52203E310A00457A61 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB9EC51203E310A00457A61 /* logo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		9A99C8B6203C93FA0057D607 /* BOZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOZUITests.swift; sourceTree = "<group>"; };
 		9A99C8B8203C93FA0057D607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADB9EC49203E0BDC00457A61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ADB9EC4F203E303F00457A61 /* GifImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GifImageView.swift; path = ../../../../Documents/OurHackathonDonationProject/OurHackathonDonation/supportLibraries/GifImageView.swift; sourceTree = "<group>"; };
+		ADB9EC51203E310A00457A61 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		9A99C892203C93FA0057D607 /* BOZ */ = {
 			isa = PBXGroup;
 			children = (
+				ADB9EC4C203E2CFB00457A61 /* supportLibraries */,
 				ADB9EC4B203E0CBA00457A61 /* models */,
 				ADB9EC47203E0B5300457A61 /* controllers */,
 				9A99C893203C93FA0057D607 /* AppDelegate.swift */,
@@ -108,6 +113,7 @@
 				9A99C89D203C93FA0057D607 /* Assets.xcassets */,
 				9A99C89F203C93FA0057D607 /* LaunchScreen.storyboard */,
 				9A99C8A2203C93FA0057D607 /* Info.plist */,
+				ADB9EC51203E310A00457A61 /* logo.gif */,
 				9A99C89A203C93FA0057D607 /* BOZ.xcdatamodeld */,
 			);
 			path = BOZ;
@@ -153,6 +159,14 @@
 			children = (
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		ADB9EC4C203E2CFB00457A61 /* supportLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				ADB9EC4F203E303F00457A61 /* GifImageView.swift */,
+			);
+			path = supportLibraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A99C8A1203C93FA0057D607 /* LaunchScreen.storyboard in Resources */,
+				ADB9EC52203E310A00457A61 /* logo.gif in Resources */,
 				9A99C89E203C93FA0057D607 /* Assets.xcassets in Resources */,
 				9A99C899203C93FA0057D607 /* Main.storyboard in Resources */,
 			);
@@ -290,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A99C89C203C93FA0057D607 /* BOZ.xcdatamodeld in Sources */,
+				ADB9EC50203E303F00457A61 /* GifImageView.swift in Sources */,
 				9A99C896203C93FA0057D607 /* BaseViewController.swift in Sources */,
 				9A99C894203C93FA0057D607 /* AppDelegate.swift in Sources */,
 				ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */,
