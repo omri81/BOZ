@@ -15,11 +15,14 @@
 		9A99C8A1203C93FA0057D607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A99C89F203C93FA0057D607 /* LaunchScreen.storyboard */; };
 		9A99C8AC203C93FA0057D607 /* BOZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8AB203C93FA0057D607 /* BOZTests.swift */; };
 		9A99C8B7203C93FA0057D607 /* BOZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8B6203C93FA0057D607 /* BOZUITests.swift */; };
+		AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */; };
 		AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */; };
+		ADB1F6F2203F708A00F09BF5 /* ComeToMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB1F6F1203F708A00F09BF5 /* ComeToMeViewController.swift */; };
 		ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC49203E0BDC00457A61 /* MainViewController.swift */; };
 		ADB9EC50203E303F00457A61 /* GifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC4F203E303F00457A61 /* GifImageView.swift */; };
 		ADB9EC52203E310A00457A61 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB9EC51203E310A00457A61 /* logo.gif */; };
 		ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9823D203F2F74004BD58B /* AboutViewController.swift */; };
+		ADF30ACC203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF30ACB203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +57,14 @@
 		9A99C8B2203C93FA0057D607 /* BOZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BOZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A99C8B6203C93FA0057D607 /* BOZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOZUITests.swift; sourceTree = "<group>"; };
 		9A99C8B8203C93FA0057D607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDonationViewController.swift; sourceTree = "<group>"; };
 		AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web2HelpViewController.swift; sourceTree = "<group>"; };
+		ADB1F6F1203F708A00F09BF5 /* ComeToMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeToMeViewController.swift; sourceTree = "<group>"; };
 		ADB9EC49203E0BDC00457A61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB9EC4F203E303F00457A61 /* GifImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GifImageView.swift; path = ../../../../Documents/OurHackathonDonationProject/OurHackathonDonation/supportLibraries/GifImageView.swift; sourceTree = "<group>"; };
 		ADB9EC51203E310A00457A61 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 		ADC9823D203F2F74004BD58B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		ADF30ACB203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeFromMe1_Details_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,9 @@
 				ADB9EC49203E0BDC00457A61 /* MainViewController.swift */,
 				AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */,
 				ADC9823D203F2F74004BD58B /* AboutViewController.swift */,
+				AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */,
+				ADF30ACB203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift */,
+				ADB1F6F1203F708A00F09BF5 /* ComeToMeViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -314,9 +323,12 @@
 				AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */,
 				ADB9EC50203E303F00457A61 /* GifImageView.swift in Sources */,
 				ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */,
+				AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */,
+				ADF30ACC203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift in Sources */,
 				9A99C896203C93FA0057D607 /* BaseViewController.swift in Sources */,
 				9A99C894203C93FA0057D607 /* AppDelegate.swift in Sources */,
 				ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */,
+				ADB1F6F2203F708A00F09BF5 /* ComeToMeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -122,6 +122,9 @@
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BIg-kd-wP4" kind="show" id="2Pe-zW-N6P"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rnR-Qo-KPi">
                                 <rect key="frame" x="261" y="78" width="76" height="61"/>
@@ -212,6 +215,253 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1v-ZT-Sbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1394" y="18"/>
+        </scene>
+        <!--Quick Donation View Controller-->
+        <scene sceneID="fH5-Fr-naS">
+            <objects>
+                <viewController id="BIg-kd-wP4" customClass="QuickDonationViewController" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CK4-Nw-RnE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uum-Hl-EZG">
+                                <rect key="frame" x="164" y="90" width="61" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="כסף">
+                                    <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="callMony" destination="BIg-kd-wP4" eventType="touchUpInside" id="2tG-Rm-6O8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGl-Mx-vqx">
+                                <rect key="frame" x="211" y="396" width="61" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="השארתי">
+                                    <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gVn-5A-NQ7">
+                                <rect key="frame" x="102" y="253" width="61" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="3LW-7W-QFI"/>
+                                    <constraint firstAttribute="height" constant="65" id="GDV-qi-J3z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="בואו לקחת">
+                                    <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="II7-Gm-ArK" kind="show" id="HM5-NU-EJ1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MomAndBabe" translatesAutoresizingMaskIntoConstraints="NO" id="NxZ-b0-Rjj">
+                                <rect key="frame" x="25" y="96" width="119" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bublerileft" translatesAutoresizingMaskIntoConstraints="NO" id="iHP-ba-ttU">
+                                <rect key="frame" x="189" y="226" width="132" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="Db9-pi-qvY"/>
+                                    <constraint firstAttribute="height" constant="100" id="dW5-Rr-q4Z"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="נגיע אליך בכדי לאסוף מוצרי מזון לתינוקות." textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="Ihq-3M-NMD">
+                                <rect key="frame" x="211" y="239" width="88" height="74"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubleright" translatesAutoresizingMaskIntoConstraints="NO" id="bEM-hA-lcH">
+                                <rect key="frame" x="12" y="375.5" width="173" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="dtf-c4-IwU"/>
+                                    <constraint firstAttribute="height" constant="106" id="sVg-Z1-zk0"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="קנית מזון לתינוק והשארת כתרומה בסופר ? תעדכן אותנו בבקשה. תודה !!!" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="DJs-eY-5ql">
+                                <rect key="frame" x="25" y="385.5" width="127" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="aY9-6r-hAa"/>
+                                    <constraint firstAttribute="width" constant="127" id="rQH-ig-2J3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="momAndBaybe2" translatesAutoresizingMaskIntoConstraints="NO" id="3zy-de-Jky">
+                                <rect key="frame" x="9" y="511" width="356" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="356" id="MWh-Ss-Gdc"/>
+                                    <constraint firstAttribute="height" constant="156" id="bTY-ST-1ZG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ihq-3M-NMD" firstAttribute="centerY" secondItem="iHP-ba-ttU" secondAttribute="centerY" id="4Vw-sy-Coq"/>
+                            <constraint firstItem="gVn-5A-NQ7" firstAttribute="leading" secondItem="zbQ-fV-U5L" secondAttribute="leading" constant="102" id="9DP-eC-pzg"/>
+                            <constraint firstItem="vGl-Mx-vqx" firstAttribute="height" secondItem="gVn-5A-NQ7" secondAttribute="height" id="GAf-cS-LOU"/>
+                            <constraint firstItem="3zy-de-Jky" firstAttribute="centerX" secondItem="zbQ-fV-U5L" secondAttribute="centerX" id="Iew-4A-ETm"/>
+                            <constraint firstItem="Ihq-3M-NMD" firstAttribute="centerX" secondItem="iHP-ba-ttU" secondAttribute="centerX" id="JKf-ZC-KFr"/>
+                            <constraint firstItem="zbQ-fV-U5L" firstAttribute="trailing" secondItem="vGl-Mx-vqx" secondAttribute="trailing" constant="103" id="JMg-UW-pUM"/>
+                            <constraint firstItem="vGl-Mx-vqx" firstAttribute="width" secondItem="gVn-5A-NQ7" secondAttribute="width" id="Jvk-Lt-c6h"/>
+                            <constraint firstItem="DJs-eY-5ql" firstAttribute="top" secondItem="bEM-hA-lcH" secondAttribute="bottom" constant="-96" id="OGt-9m-g9L"/>
+                            <constraint firstItem="zbQ-fV-U5L" firstAttribute="trailing" secondItem="uum-Hl-EZG" secondAttribute="trailing" constant="150" id="Rko-iG-07K"/>
+                            <constraint firstItem="zbQ-fV-U5L" firstAttribute="bottom" secondItem="3zy-de-Jky" secondAttribute="bottom" id="Vjn-Vu-7O9"/>
+                            <constraint firstItem="uum-Hl-EZG" firstAttribute="width" secondItem="gVn-5A-NQ7" secondAttribute="width" id="Wxg-fz-rvt"/>
+                            <constraint firstItem="bEM-hA-lcH" firstAttribute="leading" secondItem="zbQ-fV-U5L" secondAttribute="leading" constant="12" id="Z27-Sr-C5X"/>
+                            <constraint firstItem="bEM-hA-lcH" firstAttribute="leading" secondItem="DJs-eY-5ql" secondAttribute="trailing" constant="-140" id="aWD-NX-jHc"/>
+                            <constraint firstItem="uum-Hl-EZG" firstAttribute="top" secondItem="zbQ-fV-U5L" secondAttribute="top" constant="26" id="fPP-fe-EB1"/>
+                            <constraint firstItem="Ihq-3M-NMD" firstAttribute="top" secondItem="iHP-ba-ttU" secondAttribute="bottom" constant="-87" id="fav-vB-CWy"/>
+                            <constraint firstItem="zbQ-fV-U5L" firstAttribute="trailing" secondItem="iHP-ba-ttU" secondAttribute="trailing" constant="54" id="fu3-AL-e9h"/>
+                            <constraint firstItem="vGl-Mx-vqx" firstAttribute="leading" secondItem="DJs-eY-5ql" secondAttribute="trailing" constant="59" id="iWM-OL-AgS"/>
+                            <constraint firstItem="zbQ-fV-U5L" firstAttribute="bottom" secondItem="vGl-Mx-vqx" secondAttribute="bottom" constant="206" id="k8d-p9-RaV"/>
+                            <constraint firstItem="uum-Hl-EZG" firstAttribute="height" secondItem="gVn-5A-NQ7" secondAttribute="height" id="kSv-kk-F4w"/>
+                            <constraint firstItem="gVn-5A-NQ7" firstAttribute="top" secondItem="zbQ-fV-U5L" secondAttribute="top" constant="189" id="nC0-xW-Jib"/>
+                            <constraint firstItem="bEM-hA-lcH" firstAttribute="centerY" secondItem="vGl-Mx-vqx" secondAttribute="centerY" id="qvy-0W-RgW"/>
+                            <constraint firstItem="Ihq-3M-NMD" firstAttribute="leading" secondItem="iHP-ba-ttU" secondAttribute="trailing" constant="-110" id="zEI-bB-QXc"/>
+                            <constraint firstItem="iHP-ba-ttU" firstAttribute="top" secondItem="zbQ-fV-U5L" secondAttribute="top" constant="162" id="zbL-qb-dCX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zbQ-fV-U5L"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gwL-Zl-B7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="785.75712143928047"/>
+        </scene>
+        <!--Take From Me1 Details View Controller-->
+        <scene sceneID="Fws-gm-Y9J">
+            <objects>
+                <viewController id="II7-Gm-ArK" customClass="TakeFromMe1_Details_ViewController" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p6g-fy-0Ki" customClass="ComeT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RSq-ay-mKa">
+                                <rect key="frame" x="68" y="72" width="278" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">שם , טלפון, כתובת - זיהוי אוטומטי, שאלה האם מעוניין לאסוף במיקום אחר, , או במידה ואין אישור למיקום, לפתוח חלון חדש של איתור כתובת . החלון יכיל אימות של עיר ועד מספר בית, במידה ולא נמצאה הכתובת יגיד, אתה בטוח בכתובת? אין לנו מיקום מדיוק הפרטים נשמרו, ניצור איתך קשר</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Mbf-F6-Obs" userLabel="mainStack">
+                                <rect key="frame" x="25" y="201" width="325" height="162"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idO-71-y8h" userLabel="nameStack">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="DGZ-mU-DTX" userLabel="nameTF">
+                                                <rect key="frame" x="0.0" y="0.0" width="285.5" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="שם:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvv-HF-xFq">
+                                                <rect key="frame" x="285.5" y="0.0" width="39.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jvv-HF-xFq" firstAttribute="centerY" secondItem="idO-71-y8h" secondAttribute="centerY" id="hH1-fz-Meh"/>
+                                            <constraint firstItem="DGZ-mU-DTX" firstAttribute="centerY" secondItem="jvv-HF-xFq" secondAttribute="centerY" id="owK-HB-UMV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2II-8E-pz5" userLabel="phoneStack">
+                                        <rect key="frame" x="0.0" y="64" width="325" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hi5-7N-yrT" userLabel="phoneNumberTf">
+                                                <rect key="frame" x="0.0" y="0.0" width="265.5" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="טלפון:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbg-jQ-ryp">
+                                                <rect key="frame" x="265.5" y="0.0" width="59.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Hi5-7N-yrT" firstAttribute="centerY" secondItem="Fbg-jQ-ryp" secondAttribute="centerY" id="YKq-kD-CTf"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qw0-Gj-nTh" userLabel="addressStack">
+                                        <rect key="frame" x="0.0" y="128" width="325" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ui-KD-0FR" userLabel="addressTF">
+                                                <rect key="frame" x="0.0" y="0.0" width="254.5" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="כתובת:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1D-Fm-0VV">
+                                                <rect key="frame" x="254.5" y="0.0" width="70.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mbf-F6-Obs" firstAttribute="centerX" secondItem="ad9-b0-Ima" secondAttribute="centerX" id="84Q-1g-S6l"/>
+                            <constraint firstItem="Mbf-F6-Obs" firstAttribute="leading" secondItem="ad9-b0-Ima" secondAttribute="leading" constant="25" id="8EB-Lq-Jx6"/>
+                            <constraint firstItem="ad9-b0-Ima" firstAttribute="trailing" secondItem="Mbf-F6-Obs" secondAttribute="trailing" constant="25" id="Ene-Pp-gv4"/>
+                            <constraint firstItem="ad9-b0-Ima" firstAttribute="bottom" secondItem="Mbf-F6-Obs" secondAttribute="bottom" constant="304" id="moY-ZV-peE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ad9-b0-Ima"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSi-A4-R0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2112.8000000000002" y="785.75712143928047"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="BlH-Df-iou">
@@ -315,9 +565,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MomAndBabe" width="269" height="187"/>
         <image name="__1" width="953" height="543"/>
         <image name="bar" width="399" height="399"/>
+        <image name="bubleright" width="375" height="229"/>
+        <image name="bublerileft" width="373" height="229"/>
         <image name="facebookLogo" width="48" height="48"/>
+        <image name="momAndBaybe2" width="258" height="195"/>
         <image name="omri" width="317" height="416"/>
         <image name="zohar" width="160" height="160"/>
     </resources>
