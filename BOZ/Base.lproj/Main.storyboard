@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -97,6 +98,9 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kvr-9R-A8g" kind="show" id="UZa-up-k74"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dac-e1-7ky">
                                 <rect key="frame" x="87" y="444" width="201" height="47"/>
@@ -209,6 +213,88 @@
             </objects>
             <point key="canvasLocation" x="1394" y="18"/>
         </scene>
+        <!--About View Controller-->
+        <scene sceneID="BlH-Df-iou">
+            <objects>
+                <viewController id="kvr-9R-A8g" customClass="AboutViewController" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3aG-jZ-RSy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Qhr-nP-vwk">
+                                <rect key="frame" x="0.0" y="44" width="375" height="667"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osf-bZ-sn9" userLabel="section1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                                        <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NG6-Xc-H1s" userLabel="section2">
+                                        <rect key="frame" x="0.0" y="215.5" width="375" height="236"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2B-ZQ-1oJ" userLabel="section3">
+                                        <rect key="frame" x="0.0" y="451.5" width="375" height="215.5"/>
+                                        <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="k2B-ZQ-1oJ" firstAttribute="top" secondItem="NG6-Xc-H1s" secondAttribute="bottom" id="DIv-bS-n30"/>
+                                    <constraint firstItem="NG6-Xc-H1s" firstAttribute="top" secondItem="osf-bZ-sn9" secondAttribute="bottom" id="kho-11-M6K"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="8HY-Ns-q4Q">
+                                <rect key="frame" x="54.5" y="352" width="266" height="71"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="LBt-bJ-6ue" userLabel="img1">
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="40N-o8-bAc"/>
+                                            <constraint firstAttribute="width" constant="68" id="Byc-qf-Q1X"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omri" translatesAutoresizingMaskIntoConstraints="NO" id="vSZ-AA-dA3" userLabel="img2">
+                                        <rect key="frame" x="99" y="0.0" width="68" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68" id="0lT-en-edc"/>
+                                            <constraint firstAttribute="height" constant="71" id="agM-fY-Ig0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zohar" translatesAutoresizingMaskIntoConstraints="NO" id="L7q-Lf-Px9" userLabel="img3">
+                                        <rect key="frame" x="198" y="0.0" width="68" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68" id="DBB-1s-lzm"/>
+                                            <constraint firstAttribute="height" constant="71" id="lqo-x3-MwF"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.086805555555555552" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="k2B-ZQ-1oJ" firstAttribute="height" secondItem="5vd-nY-zP2" secondAttribute="height" multiplier="1:3" id="J55-bl-2f2"/>
+                            <constraint firstItem="8HY-Ns-q4Q" firstAttribute="centerX" secondItem="5vd-nY-zP2" secondAttribute="centerX" id="La9-Ml-abR"/>
+                            <constraint firstItem="5vd-nY-zP2" firstAttribute="bottom" secondItem="8HY-Ns-q4Q" secondAttribute="bottom" constant="288" id="UAS-dZ-05A"/>
+                            <constraint firstItem="Qhr-nP-vwk" firstAttribute="top" secondItem="5vd-nY-zP2" secondAttribute="top" constant="-20" id="gQ5-qK-ytt"/>
+                            <constraint firstItem="Qhr-nP-vwk" firstAttribute="leading" secondItem="5vd-nY-zP2" secondAttribute="leading" id="hQQ-ZQ-xao"/>
+                            <constraint firstItem="8HY-Ns-q4Q" firstAttribute="centerY" secondItem="5vd-nY-zP2" secondAttribute="centerY" id="kF6-2b-xhW"/>
+                            <constraint firstItem="osf-bZ-sn9" firstAttribute="height" secondItem="5vd-nY-zP2" secondAttribute="height" multiplier="1:3" id="kOe-CZ-Edu"/>
+                            <constraint firstItem="5vd-nY-zP2" firstAttribute="bottom" secondItem="Qhr-nP-vwk" secondAttribute="bottom" id="mjQ-oB-1yI"/>
+                            <constraint firstItem="5vd-nY-zP2" firstAttribute="trailing" secondItem="8HY-Ns-q4Q" secondAttribute="trailing" constant="54.5" id="qtM-5I-5Cn"/>
+                            <constraint firstItem="5vd-nY-zP2" firstAttribute="trailing" secondItem="Qhr-nP-vwk" secondAttribute="trailing" id="yeF-kr-zk9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5vd-nY-zP2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ZP-dp-XIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024.8" y="17.541229385307346"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="JhZ-S7-aRK">
             <objects>
@@ -230,6 +316,9 @@
     </scenes>
     <resources>
         <image name="__1" width="953" height="543"/>
+        <image name="bar" width="399" height="399"/>
         <image name="facebookLogo" width="48" height="48"/>
+        <image name="omri" width="317" height="416"/>
+        <image name="zohar" width="160" height="160"/>
     </resources>
 </document>

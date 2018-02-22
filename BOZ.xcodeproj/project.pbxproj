@@ -19,6 +19,7 @@
 		ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC49203E0BDC00457A61 /* MainViewController.swift */; };
 		ADB9EC50203E303F00457A61 /* GifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC4F203E303F00457A61 /* GifImageView.swift */; };
 		ADB9EC52203E310A00457A61 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB9EC51203E310A00457A61 /* logo.gif */; };
+		ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9823D203F2F74004BD58B /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		ADB9EC49203E0BDC00457A61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB9EC4F203E303F00457A61 /* GifImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GifImageView.swift; path = ../../../../Documents/OurHackathonDonationProject/OurHackathonDonation/supportLibraries/GifImageView.swift; sourceTree = "<group>"; };
 		ADB9EC51203E310A00457A61 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
+		ADC9823D203F2F74004BD58B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				ADB9EC48203E0B6900457A61 /* basecontroller */,
 				ADB9EC49203E0BDC00457A61 /* MainViewController.swift */,
 				AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */,
+				ADC9823D203F2F74004BD58B /* AboutViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				9A99C89C203C93FA0057D607 /* BOZ.xcdatamodeld in Sources */,
 				AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */,
 				ADB9EC50203E303F00457A61 /* GifImageView.swift in Sources */,
+				ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */,
 				9A99C896203C93FA0057D607 /* BaseViewController.swift in Sources */,
 				9A99C894203C93FA0057D607 /* AppDelegate.swift in Sources */,
 				ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */,
