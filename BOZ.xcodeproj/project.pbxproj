@@ -15,6 +15,7 @@
 		9A99C8A1203C93FA0057D607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A99C89F203C93FA0057D607 /* LaunchScreen.storyboard */; };
 		9A99C8AC203C93FA0057D607 /* BOZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8AB203C93FA0057D607 /* BOZTests.swift */; };
 		9A99C8B7203C93FA0057D607 /* BOZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8B6203C93FA0057D607 /* BOZUITests.swift */; };
+		AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */; };
 		ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC49203E0BDC00457A61 /* MainViewController.swift */; };
 		ADB9EC50203E303F00457A61 /* GifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC4F203E303F00457A61 /* GifImageView.swift */; };
 		ADB9EC52203E310A00457A61 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB9EC51203E310A00457A61 /* logo.gif */; };
@@ -52,6 +53,7 @@
 		9A99C8B2203C93FA0057D607 /* BOZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BOZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A99C8B6203C93FA0057D607 /* BOZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOZUITests.swift; sourceTree = "<group>"; };
 		9A99C8B8203C93FA0057D607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web2HelpViewController.swift; sourceTree = "<group>"; };
 		ADB9EC49203E0BDC00457A61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB9EC4F203E303F00457A61 /* GifImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GifImageView.swift; path = ../../../../Documents/OurHackathonDonationProject/OurHackathonDonation/supportLibraries/GifImageView.swift; sourceTree = "<group>"; };
 		ADB9EC51203E310A00457A61 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				ADB9EC48203E0B6900457A61 /* basecontroller */,
 				ADB9EC49203E0BDC00457A61 /* MainViewController.swift */,
+				AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A99C89C203C93FA0057D607 /* BOZ.xcdatamodeld in Sources */,
+				AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */,
 				ADB9EC50203E303F00457A61 /* GifImageView.swift in Sources */,
 				9A99C896203C93FA0057D607 /* BaseViewController.swift in Sources */,
 				9A99C894203C93FA0057D607 /* AppDelegate.swift in Sources */,
