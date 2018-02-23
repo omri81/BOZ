@@ -9,7 +9,9 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
+    //A string array to save all the names
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

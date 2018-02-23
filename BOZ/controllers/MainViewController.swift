@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Foundation
 
 class MainViewController: BaseViewController {
-
+    
+    
     @IBOutlet weak var quickDonationBtn: UIButton!
     @IBOutlet weak var logoGifImageView: UIImageView!
     
@@ -27,22 +29,61 @@ class MainViewController: BaseViewController {
                         self?.quickDonationBtn.transform = .identity
             },
                        completion: nil)
+        
+        getJsonFromUrl()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        //this function is fetching the json from URL
+        func getJsonFromUrl(){
+            let URL_HEROES = "https://api.myjson.com/bins/sxhnp"
+            //creating a NSURL
+            let url = NSURL(string: URL_HEROES)
+            
+            //fetching the data from the url
+            URLSession.shared.dataTask(with: (url as? URL)!, completionHandler: {(data, response, error) -> Void in
+                
+                if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
+                    
+                    //printing the json in console
+                   // print(jsonObj!.value(forKey: "items")!)
+                    
+                    //getting the avengers tag array from json and converting it to NSArray
+                    if let heroeArray = jsonObj!.value(forKey: "items") as? NSArray {
+                        //looping through all the elements
+                        for heroe in heroeArray{
+                            
+                            //converting the element to a dictionary
+                            if let heroeDict = heroe as? NSDictionary {
+                                var sub = MilkSubst()
+                                //getting the title from the dictionary
+                                if let title = heroeDict.value(forKey: "title") {
+                                    sub.title = title as! String
+                                }
+                                //getting the fullDesc from the dictionary
+                                if let fullDesc = heroeDict.value(forKey: "fullDesc") {
+                                    sub.fullDesc = fullDesc as! String
+                                }
+                                //getting the artworkUrl100 from the dictionary
+                                if let artworkUrl100 = heroeDict.value(forKey: "artworkUrl100") {
+                                    sub.coverImage = artworkUrl100 as! String
+                                    print(sub.coverImage)
+                                }
+                                subsArray.append(sub)
+                            }
+                        }
+                    }
+                    
+                    OperationQueue.main.addOperation({
+                        //calling another function after fetching the json
+                       
+                    })
+                }
+            }).resume()
     }
-    */
+    
 
 }
