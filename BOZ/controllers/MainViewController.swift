@@ -17,7 +17,16 @@ class MainViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //productfill
+        let product = ProductModel()
+        product.insertNewProduct(qr: "sfsef---QR---sdf",
+                                 title: "תחליף חלב טעים")
+        let milkModel = ProductModel()
+        let milkArray = milkModel.productQueryAll()
+            for m in milkArray {
+                print ("milk: title: \(m.title!) qr: \(m.qr!)")
+            }
+        
         logoGifImageView.loadGif(name: "logo")
         quickDonationBtn.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         UIView.animate(withDuration: 2.0,
@@ -39,7 +48,7 @@ class MainViewController: BaseViewController {
     }
         //this function is fetching the json from URL
         func getJsonFromUrl(){
-            let URL_HEROES = "https://api.myjson.com/bins/sxhnp"
+            let URL_HEROES = "https://cf66e30d-0e37-45cc-b5b7-ff206a2861b3-bluemix.cloudant.com/neptun/1" // "https://api.myjson.com/bins/sxhnp"
             //creating a NSURL
             let url = NSURL(string: URL_HEROES)
             
@@ -47,7 +56,9 @@ class MainViewController: BaseViewController {
             URLSession.shared.dataTask(with: (url as? URL)!, completionHandler: {(data, response, error) -> Void in
                 
                 if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
-                    
+                    if let title = jsonObj!.value(forKey: "title") {
+                        print(title)
+                    }
                     //printing the json in console
                    // print(jsonObj!.value(forKey: "items")!)
                     
@@ -74,7 +85,9 @@ class MainViewController: BaseViewController {
                                 }
                                 subsArray.append(sub)
                             }
+ 
                         }
+
                     }
                     
                     OperationQueue.main.addOperation({
