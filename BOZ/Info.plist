@@ -11,6 +11,7 @@
     <array>
         <string>telprompt</string>
         <string>tel</string>
+        <string>waze</string>
     </array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

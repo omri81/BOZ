@@ -6,8 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,54 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gd3-Qd-VrX">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="gd3-Qd-VrX" secondAttribute="height" multiplier="3:1" id="rzH-fL-lrr"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boz_bg" translatesAutoresizingMaskIntoConstraints="NO" id="1u2-GF-eL0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXG-Hl-8ax">
-                                <rect key="frame" x="0.0" y="126" width="375" height="100"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="קישור לסיפורים על המשפחות שאליהם אתם תורמים ועוזרים" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DwO-X0-j58">
-                                        <rect key="frame" x="200" y="8" width="167" height="92"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="167" id="wXN-va-MTk"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9K7-RM-Tlr">
-                                        <rect key="frame" x="37" y="14" width="93" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="93" id="rn2-7t-bp0"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="DwO-X0-j58" firstAttribute="leading" secondItem="9K7-RM-Tlr" secondAttribute="trailing" constant="70" id="5EB-HO-hCc"/>
-                                    <constraint firstItem="9K7-RM-Tlr" firstAttribute="top" secondItem="bXG-Hl-8ax" secondAttribute="top" constant="14" id="Ag1-33-fsU"/>
-                                    <constraint firstAttribute="trailing" secondItem="DwO-X0-j58" secondAttribute="trailing" constant="8" id="Cg9-qU-kVC"/>
-                                    <constraint firstItem="DwO-X0-j58" firstAttribute="top" secondItem="bXG-Hl-8ax" secondAttribute="top" constant="8" id="PAJ-zf-OMO"/>
-                                    <constraint firstItem="9K7-RM-Tlr" firstAttribute="leading" secondItem="bXG-Hl-8ax" secondAttribute="leading" constant="37" id="qmb-x6-qdY"/>
-                                    <constraint firstAttribute="width" secondItem="bXG-Hl-8ax" secondAttribute="height" multiplier="15:4" id="u3d-pW-lOl"/>
-                                </constraints>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ziw-4R-YYu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.44" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DwO-X0-j58" secondAttribute="bottom" constant="441" id="QoX-bO-c7O"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="gd3-Qd-VrX" secondAttribute="top" constant="20" id="Qvk-ip-eGX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9K7-RM-Tlr" secondAttribute="bottom" constant="447" id="S0A-3o-HII"/>
-                            <constraint firstItem="bXG-Hl-8ax" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="WG7-ux-1G9"/>
-                            <constraint firstItem="bXG-Hl-8ax" firstAttribute="top" secondItem="gd3-Qd-VrX" secondAttribute="bottom" constant="1" id="aeq-dt-Kca"/>
-                            <constraint firstItem="gd3-Qd-VrX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eGQ-Yw-Qjy"/>
-                            <constraint firstItem="gd3-Qd-VrX" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="quS-uf-v9b"/>
-                            <constraint firstItem="bXG-Hl-8ax" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rSb-5S-4dj"/>
+                            <constraint firstItem="Ziw-4R-YYu" firstAttribute="height" secondItem="1u2-GF-eL0" secondAttribute="height" id="2Yh-Rm-mFg"/>
+                            <constraint firstItem="Ziw-4R-YYu" firstAttribute="width" secondItem="1u2-GF-eL0" secondAttribute="width" id="9kc-jO-j0x"/>
+                            <constraint firstAttribute="bottom" secondItem="1u2-GF-eL0" secondAttribute="bottom" id="DvR-0t-COx"/>
+                            <constraint firstItem="Ziw-4R-YYu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EO8-I3-XTg"/>
+                            <constraint firstItem="1u2-GF-eL0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="amW-hm-Roq"/>
+                            <constraint firstItem="1u2-GF-eL0" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="rF1-A3-qcZ"/>
+                            <constraint firstItem="Ziw-4R-YYu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uvf-qp-GKV"/>
+                            <constraint firstItem="1u2-GF-eL0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="zuJ-7U-v3r"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -74,4 +43,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="boz_bg" width="3024" height="2016"/>
+    </resources>
 </document>

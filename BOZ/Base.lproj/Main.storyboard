@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cPl-oq-3E2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3UE-c6-eqe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,6 +14,10 @@
     <customFonts key="customFonts">
         <array key="ArialBold.ttf">
             <string>Arial-BoldMT</string>
+        </array>
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -35,9 +40,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <size key="titleShadowOffset" width="0.0" height="3"/>
-                                <state key="normal" title="הרשמה">
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="הרשמה"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -58,9 +61,7 @@
                                 <color key="backgroundColor" red="0.91666666666666663" green="0.11805555555555555" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <size key="titleShadowOffset" width="0.0" height="3"/>
-                                <state key="normal" title="כניסה">
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="כניסה"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -211,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="27.436281859070466"/>
+            <point key="canvasLocation" x="900" y="29"/>
         </scene>
         <!--Web2 Help View Controller-->
         <scene sceneID="4J9-i9-luX">
@@ -226,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1v-ZT-Sbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1394" y="18"/>
+            <point key="canvasLocation" x="2068" y="18"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vbY-if-gfb">
@@ -271,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDF-Af-c1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.79999999999995" y="965.6671664167917"/>
+            <point key="canvasLocation" x="700" y="1494"/>
         </scene>
         <!--Quick Donation View Controller-->
         <scene sceneID="fH5-Fr-naS">
@@ -714,10 +715,10 @@
                                                     <rect key="frame" x="32" y="-9" width="174" height="145"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hDU-77-brw">
-                                                            <rect key="frame" x="0.0" y="0.0" width="174" height="358.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="174" height="121"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbW-K6-qAq">
-                                                            <rect key="frame" x="0.0" y="358.5" width="174" height="60.5"/>
+                                                            <rect key="frame" x="0.0" y="121" width="174" height="61"/>
                                                             <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -851,7 +852,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ZP-dp-XIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2024.8" y="17.541229385307346"/>
+            <point key="canvasLocation" x="2903" y="18"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ou1-mR-ZvJ">
@@ -1093,6 +1094,505 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCW-0a-2BQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.40000000000001" y="-639.13043478260875"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="Zvk-mM-4pL">
+            <objects>
+                <viewController id="3UE-c6-eqe" customClass="MainVC" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hoe-GT-OY4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boz_bg" translatesAutoresizingMaskIntoConstraints="NO" id="dzz-TN-PrH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaT-YU-BB6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.4392658390410959" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="416-Rj-Nhg">
+                                <rect key="frame" x="307" y="20" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="416-Rj-Nhg" secondAttribute="height" multiplier="1:1" id="ePD-r2-UCe"/>
+                                    <constraint firstAttribute="height" constant="60" id="l67-h3-RAw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ryh-nB-kVe">
+                                <rect key="frame" x="189" y="20" width="118" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.14528039383561644" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal">
+                                    <string key="title">הבנק החברתי
+למזון תינוקות</string>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6e-pw-uzk">
+                                <rect key="frame" x="8" y="20" width="139" height="34"/>
+                                <color key="backgroundColor" red="0.13534801411555555" green="0.49416805309166673" blue="0.71183268229166663" alpha="0.37548159246575341" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="התחברות למערכת">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.30375107020547948" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="dHh-rZ-2En">
+                                <rect key="frame" x="8" y="155" width="359" height="234"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNL-5P-bQQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="106.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696061643838" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="uwa-d7-glW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
+                                        <state key="normal" title="תרומה מהירה">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="2eO-zo-vbP" kind="show" id="L6J-dg-HbL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K0-Zl-RQD">
+                                        <rect key="frame" x="0.0" y="127.5" width="359" height="106.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
+                                        <state key="normal" title="צריך תרומה?">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qNL-5P-bQQ" firstAttribute="leading" secondItem="dHh-rZ-2En" secondAttribute="leading" id="G3l-Om-QgO"/>
+                                    <constraint firstAttribute="trailing" secondItem="qNL-5P-bQQ" secondAttribute="trailing" id="KFz-u0-QuB"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg5-uJ-GFv">
+                                <rect key="frame" x="8" y="577" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vg5-uJ-GFv" secondAttribute="height" multiplier="1:1" id="H2o-2k-Wmx"/>
+                                    <constraint firstAttribute="height" constant="70" id="YXE-wU-gwg"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="facebookLogo"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20S-ew-e9g">
+                                <rect key="frame" x="93.5" y="593" width="187.5" height="38"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.35129494863013699" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                <state key="normal" title="www.2help.org.il">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="LQq-MJ-LBP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igv-oG-Nls">
+                                <rect key="frame" x="297" y="577" width="70" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Igv-oG-Nls" secondAttribute="height" multiplier="1:1" id="iGb-ni-mzc"/>
+                                    <constraint firstAttribute="height" constant="70" id="obM-xZ-abc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="phoneIcon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LaT-YU-BB6" firstAttribute="width" secondItem="dzz-TN-PrH" secondAttribute="width" id="0cP-Rb-m9B"/>
+                            <constraint firstItem="20S-ew-e9g" firstAttribute="centerX" secondItem="Hoe-GT-OY4" secondAttribute="centerX" id="33T-Z5-kmH"/>
+                            <constraint firstItem="CvM-uk-SgO" firstAttribute="trailing" secondItem="Igv-oG-Nls" secondAttribute="trailing" constant="8" id="4St-DQ-m6I"/>
+                            <constraint firstItem="CvM-uk-SgO" firstAttribute="bottom" secondItem="Igv-oG-Nls" secondAttribute="bottom" constant="20" id="DGV-tT-lPS"/>
+                            <constraint firstItem="ryh-nB-kVe" firstAttribute="height" secondItem="416-Rj-Nhg" secondAttribute="height" id="DTc-Fy-GNV"/>
+                            <constraint firstItem="vg5-uJ-GFv" firstAttribute="leading" secondItem="CvM-uk-SgO" secondAttribute="leading" constant="8" id="HxJ-hY-KPo"/>
+                            <constraint firstItem="CvM-uk-SgO" firstAttribute="trailing" secondItem="416-Rj-Nhg" secondAttribute="trailing" constant="8" id="Iby-77-wyD"/>
+                            <constraint firstItem="LaT-YU-BB6" firstAttribute="centerY" secondItem="Hoe-GT-OY4" secondAttribute="centerY" id="LL0-OS-ERr"/>
+                            <constraint firstItem="20S-ew-e9g" firstAttribute="width" secondItem="Hoe-GT-OY4" secondAttribute="width" multiplier="50%" id="N4U-kF-IlU"/>
+                            <constraint firstItem="q6e-pw-uzk" firstAttribute="leading" secondItem="CvM-uk-SgO" secondAttribute="leading" constant="8" id="P50-R1-Rbb"/>
+                            <constraint firstItem="LaT-YU-BB6" firstAttribute="centerX" secondItem="Hoe-GT-OY4" secondAttribute="centerX" id="QTr-p6-SuD"/>
+                            <constraint firstItem="ryh-nB-kVe" firstAttribute="top" secondItem="416-Rj-Nhg" secondAttribute="top" id="R1V-h4-ggr"/>
+                            <constraint firstItem="q6e-pw-uzk" firstAttribute="top" secondItem="CvM-uk-SgO" secondAttribute="top" id="Ufl-b6-evQ"/>
+                            <constraint firstItem="dHh-rZ-2En" firstAttribute="top" secondItem="ryh-nB-kVe" secondAttribute="bottom" constant="75" id="btZ-Pd-sAY"/>
+                            <constraint firstItem="416-Rj-Nhg" firstAttribute="leading" secondItem="ryh-nB-kVe" secondAttribute="trailing" id="e6t-Cl-vOw"/>
+                            <constraint firstAttribute="bottom" secondItem="dzz-TN-PrH" secondAttribute="bottom" id="fal-Py-qJj"/>
+                            <constraint firstItem="dzz-TN-PrH" firstAttribute="top" secondItem="Hoe-GT-OY4" secondAttribute="top" id="ffh-HI-END"/>
+                            <constraint firstItem="dzz-TN-PrH" firstAttribute="leading" secondItem="Hoe-GT-OY4" secondAttribute="leading" id="gS8-6p-8On"/>
+                            <constraint firstItem="CvM-uk-SgO" firstAttribute="bottom" secondItem="vg5-uJ-GFv" secondAttribute="bottom" constant="20" id="giG-Q4-6BX"/>
+                            <constraint firstItem="dzz-TN-PrH" firstAttribute="trailing" secondItem="CvM-uk-SgO" secondAttribute="trailing" id="h45-iR-hK5"/>
+                            <constraint firstItem="dHh-rZ-2En" firstAttribute="leading" secondItem="CvM-uk-SgO" secondAttribute="leading" constant="8" id="hwS-lh-TEn"/>
+                            <constraint firstItem="416-Rj-Nhg" firstAttribute="top" secondItem="CvM-uk-SgO" secondAttribute="top" id="kuc-rE-Cec"/>
+                            <constraint firstItem="LaT-YU-BB6" firstAttribute="height" secondItem="dzz-TN-PrH" secondAttribute="height" id="vch-TT-W1H"/>
+                            <constraint firstItem="20S-ew-e9g" firstAttribute="centerY" secondItem="vg5-uJ-GFv" secondAttribute="centerY" id="wDa-E4-hO1"/>
+                            <constraint firstItem="CvM-uk-SgO" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="dHh-rZ-2En" secondAttribute="bottom" constant="278" id="yWP-8r-b1V"/>
+                            <constraint firstItem="CvM-uk-SgO" firstAttribute="trailing" secondItem="dHh-rZ-2En" secondAttribute="trailing" constant="8" id="zfI-VA-leu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CvM-uk-SgO"/>
+                    </view>
+                    <connections>
+                        <outlet property="logoImg" destination="416-Rj-Nhg" id="GXA-Jd-G0T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5z-Id-uog" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1618" y="1494"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uvn-bM-W2t">
+            <objects>
+                <navigationController id="2eO-zo-vbP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vx9-W9-B4L">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jtu-ez-KRt" kind="relationship" relationship="rootViewController" id="csb-Sf-hVU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U8b-fx-Rqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1618" y="2300"/>
+        </scene>
+        <!--DonationVC-->
+        <scene sceneID="RNx-co-87y">
+            <objects>
+                <viewController title="DonationVC" id="jtu-ez-KRt" customClass="DonationVC" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ozZ-FT-jaV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="donation_bg" translatesAutoresizingMaskIntoConstraints="NO" id="xQq-3R-Az7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRs-zc-lZe">
+                                <rect key="frame" x="0.0" y="-43" width="375" height="689"/>
+                                <subviews>
+                                    <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTZ-Xx-bU0">
+                                        <rect key="frame" x="8" y="48" width="30" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="LSq-at-cgP"/>
+                                            <constraint firstAttribute="width" secondItem="uTZ-Xx-bU0" secondAttribute="height" multiplier="3:5" id="Rqa-9R-GaH"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="back_btn"/>
+                                        <connections>
+                                            <action selector="onBtnClickedWithSender:" destination="jtu-ez-KRt" eventType="touchUpInside" id="s4j-ix-XbC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.25131100167123283" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uTZ-Xx-bU0" firstAttribute="leading" secondItem="wRs-zc-lZe" secondAttribute="leading" constant="8" id="wYK-oU-qB3"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="0dx-Eq-iEU">
+                                <rect key="frame" x="299" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0dx-Eq-iEU" secondAttribute="height" multiplier="1:1" id="R4N-H1-Cll"/>
+                                    <constraint firstAttribute="height" constant="60" id="a9A-DA-ukV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bex-yz-Io0">
+                                <rect key="frame" x="181" y="0.0" width="118" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.99215686274509807" blue="1" alpha="0.14528039379999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal">
+                                    <string key="title">הבנק החברתי
+למזון תינוקות</string>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.89593321917808222" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="E9D-hx-73j">
+                                <rect key="frame" x="8" y="100" width="359" height="436"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAR-JH-8Pp">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="98"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="EBb-qK-ypW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
+                                        <state key="normal" title="תרומה כספית">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onBtnClickedWithSender:" destination="jtu-ez-KRt" eventType="touchUpInside" id="i4z-bX-aTe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtc-Kp-pwo">
+                                        <rect key="frame" x="0.0" y="113" width="359" height="97.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="LI6-X8-l2M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
+                                        <state key="normal" title="בואו לקחת">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onBtnClickedWithSender:" destination="jtu-ez-KRt" eventType="touchUpInside" id="0hb-BW-rHG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6U9-Ld-2Fn">
+                                        <rect key="frame" x="0.0" y="225.5" width="359" height="98"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="JAz-to-Zxa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
+                                        <state key="normal" title="השארתי ב...">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onBtnClickedWithSender:" destination="jtu-ez-KRt" eventType="touchUpInside" id="Tdc-pk-kb5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4O8-WL-bo8">
+                                        <rect key="frame" x="0.0" y="338.5" width="359" height="97.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="6BX-CZ-OiT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
+                                        <state key="normal" title="אבוא אליכם">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onBtnClickedWithSender:" destination="jtu-ez-KRt" eventType="touchUpInside" id="537-8l-Dnr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xho-sX-HCf">
+                                <rect key="frame" x="90" y="563" width="195" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.99215686274509807" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="La8-lc-Oh3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                <inset key="contentEdgeInsets" minX="7" minY="3" maxX="7" maxY="3"/>
+                                <state key="normal" title="מה אפשר לתרום?">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onBtnClickedWithSender:" destination="jtu-ez-KRt" eventType="touchUpInside" id="d36-jq-a53"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Bex-yz-Io0" firstAttribute="height" secondItem="0dx-Eq-iEU" secondAttribute="height" id="28E-ye-5UD"/>
+                            <constraint firstItem="xQq-3R-Az7" firstAttribute="leading" secondItem="ozZ-FT-jaV" secondAttribute="leading" id="Bbv-No-hmp"/>
+                            <constraint firstItem="xQq-3R-Az7" firstAttribute="trailing" secondItem="k3i-P1-ylh" secondAttribute="trailing" id="Bxg-CE-4Ru"/>
+                            <constraint firstItem="k3i-P1-ylh" firstAttribute="bottom" secondItem="Xho-sX-HCf" secondAttribute="bottom" constant="10" id="DKC-kW-RRl"/>
+                            <constraint firstItem="wRs-zc-lZe" firstAttribute="height" secondItem="xQq-3R-Az7" secondAttribute="height" constant="43" id="Die-3M-qFl"/>
+                            <constraint firstItem="0dx-Eq-iEU" firstAttribute="leading" secondItem="Bex-yz-Io0" secondAttribute="trailing" id="E0f-wF-2Xv"/>
+                            <constraint firstItem="wRs-zc-lZe" firstAttribute="centerY" secondItem="ozZ-FT-jaV" secondAttribute="centerY" id="GJe-Z4-VBx"/>
+                            <constraint firstItem="xQq-3R-Az7" firstAttribute="bottom" secondItem="ozZ-FT-jaV" secondAttribute="bottom" constant="43" id="Gw7-jj-Qbk"/>
+                            <constraint firstItem="E9D-hx-73j" firstAttribute="leading" secondItem="k3i-P1-ylh" secondAttribute="leading" constant="8" id="Mgq-RP-Xe0"/>
+                            <constraint firstItem="wRs-zc-lZe" firstAttribute="width" secondItem="xQq-3R-Az7" secondAttribute="width" id="UVA-XC-arn"/>
+                            <constraint firstItem="0dx-Eq-iEU" firstAttribute="top" secondItem="k3i-P1-ylh" secondAttribute="top" id="XOy-W2-JQn"/>
+                            <constraint firstItem="uTZ-Xx-bU0" firstAttribute="centerY" secondItem="Bex-yz-Io0" secondAttribute="centerY" id="XZr-Qn-YUI"/>
+                            <constraint firstItem="k3i-P1-ylh" firstAttribute="bottom" secondItem="E9D-hx-73j" secondAttribute="bottom" constant="67" id="aEA-M5-yp8"/>
+                            <constraint firstItem="k3i-P1-ylh" firstAttribute="trailing" secondItem="0dx-Eq-iEU" secondAttribute="trailing" constant="16" id="auq-lx-KNk"/>
+                            <constraint firstItem="Bex-yz-Io0" firstAttribute="top" secondItem="0dx-Eq-iEU" secondAttribute="top" id="eWY-S8-NDa"/>
+                            <constraint firstItem="wRs-zc-lZe" firstAttribute="centerX" secondItem="ozZ-FT-jaV" secondAttribute="centerX" id="f0Z-CN-KEM"/>
+                            <constraint firstItem="k3i-P1-ylh" firstAttribute="trailing" secondItem="E9D-hx-73j" secondAttribute="trailing" constant="8" id="kDR-Ga-Fpi"/>
+                            <constraint firstItem="Xho-sX-HCf" firstAttribute="centerX" secondItem="ozZ-FT-jaV" secondAttribute="centerX" id="nn5-Pf-qT1"/>
+                            <constraint firstAttribute="top" secondItem="xQq-3R-Az7" secondAttribute="top" id="tqr-Gh-ajy"/>
+                            <constraint firstItem="E9D-hx-73j" firstAttribute="top" secondItem="0dx-Eq-iEU" secondAttribute="bottom" constant="40" id="twc-Td-SJF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k3i-P1-ylh"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="Bj4-Xj-k1f">
+                        <barButtonItem key="backBarButtonItem" title="חזור" id="Uzh-Fs-NSf"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="logoImg" destination="0dx-Eq-iEU" id="Mas-HL-xDp"/>
+                        <segue destination="fvg-TM-w19" kind="show" identifier="toComeTakeVC" id="eYf-et-hHI"/>
+                        <segue destination="Y6U-rw-7pE" kind="show" identifier="toImComingVC" id="2hd-A9-pkh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kta-6g-jXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1618.4000000000001" y="3024.7376311844082"/>
+        </scene>
+        <!--השלוחות שלנו:-->
+        <scene sceneID="ccE-d7-xeg">
+            <objects>
+                <collectionViewController title="השלוחות שלנו:" id="Y6U-rw-7pE" customClass="BranchListVC" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wVB-Bv-FAA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="l7P-NQ-qZ3">
+                            <size key="itemSize" width="375" height="88"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="branchCell" id="MvS-eK-AB0" customClass="BranchCell" customModule="BOZ" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="שם הסניף" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3M-xB-RCb">
+                                            <rect key="frame" x="277.5" y="8" width="77.5" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="170" id="FgT-QA-bRr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                            <color key="textColor" red="0.21568627450980393" green="0.22352941176470587" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="כתובת הסניף" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqa-Me-DzW">
+                                            <rect key="frame" x="267.5" y="38" width="87.5" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="170" id="gAB-PZ-9JK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="phoneBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01v-F3-hwG">
+                                            <rect key="frame" x="20" y="20" width="48" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="01v-F3-hwG" secondAttribute="height" multiplier="1:1" id="09a-ic-qbA"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="xOC-s5-c76"/>
+                                            </constraints>
+                                            <state key="normal" backgroundImage="phoneIcon"/>
+                                            <connections>
+                                                <action selector="onClickWithSender:" destination="MvS-eK-AB0" eventType="touchUpInside" id="AHj-on-aos"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="wazeBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqy-01-8dV">
+                                            <rect key="frame" x="72" y="14" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="Sw4-Ht-Qea"/>
+                                                <constraint firstAttribute="width" secondItem="jqy-01-8dV" secondAttribute="height" multiplier="1:1" id="zQS-HV-ljq"/>
+                                            </constraints>
+                                            <state key="normal" backgroundImage="waze_logo"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="onClickWithSender:" destination="MvS-eK-AB0" eventType="touchUpInside" id="DaP-qu-3G7"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.99215686274509807" blue="1" alpha="0.1072613441780822" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jqy-01-8dV" firstAttribute="width" secondItem="jqy-01-8dV" secondAttribute="height" multiplier="1:1" id="1Gh-Aj-Imn"/>
+                                    <constraint firstAttribute="trailing" secondItem="P3M-xB-RCb" secondAttribute="trailing" constant="20" id="2zK-SD-6nk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xqa-Me-DzW" secondAttribute="trailing" constant="20" id="BSf-xc-cl5"/>
+                                    <constraint firstItem="Xqa-Me-DzW" firstAttribute="top" secondItem="P3M-xB-RCb" secondAttribute="bottom" constant="4" id="COs-Mf-HcO"/>
+                                    <constraint firstItem="P3M-xB-RCb" firstAttribute="top" secondItem="MvS-eK-AB0" secondAttribute="top" constant="8" id="Hai-Hy-Lz5"/>
+                                    <constraint firstItem="01v-F3-hwG" firstAttribute="leading" secondItem="MvS-eK-AB0" secondAttribute="leading" constant="20" id="JkQ-A6-brp"/>
+                                    <constraint firstItem="jqy-01-8dV" firstAttribute="leading" secondItem="01v-F3-hwG" secondAttribute="trailing" constant="4" id="NnG-qW-wZ2"/>
+                                    <constraint firstItem="jqy-01-8dV" firstAttribute="centerY" secondItem="MvS-eK-AB0" secondAttribute="centerY" id="iD8-iX-mRh"/>
+                                    <constraint firstItem="01v-F3-hwG" firstAttribute="centerY" secondItem="MvS-eK-AB0" secondAttribute="centerY" id="oBv-sa-WGj"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="addressLbl" destination="Xqa-Me-DzW" id="ap5-gE-itq"/>
+                                    <outlet property="nameLbl" destination="P3M-xB-RCb" id="2I0-8Y-kiW"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Y6U-rw-7pE" id="EOp-0g-eUP"/>
+                            <outlet property="delegate" destination="Y6U-rw-7pE" id="Hl8-P6-yEC"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNw-Wr-15o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2295" y="3752"/>
+        </scene>
+        <!--בואו לקחת-->
+        <scene sceneID="hvO-G9-3F2">
+            <objects>
+                <viewController title="בואו לקחת" id="fvg-TM-w19" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nff-1k-Vi9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fGd-Ih-168"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AH-sp-v9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-942" y="3752"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3J7-9c-hmH">
@@ -1366,13 +1866,18 @@
     <resources>
         <image name="MomAndBabe" width="269" height="187"/>
         <image name="__1" width="953" height="543"/>
+        <image name="back_btn" width="24" height="40"/>
         <image name="bar" width="399" height="399"/>
+        <image name="boz_bg" width="3024" height="2016"/>
         <image name="bubleright" width="375" height="229"/>
         <image name="bublerileft" width="373" height="229"/>
+        <image name="donation_bg" width="1920" height="1200"/>
         <image name="facebookLogo" width="48" height="48"/>
         <image name="momAndBaybe2" width="258" height="195"/>
         <image name="omri" width="317" height="416"/>
+        <image name="phoneIcon" width="48" height="48"/>
         <image name="productlistimg" width="654" height="532"/>
+        <image name="waze_logo" width="180" height="180"/>
         <image name="zohar" width="160" height="160"/>
     </resources>
 </document>
