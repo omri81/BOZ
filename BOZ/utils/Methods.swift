@@ -10,7 +10,9 @@ import UIKit
 
 public class Methods{
     
-    static let OFFICE_NUMBER = "0507888094"
+    private static let OFFICE_NUMBER = "0507888094"
+    private static let OFFICIAL_WEBSITE = "https://www.2help.org.il/"
+    private static let OFFICIAL_FACEBOOK_PAGE_ID = "138399090105076"
     
     public static func makePhoneCall(toNumber : String){
         guard let url = URL(string: "tel://\(toNumber)") else { return }
@@ -33,6 +35,21 @@ public class Methods{
             UIApplication.shared.open(URL(string: "http://itunes.apple.com/us/app/id323229106")!, options: [:], completionHandler: nil)
         }
         
+    }
+    
+    public static func openOfficialWebsite(){
+        guard let url = URL(string: OFFICIAL_WEBSITE) else {return}
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    public static func openFacebookPage(){
+        
+        if UIApplication.shared.canOpenURL(URL(string: "fb://")!){
+            let appUrl = "fb://profile/\(OFFICIAL_FACEBOOK_PAGE_ID)"
+            UIApplication.shared.open(URL(string: appUrl)!, options: [:], completionHandler: nil)
+        }else{
+            UIApplication.shared.open(URL(string: "https://www.facebook.com/2help.org.il/")!, options: [:], completionHandler: nil)
+        }
     }
     
 }

@@ -23,6 +23,7 @@ class DonationVC: UIViewController {
     private let TO_COME_TAKE_VC = "toComeTakeVC"
     private let TO_LEFT_AT_VC = "toLeftAtVC"
     private let TO_IM_COMING_VC = "toImComingVC"
+    private let TO_PRODUCT_VC = "toProductVC"
     
     @IBOutlet weak var logoImg: UIImageView!
     
@@ -54,7 +55,7 @@ class DonationVC: UIViewController {
             case IM_COMING_BTN:
                 performSegue(withIdentifier: TO_IM_COMING_VC, sender: self)
             case WHAT_TO_DONATE_BTN:
-                break
+                performSegue(withIdentifier: TO_PRODUCT_VC, sender: self)
             case BACK_BTN:
                 self.navigationController?.dismiss(animated: true, completion: nil)
             default:

@@ -32,7 +32,9 @@
 		FC9FB36720470F3F00A3B508 /* BranchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB36620470F3F00A3B508 /* BranchCell.swift */; };
 		FC9FB36A2047102D00A3B508 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB3692047102D00A3B508 /* Methods.swift */; };
 		FC9FB36D2047196500A3B508 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB36C2047196500A3B508 /* Branch.swift */; };
-		FC9FB36F2047223500A3B508 /* BranchListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB36E2047223400A3B508 /* BranchListVC.swift */; };
+		FC9FB36F2047223500A3B508 /* BranchListCVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */; };
+		FC9FB3722048670600A3B508 /* ProductListCVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB3712048670600A3B508 /* ProductListCVVC.swift */; };
+		FC9FB3762048864C00A3B508 /* DonationProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB3752048864C00A3B508 /* DonationProduct.swift */; };
 		FCC458372045B5D300A89CDE /* GifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC458362045B5D300A89CDE /* GifImageView.swift */; };
 		FCC458392045C6B900A89CDE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC458382045C6B900A89CDE /* MainVC.swift */; };
 /* End PBXBuildFile section */
@@ -86,7 +88,9 @@
 		FC9FB36620470F3F00A3B508 /* BranchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchCell.swift; sourceTree = "<group>"; };
 		FC9FB3692047102D00A3B508 /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
 		FC9FB36C2047196500A3B508 /* Branch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
-		FC9FB36E2047223400A3B508 /* BranchListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchListVC.swift; sourceTree = "<group>"; };
+		FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchListCVVC.swift; sourceTree = "<group>"; };
+		FC9FB3712048670600A3B508 /* ProductListCVVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCVVC.swift; sourceTree = "<group>"; };
+		FC9FB3752048864C00A3B508 /* DonationProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationProduct.swift; sourceTree = "<group>"; };
 		FCC458362045B5D300A89CDE /* GifImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GifImageView.swift; path = ../GifImageView.swift; sourceTree = "<group>"; };
 		FCC458382045C6B900A89CDE /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,17 +192,13 @@
 		ADB9EC47203E0B5300457A61 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FC9FB370204866A500A3B508 /* oldControllers */,
 				AD81FFB720407447001CBFDA /* productCollection */,
 				ADB9EC48203E0B6900457A61 /* basecontroller */,
-				ADB9EC49203E0BDC00457A61 /* MainViewController.swift */,
-				AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */,
-				ADC9823D203F2F74004BD58B /* AboutViewController.swift */,
-				AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */,
-				ADF30ACB203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift */,
-				ADB1F6F1203F708A00F09BF5 /* ComeToMeViewController.swift */,
 				FCC458382045C6B900A89CDE /* MainVC.swift */,
 				FC9FB3632045F69200A3B508 /* DonationVC.swift */,
-				FC9FB36E2047223400A3B508 /* BranchListVC.swift */,
+				FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */,
+				FC9FB3712048670600A3B508 /* ProductListCVVC.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -216,6 +216,7 @@
 			children = (
 				AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */,
 				FC9FB36C2047196500A3B508 /* Branch.swift */,
+				FC9FB3752048864C00A3B508 /* DonationProduct.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -242,6 +243,19 @@
 				FC9FB3692047102D00A3B508 /* Methods.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		FC9FB370204866A500A3B508 /* oldControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADB9EC49203E0BDC00457A61 /* MainViewController.swift */,
+				AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */,
+				ADC9823D203F2F74004BD58B /* AboutViewController.swift */,
+				AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */,
+				ADF30ACB203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift */,
+				ADB1F6F1203F708A00F09BF5 /* ComeToMeViewController.swift */,
+			);
+			path = oldControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,14 +397,16 @@
 				FCC458392045C6B900A89CDE /* MainVC.swift in Sources */,
 				FCC458372045B5D300A89CDE /* GifImageView.swift in Sources */,
 				AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */,
-				FC9FB36F2047223500A3B508 /* BranchListVC.swift in Sources */,
+				FC9FB36F2047223500A3B508 /* BranchListCVVC.swift in Sources */,
 				AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */,
+				FC9FB3722048670600A3B508 /* ProductListCVVC.swift in Sources */,
 				ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */,
 				AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */,
 				AD81FFB920407495001CBFDA /* MilkSubst.swift in Sources */,
 				FC9FB36A2047102D00A3B508 /* Methods.swift in Sources */,
 				ADF30ACC203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift in Sources */,
 				AD81FFBB2040756B001CBFDA /* ApiClient.swift in Sources */,
+				FC9FB3762048864C00A3B508 /* DonationProduct.swift in Sources */,
 				9A99C896203C93FA0057D607 /* BaseViewController.swift in Sources */,
 				9A99C894203C93FA0057D607 /* AppDelegate.swift in Sources */,
 				FC9FB36D2047196500A3B508 /* Branch.swift in Sources */,
@@ -598,6 +614,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94A5KG8Q6V;
 				INFOPLIST_FILE = BOZTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ovadia.BOZTests;
@@ -614,6 +631,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94A5KG8Q6V;
 				INFOPLIST_FILE = BOZTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ovadia.BOZTests;
@@ -629,6 +647,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94A5KG8Q6V;
 				INFOPLIST_FILE = BOZUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ovadia.BOZUITests;
@@ -644,6 +663,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94A5KG8Q6V;
 				INFOPLIST_FILE = BOZUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ovadia.BOZUITests;
