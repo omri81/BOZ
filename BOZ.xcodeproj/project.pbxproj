@@ -35,6 +35,7 @@
 		FC9FB36F2047223500A3B508 /* BranchListCVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */; };
 		FC9FB3722048670600A3B508 /* ProductListCVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB3712048670600A3B508 /* ProductListCVVC.swift */; };
 		FC9FB3762048864C00A3B508 /* DonationProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB3752048864C00A3B508 /* DonationProduct.swift */; };
+		FC9FB3782049904200A3B508 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB3772049904200A3B508 /* MyTextField.swift */; };
 		FCC458372045B5D300A89CDE /* GifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC458362045B5D300A89CDE /* GifImageView.swift */; };
 		FCC458392045C6B900A89CDE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC458382045C6B900A89CDE /* MainVC.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchListCVVC.swift; sourceTree = "<group>"; };
 		FC9FB3712048670600A3B508 /* ProductListCVVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCVVC.swift; sourceTree = "<group>"; };
 		FC9FB3752048864C00A3B508 /* DonationProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationProduct.swift; sourceTree = "<group>"; };
+		FC9FB3772049904200A3B508 /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 		FCC458362045B5D300A89CDE /* GifImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GifImageView.swift; path = ../GifImageView.swift; sourceTree = "<group>"; };
 		FCC458382045C6B900A89CDE /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				FC9FB36620470F3F00A3B508 /* BranchCell.swift */,
+				FC9FB3772049904200A3B508 /* MyTextField.swift */,
 			);
 			path = customViews;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */,
 				AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */,
 				AD81FFB920407495001CBFDA /* MilkSubst.swift in Sources */,
+				FC9FB3782049904200A3B508 /* MyTextField.swift in Sources */,
 				FC9FB36A2047102D00A3B508 /* Methods.swift in Sources */,
 				ADF30ACC203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift in Sources */,
 				AD81FFBB2040756B001CBFDA /* ApiClient.swift in Sources */,
