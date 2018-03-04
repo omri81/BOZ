@@ -986,7 +986,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXF-w4-ZRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4233" y="262"/>
+            <point key="canvasLocation" x="-5503" y="292"/>
         </scene>
         <!--מסך שליח-->
         <scene sceneID="Z97-gR-brX">
@@ -1001,7 +1001,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYN-kA-p08" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4234" y="1014"/>
+            <point key="canvasLocation" x="-5503" y="1014"/>
+        </scene>
+        <!--הרשמה-->
+        <scene sceneID="Uty-KK-M72">
+            <objects>
+                <viewController title="הרשמה" id="87g-TL-6l0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ipg-ov-SPC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HwF-rl-XU2">
+                                <rect key="frame" x="15.999999999999993" y="104" width="91.333333333333329" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="שם פרטי" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="go2-kY-BOZ" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="23"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="שם משפחה" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ye0-xI-r4e" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="38" width="91.333333333333329" height="23"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="מס׳ ת.ז" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="o2p-5h-BYg" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="76" width="91.333333333333329" height="23"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="סיסמא" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="R57-in-IwJ" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="114" width="91.333333333333329" height="23"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="סיסמא" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Q9w-NC-Fpo" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="152" width="91.333333333333329" height="23"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79736385144717303" green="0.99323307292020824" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Bhh-cY-Gu2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUe-Ja-piZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4370" y="1014"/>
         </scene>
         <!--התחברות למערכת-->
         <scene sceneID="ew3-rj-PTC">
@@ -1166,7 +1219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0e-5a-Hw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4234" y="1688"/>
+            <point key="canvasLocation" x="-5503" y="1752"/>
         </scene>
         <!--בקשה למזון תינוקות-->
         <scene sceneID="8Tl-YH-akO">
@@ -1290,7 +1343,7 @@
                                         <rect key="frame" x="0.0" y="171" width="359" height="150"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
-                                        <state key="normal" title="צריך תרומה?">
+                                        <state key="normal" title="בקשה למזון תינוקות">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
