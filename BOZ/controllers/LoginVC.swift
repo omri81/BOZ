@@ -10,26 +10,34 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    private static let TO_REGISTER_VC = "toRegisterVC"
+    private static let TO_ADMIN_VC = "toAdminVC"
+    private static let TO_DELIVERY_VC = "toDeliveryVC"
+    private static let TO_STORAGE_VC = "toStorageVC"
+    
+    private let LOGIN_BTN = "loginBtn"
+    private let BACK_BTN = "backBtn"
+    private let REGISTER_BTN = "registerBtn"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func onClicked(sender: UIButton){
+        switch sender.restorationIdentifier{
+        case LOGIN_BTN?:
+                break
+        case BACK_BTN?:
+                break
+        case REGISTER_BTN?:
+                break
+            default:
+                break
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

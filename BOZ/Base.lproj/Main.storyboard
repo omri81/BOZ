@@ -1011,55 +1011,108 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HwF-rl-XU2">
-                                <rect key="frame" x="15.999999999999993" y="104" width="91.333333333333329" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="39B-YB-R2V">
+                                <rect key="frame" x="16" y="108" width="343" height="650"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="שם פרטי" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="go2-kY-BOZ" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="23"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="שם משפחה" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ye0-xI-r4e" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="38" width="91.333333333333329" height="23"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="מס׳ ת.ז" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="o2p-5h-BYg" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="76" width="91.333333333333329" height="23"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="סיסמא" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="R57-in-IwJ" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="114" width="91.333333333333329" height="23"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="סיסמא" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Q9w-NC-Fpo" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="152" width="91.333333333333329" height="23"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HwF-rl-XU2">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="530"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="שם פרטי" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="go2-kY-BOZ" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="53"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="שם משפחה" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ye0-xI-r4e" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="68" width="343" height="53.333333333333343"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="מס׳ ת.ז" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="o2p-5h-BYg" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="136.33333333333334" width="343" height="53"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="מס׳ טלפון" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="R57-in-IwJ" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="204.33333333333331" width="343" height="53.333333333333314"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="כתובת" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Q9w-NC-Fpo" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="272.66666666666669" width="343" height="53"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="סיסמא" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="doY-dr-gtA" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="340.66666666666669" width="343" height="53"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="אימות סיסמא" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="v14-Ad-Mme" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="408.66666666666663" width="343" height="53.333333333333314"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1qR-IV-ygs">
+                                                <rect key="frame" x="0.0" y="477" width="343" height="54"/>
+                                                <segments>
+                                                    <segment title="מחסנאי"/>
+                                                    <segment title="שליח"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UGQ-eH-GE2">
+                                        <rect key="frame" x="0.0" y="570" width="343" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E6-eT-M4l">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="7cH-3u-mZl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
+                                                <state key="normal" title="הירשם">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="zb6-nL-JaX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.79736385144717303" green="0.99323307292020824" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bhh-cY-Gu2" firstAttribute="bottom" secondItem="39B-YB-R2V" secondAttribute="bottom" constant="20" id="3oG-aT-ZT8"/>
+                            <constraint firstItem="39B-YB-R2V" firstAttribute="leading" secondItem="Bhh-cY-Gu2" secondAttribute="leading" constant="16" id="Lh2-ZE-NKg"/>
+                            <constraint firstItem="Bhh-cY-Gu2" firstAttribute="trailing" secondItem="39B-YB-R2V" secondAttribute="trailing" constant="16" id="fCM-mv-BGq"/>
+                            <constraint firstItem="39B-YB-R2V" firstAttribute="top" secondItem="Bhh-cY-Gu2" secondAttribute="top" constant="20" id="yJj-cQ-CAS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bhh-cY-Gu2"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pUe-Ja-piZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4370" y="1014"/>
+            <point key="canvasLocation" x="-4370.3999999999996" y="1013.7931034482759"/>
         </scene>
         <!--התחברות למערכת-->
         <scene sceneID="ew3-rj-PTC">
             <objects>
-                <viewController title="התחברות למערכת" id="WL9-93-xcu" sceneMemberID="viewController">
+                <viewController title="התחברות למערכת" id="WL9-93-xcu" customClass="LoginVC" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Cq-Df-Uyv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1071,13 +1124,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.089870505136986301" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezh-jc-hL7">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="backBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezh-jc-hL7">
                                 <rect key="frame" x="8" y="96" width="30" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ezh-jc-hL7" secondAttribute="height" multiplier="3:5" id="fbz-gF-yDD"/>
                                     <constraint firstAttribute="width" constant="30" id="kJf-gp-MaI"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="back_btn"/>
+                                <connections>
+                                    <action selector="onClickedWithSender:" destination="WL9-93-xcu" eventType="touchUpInside" id="S2T-xb-JKv"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="iDp-z5-KWK">
                                 <rect key="frame" x="20" y="226" width="335" height="532"/>
@@ -1105,7 +1161,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Izz-wE-BhM">
                                         <rect key="frame" x="0.0" y="155" width="335" height="80"/>
                                         <subviews>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSX-GX-NHy">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" restorationIdentifier="loginBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSX-GX-NHy">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -1122,6 +1178,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="dyy-Og-qzQ"/>
+                                                    <action selector="onClickedWithSender:" destination="WL9-93-xcu" eventType="touchUpInside" id="bW9-CG-v3C"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1129,7 +1186,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bLx-Qx-p4F">
                                         <rect key="frame" x="0.0" y="280" width="317.33333333333331" height="252"/>
                                         <subviews>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x72-BS-RfQ">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" restorationIdentifier="registerBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x72-BS-RfQ">
                                                 <rect key="frame" x="0.0" y="212" width="164" height="40"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -1146,6 +1203,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="Jfz-8g-XGi"/>
+                                                    <action selector="onClickedWithSender:" destination="WL9-93-xcu" eventType="touchUpInside" id="1ye-Fy-uNF"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="עדיין לא נרשמתם?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nN-Tw-Ba9">
@@ -1185,6 +1243,9 @@
                         <viewLayoutGuide key="safeArea" id="ZP6-LJ-Mf3"/>
                     </view>
                     <navigationItem key="navigationItem" id="HUB-qe-2fn"/>
+                    <connections>
+                        <segue destination="87g-TL-6l0" kind="show" identifier="toRegisterVC" id="Czz-j0-5lN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bce-BR-cHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
