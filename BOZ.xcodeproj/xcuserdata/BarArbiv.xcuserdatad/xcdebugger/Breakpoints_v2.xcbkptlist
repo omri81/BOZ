@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BOZ/controllers/ProductListCVVC.swift"
+            timestampString = "541786683.011366"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "products"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BOZ.ProductListCVVC.(products in _45AD385C5A9C7B377FCF183B9CC5A782).getter : Swift.Array&lt;BOZ.DonationProduct&gt;"
+                  moduleName = "BOZ"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/BarArbiv/Documents/HackerU%20Hackathon/BOZ/BOZ/controllers/ProductListCVVC.swift"
+                  timestampString = "541679547.808087"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BOZ.ProductListCVVC.(products in _45AD385C5A9C7B377FCF183B9CC5A782).setter : Swift.Array&lt;BOZ.DonationProduct&gt;"
+                  moduleName = "BOZ"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/BarArbiv/Documents/HackerU%20Hackathon/BOZ/BOZ/controllers/ProductListCVVC.swift"
+                  timestampString = "541679547.810461"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BOZ.ProductListCVVC.init(collectionViewLayout: __ObjC.UICollectionViewLayout) -&gt; BOZ.ProductListCVVC"
+                  moduleName = "BOZ"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/BarArbiv/Documents/HackerU%20Hackathon/BOZ/BOZ/controllers/ProductListCVVC.swift"
+                  timestampString = "541679547.812693"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BOZ.ProductListCVVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; BOZ.ProductListCVVC"
+                  moduleName = "BOZ"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/BarArbiv/Documents/HackerU%20Hackathon/BOZ/BOZ/controllers/ProductListCVVC.swift"
+                  timestampString = "541679547.814707"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BOZ.ProductListCVVC.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;BOZ.ProductListCVVC&gt;"
+                  moduleName = "BOZ"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/BarArbiv/Documents/HackerU%20Hackathon/BOZ/BOZ/controllers/ProductListCVVC.swift"
+                  timestampString = "541679547.816437"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BOZ/controllers/ProductListCVVC.swift"
+            timestampString = "541786683.011832"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "products"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BOZ/controllers/ProductListCVVC.swift"
+            timestampString = "541786683.012078"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "products"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BOZ/controllers/ProductListCVVC.swift"
+            timestampString = "541786683.012298"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "products"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BOZ/controllers/ProductListCVVC.swift"
+            timestampString = "541786683.012545"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "products"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
