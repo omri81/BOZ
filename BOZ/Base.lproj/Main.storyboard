@@ -1006,7 +1006,7 @@
         <!--הרשמה-->
         <scene sceneID="Uty-KK-M72">
             <objects>
-                <viewController title="הרשמה" id="87g-TL-6l0" sceneMemberID="viewController">
+                <viewController title="הרשמה" id="87g-TL-6l0" customClass="RegistrationViewController" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ipg-ov-SPC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1244,6 +1244,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="HUB-qe-2fn"/>
                     <connections>
+                        <outlet property="idNumberTF" destination="dpK-PU-PaF" id="9th-dA-VWM"/>
+                        <outlet property="tokenTF" destination="KxA-n1-IKy" id="McD-Ol-OAk"/>
                         <segue destination="87g-TL-6l0" kind="show" identifier="toRegisterVC" id="Czz-j0-5lN"/>
                     </connections>
                 </viewController>

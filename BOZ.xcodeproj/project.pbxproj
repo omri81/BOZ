@@ -27,6 +27,7 @@
 		ADB1F6F2203F708A00F09BF5 /* ComeToMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB1F6F1203F708A00F09BF5 /* ComeToMeViewController.swift */; };
 		ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC49203E0BDC00457A61 /* MainViewController.swift */; };
 		ADB9EC52203E310A00457A61 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB9EC51203E310A00457A61 /* logo.gif */; };
+		ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */; };
 		ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9823D203F2F74004BD58B /* AboutViewController.swift */; };
 		ADF30ACC203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF30ACB203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift */; };
 		F7B870118C5B1D4AA128E1B6 /* Pods_BOZTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62B66EA755D8BFBC5B5350A /* Pods_BOZTests.framework */; };
@@ -92,6 +93,7 @@
 		ADB1F6F1203F708A00F09BF5 /* ComeToMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeToMeViewController.swift; sourceTree = "<group>"; };
 		ADB9EC49203E0BDC00457A61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB9EC51203E310A00457A61 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
+		ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		ADC9823D203F2F74004BD58B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		ADF30ACB203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeFromMe1_Details_ViewController.swift; sourceTree = "<group>"; };
 		B12BBA2B9D86DDF33FCA879C /* Pods_BOZUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOZUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,14 +238,15 @@
 		ADB9EC47203E0B5300457A61 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ADC67FE1204DA6AC009BD328 /* registration */,
 				FC9FB370204866A500A3B508 /* oldControllers */,
 				AD81FFB720407447001CBFDA /* productCollection */,
 				ADB9EC48203E0B6900457A61 /* basecontroller */,
 				FCC458382045C6B900A89CDE /* MainVC.swift */,
+				FC9FB3792049990F00A3B508 /* LoginVC.swift */,
 				FC9FB3632045F69200A3B508 /* DonationVC.swift */,
 				FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */,
 				FC9FB3712048670600A3B508 /* ProductListCVVC.swift */,
-				FC9FB3792049990F00A3B508 /* LoginVC.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -272,6 +275,14 @@
 				FCC458362045B5D300A89CDE /* GifImageView.swift */,
 			);
 			path = supportLibraries;
+			sourceTree = "<group>";
+		};
+		ADC67FE1204DA6AC009BD328 /* registration */ = {
+			isa = PBXGroup;
+			children = (
+				ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */,
+			);
+			path = registration;
 			sourceTree = "<group>";
 		};
 		FC9FB36520470E9900A3B508 /* customViews */ = {
@@ -610,6 +621,7 @@
 				AD81FFB920407495001CBFDA /* MilkSubst.swift in Sources */,
 				FC9FB3782049904200A3B508 /* MyTextField.swift in Sources */,
 				FC9FB36A2047102D00A3B508 /* Methods.swift in Sources */,
+				ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */,
 				ADF30ACC203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift in Sources */,
 				AD81FFBB2040756B001CBFDA /* ApiClient.swift in Sources */,
 				FC9FB3762048864C00A3B508 /* DonationProduct.swift in Sources */,
