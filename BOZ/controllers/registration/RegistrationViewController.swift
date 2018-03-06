@@ -8,32 +8,52 @@
 
 import UIKit
 import Alamofire
-import WebKit
+
 
 class RegistrationViewController: UIViewController {
     
+    private let REG_DISTRIBUTER_URL = "https://zeevtesthu.mybluemix.net/api/Users/CreateDistributer"
+    private let REG_STORE_MANAGER_URL = "https://zeevtesthu.mybluemix.net/api/Users/CreateStoreManger"
+    
+    @IBOutlet weak var VehicleSeg: UISegmentedControl!
+    @IBOutlet weak var phoneTF: MyTextField!
+    @IBAction func registerBtn() {
+        if validateInputs() {
+            register()
+        }
+    }
+    @IBOutlet weak var nameTF: MyTextField!
+    @IBOutlet weak var usernameTF: MyTextField!
+    
+    @IBOutlet weak var addressTF: MyTextField!
+    @IBOutlet weak var segRole: UISegmentedControl!
+    @IBOutlet weak var verifyPasswordTF: MyTextField!
+    @IBOutlet weak var passwordTF: MyTextField!
+    @IBOutlet weak var famelyNameTF: MyTextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "https://zeevtesthu.mybluemix.net/Admin")!
-        webView.load(URLRequest(url: url))
+        
     }
-    
-    @IBOutlet weak var webView: WKWebView!
-    
-    func regDistributer(){
-        let url = "https://zeevtesthu.mybluemix.net/api/Users/CreateDistributer"
+    func validateInputs()->Bool {
+        //check and alert
+        return true
+    }
+    func register(){
         let parameters:Parameters = [
-            "idNumber": "0234596620",
-            "name" : "אגם",
-            "famelyName" : "בן עמי",
-            "token" : "246",
-            "phoneNumber" : "0543333060",
-            "address" : "הפרחים 24 קריית אתא",
+            "idNumber": usernameTF.text!,
+            "name" : nameTF.text!,
+            "famelyName" : famelyNameTF.text!,
+            "token" : passwordTF.text!,
+            "phoneNumber" : phoneTF.text!,
+            "address" : addressTF.text!,
             "latitude": 32.807221,
             "longitude": 35.104375,
-            "vehicle" : "רכב"
+            "vehicle" : VehicleSeg.titleForSegment(at: VehicleSeg.selectedSegmentIndex)!
         ]
-
+        let url = (segRole.selectedSegmentIndex == 0) ? REG_DISTRIBUTER_URL : REG_STORE_MANAGER_URL
+       
         // self.myJsonPost()
         Alamofire.request(url, method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default, headers: [:])
             .validate(contentType: ["application/json"]).responseJSON { response in

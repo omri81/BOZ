@@ -18,10 +18,34 @@ class LoginVC: UIViewController {
     private static let TO_ADMIN_VC = "toAdminVC"
     private static let TO_DELIVERY_VC = "toDeliveryVC"
     private static let TO_STORAGE_VC = "toStorageVC"
+    private let TO_REGISTRATION_VC = "toRegisterVC"
     
+    
+    private let REGISTRATION = "registerBtn"
     private let LOGIN_BTN = "loginBtn"
     private let BACK_BTN = "backBtn"
     private let REGISTER_BTN = "registerBtn"
+    
+    func loginSucess(role:String) {
+        print("login success, role is: \(role)")
+        //asking permision to push
+        pushInit()
+        //   application(<#T##application: UIApplication##UIApplication#>, didRegisterForRemoteNotificationsWithDeviceToken: <#T##Data#>)
+        //showEnterScreen(role)
+        switch role {
+        case "deistributer" :
+            performSegue(withIdentifier: LoginVC.TO_DELIVERY_VC, sender: self)
+        case "admin" :
+            performSegue(withIdentifier: LoginVC.TO_ADMIN_VC, sender: self)
+        case "storeManager":
+            performSegue(withIdentifier: LoginVC.TO_STORAGE_VC, sender: self)
+      //  case "helples":
+       //     performSegue(withIdentifier: LoginVC.TO_DELIVERY_VC, sender: self)
+        default:
+            alertServerProblem()
+        }
+    }
+    
     
     func alertMsg(title ttl:String,msg:String) {
         let alert = UIAlertController(
@@ -61,8 +85,8 @@ class LoginVC: UIViewController {
             break
         case BACK_BTN?:
                 break
-        case REGISTER_BTN?:
-                break
+        case REGISTRATION?:
+            performSegue(withIdentifier: TO_REGISTRATION_VC, sender: self)
             default:
                 break
         }
@@ -140,11 +164,5 @@ class LoginVC: UIViewController {
                 }
         }
     }
-    func loginSucess(role:String) {
-        print("login success, role is: \(role)")
-        //asking permision to push
-        pushInit()
-     //   application(<#T##application: UIApplication##UIApplication#>, didRegisterForRemoteNotificationsWithDeviceToken: <#T##Data#>)
-        //showEnterScreen(role)
-    }
+    
 }

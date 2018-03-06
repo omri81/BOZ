@@ -976,10 +976,19 @@
         <!--מסך אדמין-->
         <scene sceneID="hM8-r2-LHT">
             <objects>
-                <viewController title="מסך אדמין" id="fRk-1l-iEd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toAdminVC" title="מסך אדמין" id="fRk-1l-iEd" customClass="AdminViewController" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ptm-L5-ufR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="הגעת למסך ADMIN" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xhY-GX-69P">
+                                <rect key="frame" x="90" y="197" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nLT-E2-jgN"/>
                     </view>
@@ -991,10 +1000,19 @@
         <!--מסך שליח-->
         <scene sceneID="Z97-gR-brX">
             <objects>
-                <viewController title="מסך שליח" id="Jxx-A7-nof" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toDistrVC" title="מסך שליח" id="Jxx-A7-nof" customClass="DistributerViewController" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ePt-df-2zM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="הגעת למסך שליח" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o9w-VC-sjO">
+                                <rect key="frame" x="69" y="209" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DsC-Eg-DSW"/>
                     </view>
@@ -1015,60 +1033,63 @@
                                 <rect key="frame" x="16" y="108" width="343" height="650"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HwF-rl-XU2">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="550.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="530"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="שם פרטי" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="go2-kY-BOZ" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="45.666666666666664"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="שם משפחה" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ye0-xI-r4e" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="63" width="343" height="47.666666666666657"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="מס׳ ת.ז" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="o2p-5h-BYg" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="125.66666666666666" width="343" height="48"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="0.0" y="60.666666666666657" width="343" height="45.333333333333343"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="מס׳ טלפון" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="R57-in-IwJ" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="188.66666666666669" width="343" height="47.666666666666657"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="0.0" y="121.00000000000001" width="343" height="45.666666666666671"/>
+                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="כתובת" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Q9w-NC-Fpo" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="251.33333333333331" width="343" height="48"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="0.0" y="181.66666666666669" width="343" height="45.666666666666657"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="40W-Cr-pBM">
+                                                <rect key="frame" x="0.0" y="242.33333333333334" width="343" height="46.333333333333343"/>
+                                                <segments>
+                                                    <segment title="אופנוע"/>
+                                                    <segment title="רכב פרטי"/>
+                                                    <segment title="רכב מסחרי"/>
+                                                    <segment title="ללא רכב"/>
+                                                    <segment title=""/>
+                                                </segments>
+                                            </segmentedControl>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="מס׳ ת.ז" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="o2p-5h-BYg" userLabel="שם משתמש" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="302.66666666666669" width="343" height="45.666666666666686"/>
+                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="סיסמא" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="doY-dr-gtA" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="314.33333333333331" width="343" height="47.666666666666686"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="0.0" y="363.33333333333331" width="343" height="45.666666666666686"/>
+                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="אימות סיסמא" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="v14-Ad-Mme" customClass="MyTextField" customModule="BOZ" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="377" width="343" height="48"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="0.0" y="424" width="343" height="45.333333333333314"/>
+                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
-                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLZ-T1-qY8">
-                                                <rect key="frame" x="0.0" y="440" width="343" height="47.666666666666686"/>
-                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <wkWebViewConfiguration key="configuration">
-                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                                    <wkPreferences key="preferences"/>
-                                                </wkWebViewConfiguration>
-                                            </wkWebView>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1qR-IV-ygs">
-                                                <rect key="frame" x="0.0" y="502.66666666666663" width="343" height="49"/>
+                                                <rect key="frame" x="0.0" y="484.33333333333337" width="343" height="46.666666666666629"/>
                                                 <segments>
                                                     <segment title="מחסנאי"/>
                                                     <segment title="שליח"/>
@@ -1077,10 +1098,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UGQ-eH-GE2">
-                                        <rect key="frame" x="0.0" y="590.66666666666663" width="343" height="59.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="570" width="343" height="80"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E6-eT-M4l">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="59.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="7cH-3u-mZl"/>
@@ -1096,6 +1117,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="zb6-nL-JaX"/>
+                                                    <action selector="registerBtn" destination="87g-TL-6l0" eventType="touchUpInside" id="vin-2i-Kag"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1113,7 +1135,15 @@
                         <viewLayoutGuide key="safeArea" id="Bhh-cY-Gu2"/>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="QLZ-T1-qY8" id="Z0C-83-iub"/>
+                        <outlet property="VehicleSeg" destination="40W-Cr-pBM" id="94e-CG-0n8"/>
+                        <outlet property="addressTF" destination="Q9w-NC-Fpo" id="Xh4-If-0gk"/>
+                        <outlet property="famelyNameTF" destination="Ye0-xI-r4e" id="Gko-yk-vwb"/>
+                        <outlet property="nameTF" destination="go2-kY-BOZ" id="dFq-ti-8Q5"/>
+                        <outlet property="passwordTF" destination="doY-dr-gtA" id="gKd-dy-NWx"/>
+                        <outlet property="phoneTF" destination="R57-in-IwJ" id="ntd-7A-tyC"/>
+                        <outlet property="segRole" destination="1qR-IV-ygs" id="fRt-5a-UXv"/>
+                        <outlet property="usernameTF" destination="o2p-5h-BYg" id="QYW-Vb-4Ud"/>
+                        <outlet property="verifyPasswordTF" destination="v14-Ad-Mme" id="fiT-c8-uJQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pUe-Ja-piZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1283,10 +1313,19 @@
         <!--מסך מחסנאי-->
         <scene sceneID="adV-3W-BJg">
             <objects>
-                <viewController title="מסך מחסנאי" id="uGa-hl-1aH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toStoreVC" title="מסך מחסנאי" id="uGa-hl-1aH" customClass="StoreManagerViewController" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5V8-hK-nGA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="הגעת למסך מחסנאי" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xMT-gP-YkF">
+                                <rect key="frame" x="84" y="153" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="get-am-6By"/>
                     </view>

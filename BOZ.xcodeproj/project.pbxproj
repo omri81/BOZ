@@ -20,6 +20,9 @@
 		AD02E8D7204EA500004D8DFC /* LoginExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* LoginExtension.swift */; };
 		AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */; };
 		AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */; };
+		AD6C475B204F474600C9A115 /* DistributerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475A204F474600C9A115 /* DistributerViewController.swift */; };
+		AD6C475D204F476200C9A115 /* StoreManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475C204F476200C9A115 /* StoreManagerViewController.swift */; };
+		AD6C475F204F477500C9A115 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475E204F477500C9A115 /* AdminViewController.swift */; };
 		AD81FFB4204067A2001CBFDA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB3204067A2001CBFDA /* ProductListViewController.swift */; };
 		AD81FFB620406FEE001CBFDA /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB520406FEE001CBFDA /* ProductCollectionViewCell.swift */; };
 		AD81FFB920407495001CBFDA /* MilkSubst.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB820407495001CBFDA /* MilkSubst.swift */; };
@@ -88,6 +91,9 @@
 		AD02E8D6204EA500004D8DFC /* LoginExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExtension.swift; sourceTree = "<group>"; };
 		AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDonationViewController.swift; sourceTree = "<group>"; };
 		AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
+		AD6C475A204F474600C9A115 /* DistributerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerViewController.swift; sourceTree = "<group>"; };
+		AD6C475C204F476200C9A115 /* StoreManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManagerViewController.swift; sourceTree = "<group>"; };
+		AD6C475E204F477500C9A115 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		AD81FFB3204067A2001CBFDA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		AD81FFB520406FEE001CBFDA /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD81FFB820407495001CBFDA /* MilkSubst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkSubst.swift; sourceTree = "<group>"; };
@@ -236,6 +242,16 @@
 			path = Push;
 			sourceTree = "<group>";
 		};
+		AD6C4759204F471E00C9A115 /* mainScreens */ = {
+			isa = PBXGroup;
+			children = (
+				AD6C475A204F474600C9A115 /* DistributerViewController.swift */,
+				AD6C475C204F476200C9A115 /* StoreManagerViewController.swift */,
+				AD6C475E204F477500C9A115 /* AdminViewController.swift */,
+			);
+			path = mainScreens;
+			sourceTree = "<group>";
+		};
 		AD81FFB720407447001CBFDA /* productCollection */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +267,7 @@
 		ADB9EC47203E0B5300457A61 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD6C4759204F471E00C9A115 /* mainScreens */,
 				ADC67FE1204DA6AC009BD328 /* registration */,
 				FC9FB370204866A500A3B508 /* oldControllers */,
 				AD81FFB720407447001CBFDA /* productCollection */,
@@ -633,8 +650,10 @@
 				FCC458392045C6B900A89CDE /* MainVC.swift in Sources */,
 				FCC458372045B5D300A89CDE /* GifImageView.swift in Sources */,
 				AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */,
+				AD6C475B204F474600C9A115 /* DistributerViewController.swift in Sources */,
 				FC9FB36F2047223500A3B508 /* BranchListCVVC.swift in Sources */,
 				AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */,
+				AD6C475D204F476200C9A115 /* StoreManagerViewController.swift in Sources */,
 				FC9FB3722048670600A3B508 /* ProductListCVVC.swift in Sources */,
 				ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */,
 				AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */,
@@ -655,6 +674,7 @@
 				AD81FFB620406FEE001CBFDA /* ProductCollectionViewCell.swift in Sources */,
 				FC9FB36720470F3F00A3B508 /* BranchCell.swift in Sources */,
 				FC9FB37A2049990F00A3B508 /* LoginVC.swift in Sources */,
+				AD6C475F204F477500C9A115 /* AdminViewController.swift in Sources */,
 				AD81FFBD20407706001CBFDA /* DataStore.swift in Sources */,
 				FC9FB3642045F69200A3B508 /* DonationVC.swift in Sources */,
 				ADB1F6F2203F708A00F09BF5 /* ComeToMeViewController.swift in Sources */,
