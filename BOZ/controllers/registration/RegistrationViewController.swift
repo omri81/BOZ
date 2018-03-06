@@ -8,14 +8,17 @@
 
 import UIKit
 import Alamofire
+import WebKit
 
 class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let url = URL(string: "https://zeevtesthu.mybluemix.net/Admin")!
+        webView.load(URLRequest(url: url))
     }
+    
+    @IBOutlet weak var webView: WKWebView!
     
     func regDistributer(){
         let url = "https://zeevtesthu.mybluemix.net/api/Users/CreateDistributer"

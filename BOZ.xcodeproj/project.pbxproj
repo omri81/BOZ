@@ -16,6 +16,8 @@
 		9A99C8A1203C93FA0057D607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A99C89F203C93FA0057D607 /* LaunchScreen.storyboard */; };
 		9A99C8AC203C93FA0057D607 /* BOZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8AB203C93FA0057D607 /* BOZTests.swift */; };
 		9A99C8B7203C93FA0057D607 /* BOZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8B6203C93FA0057D607 /* BOZUITests.swift */; };
+		AD02E8D5204E93D5004D8DFC /* push.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D4204E93D5004D8DFC /* push.swift */; };
+		AD02E8D7204EA500004D8DFC /* LoginExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* LoginExtension.swift */; };
 		AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */; };
 		AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */; };
 		AD81FFB4204067A2001CBFDA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB3204067A2001CBFDA /* ProductListViewController.swift */; };
@@ -82,6 +84,8 @@
 		9A99C8B6203C93FA0057D607 /* BOZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOZUITests.swift; sourceTree = "<group>"; };
 		9A99C8B8203C93FA0057D607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A37F444435045F12D330664B /* Pods-BOZTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOZTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOZTests/Pods-BOZTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD02E8D4204E93D5004D8DFC /* push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = push.swift; sourceTree = "<group>"; };
+		AD02E8D6204EA500004D8DFC /* LoginExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExtension.swift; sourceTree = "<group>"; };
 		AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDonationViewController.swift; sourceTree = "<group>"; };
 		AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		AD81FFB3204067A2001CBFDA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 		9A99C892203C93FA0057D607 /* BOZ */ = {
 			isa = PBXGroup;
 			children = (
+				AD02E8D3204E939E004D8DFC /* Push */,
 				FC9FB3682047101E00A3B508 /* utils */,
 				FC9FB36520470E9900A3B508 /* customViews */,
 				ADB9EC4C203E2CFB00457A61 /* supportLibraries */,
@@ -223,6 +228,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AD02E8D3204E939E004D8DFC /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				AD02E8D4204E93D5004D8DFC /* push.swift */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
 		AD81FFB720407447001CBFDA /* productCollection */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +256,7 @@
 				AD81FFB720407447001CBFDA /* productCollection */,
 				ADB9EC48203E0B6900457A61 /* basecontroller */,
 				FCC458382045C6B900A89CDE /* MainVC.swift */,
+				AD02E8D6204EA500004D8DFC /* LoginExtension.swift */,
 				FC9FB3792049990F00A3B508 /* LoginVC.swift */,
 				FC9FB3632045F69200A3B508 /* DonationVC.swift */,
 				FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */,
@@ -556,10 +570,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BOZ/Pods-BOZ-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BMSAnalyticsAPI/BMSAnalyticsAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/BMSCore/BMSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/BMSPush/BMSPush.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMSAnalyticsAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMSPush.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -622,6 +642,7 @@
 				FC9FB3782049904200A3B508 /* MyTextField.swift in Sources */,
 				FC9FB36A2047102D00A3B508 /* Methods.swift in Sources */,
 				ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */,
+				AD02E8D7204EA500004D8DFC /* LoginExtension.swift in Sources */,
 				ADF30ACC203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift in Sources */,
 				AD81FFBB2040756B001CBFDA /* ApiClient.swift in Sources */,
 				FC9FB3762048864C00A3B508 /* DonationProduct.swift in Sources */,
@@ -630,6 +651,7 @@
 				FC9FB36D2047196500A3B508 /* Branch.swift in Sources */,
 				ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */,
 				AD81FFB4204067A2001CBFDA /* ProductListViewController.swift in Sources */,
+				AD02E8D5204E93D5004D8DFC /* push.swift in Sources */,
 				AD81FFB620406FEE001CBFDA /* ProductCollectionViewCell.swift in Sources */,
 				FC9FB36720470F3F00A3B508 /* BranchCell.swift in Sources */,
 				FC9FB37A2049990F00A3B508 /* LoginVC.swift in Sources */,
@@ -803,7 +825,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94A5KG8Q6V;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BOZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ovadia.BOZ;
@@ -819,7 +841,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94A5KG8Q6V;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BOZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ovadia.BOZ;

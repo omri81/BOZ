@@ -14,6 +14,7 @@ class MainVC: UIViewController {
     private let TO_LOGIN_VC = "toLoginVC"
     private let TO_QUICK_DONATION_VC = "toQuickDonationVC"
     private let TO_ASK_DONATION_VC = "toAskDonationVC"
+    private let TO_REGISTRATION_VC = "toRegisterVC"
     
     private let ABOUT_BTN = "aboutBtn"
     private let LOGIN_BTN = "loginBtn"
@@ -22,14 +23,14 @@ class MainVC: UIViewController {
     private let PHONE_BTN = "phoneBtn"
     private let WEBSITE_BTN = "websiteBtn"
     private let FACEBOOK_BTN = "facebookBtn"
-    
+    private let REGISTRATION = "registerBtn"
     
     
     @IBOutlet weak var logoImg: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         logoImg.loadGif(name: "logo")
     }
 
@@ -43,6 +44,8 @@ class MainVC: UIViewController {
                 performSegue(withIdentifier: TO_QUICK_DONATION_VC, sender: self)
             case ASK_DONATION_BTN?:
                 performSegue(withIdentifier: TO_ASK_DONATION_VC, sender: self)
+        case REGISTRATION?:
+            performSegue(withIdentifier: TO_REGISTRATION_VC, sender: self)
             case PHONE_BTN?:
                 Methods.makePhoneCallToOffice()
             case WEBSITE_BTN?:
@@ -53,8 +56,6 @@ class MainVC: UIViewController {
                 break
         }
     }
-    
-    
 
 }
 

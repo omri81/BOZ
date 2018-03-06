@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 
+
 class LoginVC: UIViewController {
 
     @IBOutlet weak var tokenTF: MyTextField!
@@ -39,7 +40,7 @@ class LoginVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -141,6 +142,9 @@ class LoginVC: UIViewController {
     }
     func loginSucess(role:String) {
         print("login success, role is: \(role)")
+        //asking permision to push
+        pushInit()
+     //   application(<#T##application: UIApplication##UIApplication#>, didRegisterForRemoteNotificationsWithDeviceToken: <#T##Data#>)
         //showEnterScreen(role)
     }
 }
