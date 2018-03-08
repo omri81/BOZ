@@ -163,13 +163,14 @@ class LoginVC: UIViewController {
                         // we get also the GuiId private token
                         if !withPrivateToken {
                             // store private token
-                            guard let privateToken = responseJSON["userGuid"] as? String
+                            if let privateToken = responseJSON["userGuid"] as? String {
+                            prefs.set(privateToken, forKey: BaseViewController.PRIVATE_GUID)
+                            }
                                 else {
                                     self.alertServerProblem()
                                     return
                             }
                         }
-                        prefs.set(privateToken, forKey: BaseViewController.PRIVATE_GUID)
                         
                         //Enter to the app:
                         self.loginSucess(role: role)
