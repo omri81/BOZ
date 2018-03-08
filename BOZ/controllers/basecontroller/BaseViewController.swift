@@ -10,7 +10,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
     //A string array to save all the names
-    
+    public static let PRIVATE_GUID = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

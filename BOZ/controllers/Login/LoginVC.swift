@@ -87,7 +87,7 @@ class LoginVC: UIViewController {
             }
             // text is not empty and valid
             // send login request to the server:
-            self.Login(id:idNumberTF.text!,token:tokenTF.text!)
+            self.Login(id:idNumberTF.text!,token:tokenTF.text!, withPrivateToken:false)
             break
         case BACK_BTN?:
                 break
@@ -119,16 +119,26 @@ class LoginVC: UIViewController {
             msg: "נא למלא תעודת זהות וסיסמא")
     }
     
-    func Login(id:String,token:String) {
+    
+    func Login(id:String, token:String,withPrivateToken:Bool) {
         
-        let parameters: Parameters = [
+        var URL_LOGIN = "https://zeevtesthu.mybluemix.net/api/Users/"
+        let prefs = UserDefaults.standard
+        let privateToken = prefs.string(forKey: BaseViewController.PRIVATE_GUID)
+        
+        let parameters1: Parameters = [
+            "token" : privateToken
+        ]
+        
+        let parameters2: Parameters = [
             "idNumber" : id,
             "token" : token
         ]
+        URL_LOGIN = (withPrivateToken) ? URL_LOGIN + "LoginToken" : URL_LOGIN + "Login"
         
-        let URL_LOGIN = "https://zeevtesthu.mybluemix.net/api/Users/Login"
-        // self.myJsonPost()
-        Alamofire.request(URL_LOGIN, method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default, headers: [:])
+        
+        Alamofire.request(URL_LOGIN, method: HTTPMethod.post , parameters: (withPrivateToken) ? parameters1 : parameters2 ,
+            encoding: JSONEncoding.default, headers: [:])
             .validate(contentType: ["application/json"]).responseJSON { response in
                 print("response: \(response)")
                 switch response.result {
@@ -149,6 +159,19 @@ class LoginVC: UIViewController {
                             return
                         }
                         // login sucssess
+                        // only for user + pwd request
+                        // we get also the GuiId private token
+                        if !withPrivateToken {
+                            // store private token
+                            guard let privateToken = responseJSON["userGuid"] as? String
+                                else {
+                                    self.alertServerProblem()
+                                    return
+                            }
+                        }
+                        prefs.set(privateToken, forKey: BaseViewController.PRIVATE_GUID)
+                        
+                        //Enter to the app:
                         self.loginSucess(role: role)
                     } else {
                         switch (statusMsg) {

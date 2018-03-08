@@ -810,7 +810,7 @@
         <!--התחברות למערכת-->
         <scene sceneID="ew3-rj-PTC">
             <objects>
-                <viewController title="התחברות למערכת" id="WL9-93-xcu" customClass="LoginVC" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toLoginVC" title="התחברות למערכת" id="WL9-93-xcu" customClass="LoginVC" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Cq-Df-Uyv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

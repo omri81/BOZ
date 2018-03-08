@@ -20,7 +20,7 @@
 		9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */; };
 		9AA2B39020508E030042E03E /* SystemChangesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38F20508E030042E03E /* SystemChangesController.swift */; };
 		AD02E8D5204E93D5004D8DFC /* push.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D4204E93D5004D8DFC /* push.swift */; };
-		AD02E8D7204EA500004D8DFC /* LoginExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* LoginExtension.swift */; };
+		AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */; };
 		AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */; };
 		AD2F6A212050E8B000D38E85 /* DoneDonatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F6A202050E8B000D38E85 /* DoneDonatingController.swift */; };
 		AD2F6A232050E91800D38E85 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F6A222050E91800D38E85 /* LocationSearchTable.swift */; };
@@ -89,7 +89,7 @@
 		9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyAprovalController.swift; sourceTree = "<group>"; };
 		9AA2B38F20508E030042E03E /* SystemChangesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemChangesController.swift; sourceTree = "<group>"; };
 		AD02E8D4204E93D5004D8DFC /* push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = push.swift; sourceTree = "<group>"; };
-		AD02E8D6204EA500004D8DFC /* LoginExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExtension.swift; sourceTree = "<group>"; };
+		AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Push_Init.swift; sourceTree = "<group>"; };
 		AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDonationViewController.swift; sourceTree = "<group>"; };
 		AD2F6A202050E8B000D38E85 /* DoneDonatingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneDonatingController.swift; sourceTree = "<group>"; };
 		AD2F6A222050E91800D38E85 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
@@ -279,9 +279,19 @@
 			path = productCollection;
 			sourceTree = "<group>";
 		};
+		ADAAF38720518A7000F3883B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */,
+				FC9FB3792049990F00A3B508 /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		ADB9EC47203E0B5300457A61 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ADAAF38720518A7000F3883B /* Login */,
 				AD2F6A1F2050E88600D38E85 /* Donator */,
 				9AA2B38A20508BB00042E03E /* AdminControllers */,
 				AD6C4759204F471E00C9A115 /* mainScreens */,
@@ -290,8 +300,6 @@
 				AD81FFB720407447001CBFDA /* productCollection */,
 				ADB9EC48203E0B6900457A61 /* basecontroller */,
 				FCC458382045C6B900A89CDE /* MainVC.swift */,
-				AD02E8D6204EA500004D8DFC /* LoginExtension.swift */,
-				FC9FB3792049990F00A3B508 /* LoginVC.swift */,
 				FC9FB3632045F69200A3B508 /* DonationVC.swift */,
 				FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */,
 				FC9FB3712048670600A3B508 /* ProductListCVVC.swift */,
@@ -578,7 +586,7 @@
 				9AA2B39020508E030042E03E /* SystemChangesController.swift in Sources */,
 				FC9FB36A2047102D00A3B508 /* Methods.swift in Sources */,
 				ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */,
-				AD02E8D7204EA500004D8DFC /* LoginExtension.swift in Sources */,
+				AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */,
 				ADF30ACC203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift in Sources */,
 				9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */,
 				AD81FFBB2040756B001CBFDA /* ApiClient.swift in Sources */,
