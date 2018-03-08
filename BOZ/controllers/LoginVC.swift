@@ -36,15 +36,15 @@ class LoginVC: UIViewController {
         switch role {
         case "deistributer" :
              nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_DELIVERY_VC) as! DistributerViewController
-           show(nextUI, sender: self)
+                show(nextUI, sender: self)
+            
         case "admin" :
             nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_ADMIN_VC) as! AdminViewController
-            performSegue(withIdentifier: LoginVC.TO_ADMIN_VC, sender: self)
-            show(nextUI, sender: self)
+                show(nextUI, sender: self)
+            
         case "storeManager":
             nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_STORAGE_VC) as! StorageViewController
-            performSegue(withIdentifier: LoginVC.TO_STORAGE_VC, sender: self)
-            show(nextUI, sender: self)
+                show(nextUI, sender: self)
       //  case "helples":
        //     performSegue(withIdentifier: LoginVC.TO_DELIVERY_VC, sender: self)
         default:
