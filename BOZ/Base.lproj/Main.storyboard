@@ -659,22 +659,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Qhr-nP-vwk">
-                                <rect key="frame" x="0.0" y="68" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="68" width="375" height="710"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osf-bZ-sn9" userLabel="section1">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="215.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
                                         <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NG6-Xc-H1s" userLabel="section2">
-                                        <rect key="frame" x="0.0" y="215.66666666666663" width="375" height="235.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="230" width="375" height="250"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2B-ZQ-1oJ" userLabel="section3">
-                                        <rect key="frame" x="0.0" y="451.33333333333331" width="375" height="215.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="480" width="375" height="230"/>
                                         <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -686,24 +686,24 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="8HY-Ns-q4Q">
-                                <rect key="frame" x="54.666666666666657" y="376" width="266" height="71"/>
+                                <rect key="frame" x="54.666666666666657" y="376" width="266" height="114"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="LBt-bJ-6ue" userLabel="img1">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="71"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="114"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="71" id="40N-o8-bAc"/>
                                             <constraint firstAttribute="width" constant="68" id="Byc-qf-Q1X"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omri" translatesAutoresizingMaskIntoConstraints="NO" id="vSZ-AA-dA3" userLabel="img2">
-                                        <rect key="frame" x="99" y="0.0" width="68" height="71"/>
+                                        <rect key="frame" x="99" y="0.0" width="68" height="114"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="68" id="0lT-en-edc"/>
                                             <constraint firstAttribute="height" constant="71" id="agM-fY-Ig0"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zohar" translatesAutoresizingMaskIntoConstraints="NO" id="L7q-Lf-Px9" userLabel="img3">
-                                        <rect key="frame" x="198" y="0.0" width="68" height="71"/>
+                                        <rect key="frame" x="198" y="0.0" width="68" height="114"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="68" id="DBB-1s-lzm"/>
                                             <constraint firstAttribute="height" constant="71" id="lqo-x3-MwF"/>
@@ -1123,7 +1123,7 @@
         <!--מסך שליח-->
         <scene sceneID="Z97-gR-brX">
             <objects>
-                <viewController storyboardIdentifier="toDistrVC" title="מסך שליח" id="Jxx-A7-nof" customClass="DistributerViewController" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toDeliveryVC" title="מסך שליח" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jxx-A7-nof" customClass="DistributerViewController" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ePt-df-2zM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

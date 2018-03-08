@@ -11,14 +11,14 @@ target 'BOZ' do
     pod 'BMSCore', '~> 2.0'
     pod 'BMSPush', '~> 3.0'
 
-  target 'BOZTests' do
-    inherit! :search_paths
+ # target 'BOZTests' do
+ #   inherit! :search_paths
     # Pods for testing
-  end
+ # end
 
-  target 'BOZUITests' do
-    inherit! :search_paths
+ # target 'BOZUITests' do
+ #   inherit! :search_paths
     # Pods for testing
-  end
+ # end
   
 end

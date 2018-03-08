@@ -32,13 +32,19 @@ class LoginVC: UIViewController {
         pushInit()
         //   application(<#T##application: UIApplication##UIApplication#>, didRegisterForRemoteNotificationsWithDeviceToken: <#T##Data#>)
         //showEnterScreen(role)
+        var nextUI:UIViewController
         switch role {
         case "deistributer" :
-            performSegue(withIdentifier: LoginVC.TO_DELIVERY_VC, sender: self)
+             nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_DELIVERY_VC) as! DistributerViewController
+           show(nextUI, sender: self)
         case "admin" :
+            nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_ADMIN_VC) as! AdminViewController
             performSegue(withIdentifier: LoginVC.TO_ADMIN_VC, sender: self)
+            show(nextUI, sender: self)
         case "storeManager":
+            nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_STORAGE_VC) as! StorageViewController
             performSegue(withIdentifier: LoginVC.TO_STORAGE_VC, sender: self)
+            show(nextUI, sender: self)
       //  case "helples":
        //     performSegue(withIdentifier: LoginVC.TO_DELIVERY_VC, sender: self)
         default:

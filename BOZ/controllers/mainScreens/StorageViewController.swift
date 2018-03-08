@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StoreManagerViewController: UIViewController {
+class StorageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
