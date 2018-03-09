@@ -1,51 +1,42 @@
 //
-//  AdminToServer.swift
+//  EnableUsers.swift
 //  BOZ
 //
 //  Created by user134028 on 3/9/18.
 //  Copyright © 2018 Ovadia. All rights reserved.
 //
 
+/*GetNotApprovedHelpless(pagination req)
+ GetNotApprovedDonators(pagination req)
+ GetNotApprovedVolunteers(pagination req*/
 import Foundation
 import Alamofire
 
 extension AddWorkerController {
-    //Create User
-    //Create Branch
-    //Approve user
-    static fileprivate let queue = DispatchQueue(label: "requests.queue", qos: .utility)
-    static fileprivate let mainQueue = DispatchQueue.main
     
-    func returnResult(returnValue:Bool)->Bool {
-        return returnValue
-    }
+    /*UpdateAdminUser([FromBody] AdminModel.item updaterUser)
+     UpdateStoreManagerUser([FromBody] StoreManagerModel.item updaterUser)
+     UpdateHelplessUser([FromBody] DistributerModel.item updaterUser)
+     UpdateHelplessUser([FromBody] HelplessModel.item updaterUser)
+     UpdateDonatorUser([FromBody] DonatorsModel.item updaterUser)*/
     
-    func createDelivery(
-        idNumberInput:String,
-        nameInput:String,
-        lastnameInput:String,
-        passwordInput:String,
-        phoneNumberInput:String,
-        addressInput:String,
-        latitudeInput:Double,
-        longitudeInput:Double ,
-        vehicleInput :String
-        ) -> ()
+    func updateUser(user:role,lastBookmark:String) -> ()
     {
         let URL_SERVER = "https://zeevtesthu.mybluemix.net"
-        var returnValue = false
+        var url = ""
+        switch user {
+        case role.Helpless :
+            url = URL_SERVER + "/api/Users/GetNotApprovedHelpless"
+        case  role.Donators:
+            url = URL_SERVER + "/api/Users/GetNotApprovedDonators"
+        case  role.AllWorkers:
+            url = URL_SERVER + "/api/Users/GetNotApprovedVolunteers"
+        default: break
+        print("you can create every one you want here.")
+        }
         
-        let url = URL_SERVER + "/api/Users/CreateDistributer"
         let parameters : Parameters = [
-            "idNumber" : idNumberInput,
-            "name" : nameInput,
-            "famelyName" : lastnameInput,
-            "token" : passwordInput,
-            "phoneNumber" : phoneNumberInput,
-            "address" : addressInput,
-            "latitude" : latitudeInput,
-            "longitude" : longitudeInput ,
-            "vehicle" : vehicleInput
+            "bookmark" : lastBookmark
         ]
         
         Alamofire.request(url, method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default, headers: [:])
@@ -73,7 +64,9 @@ extension AddWorkerController {
                 
         }
     }
-
+    
 }
+
+
 
 
