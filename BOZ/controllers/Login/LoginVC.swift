@@ -82,7 +82,7 @@ class LoginVC: UIViewController {
                 return
             }
             if ((idNumberTF.text!.count)<6 || tokenTF.text!.count < 3) {
-                self.alertMsg(title:"נתונים לא חוקיים",msg:"תעודת זהות לפחות 6 תווים וסיסמה 3 תווים לפחות")
+                self.alertMsg(title:"נתונים לא חוקיים",msg:"שם משתמש לפחות 6 תווים וסיסמה 3 תווים לפחות")
                 return
             }
             // text is not empty and valid
@@ -106,7 +106,7 @@ class LoginVC: UIViewController {
     
     func alertLoginFail() {
         alertMsg(title:"כשלון כניסה למערכת",
-                 msg: "נא למלא תעודת זהות וסיסמא")
+                 msg: "נא למלא שם משתמש וסיסמא")
     }
     func LoginNotApproved() {
         alertMsg(title:"כשלון כניסה למערכת",
@@ -116,7 +116,7 @@ class LoginVC: UIViewController {
     func loginWrongPassword(){
         alertMsg(
             title: "סיסמא שגויה",
-            msg: "נא למלא תעודת זהות וסיסמא")
+            msg: "נא למלא שם משתמש וסיסמא")
     }
     
     

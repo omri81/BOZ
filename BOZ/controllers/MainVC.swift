@@ -23,9 +23,7 @@ class MainVC: UIViewController {
     private let PHONE_BTN = "phoneBtn"
     private let WEBSITE_BTN = "websiteBtn"
     private let FACEBOOK_BTN = "facebookBtn"
-    
-    
-    
+  
     @IBOutlet weak var logoImg: UIImageView!
     
     override func viewDidLoad() {
@@ -37,7 +35,7 @@ class MainVC: UIViewController {
         let privateToken = prefs.string(forKey: BaseViewController.PRIVATE_GUID)
         if (privateToken != nil && privateToken != "")
         {
-            print (privateToken)
+            print (privateToken!)
             let next = storyboard!.instantiateViewController(withIdentifier: "toLoginVC") as! LoginVC
             next.Login(id:"",token:"", withPrivateToken:true)
         }
