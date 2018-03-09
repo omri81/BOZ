@@ -34,7 +34,9 @@
 		AD81FFBB2040756B001CBFDA /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFBA2040756B001CBFDA /* ApiClient.swift */; };
 		AD81FFBD20407706001CBFDA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFBC20407706001CBFDA /* DataStore.swift */; };
 		AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */; };
-		AD9DFBC8205234DA00E4FE5B /* AdminToServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBC7205234DA00E4FE5B /* AdminToServer.swift */; };
+		AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */; };
+		AD9DFBCE205259FC00E4FE5B /* GetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */; };
+		AD9DFBD120525E4800E4FE5B /* EnableUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */; };
 		ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC49203E0BDC00457A61 /* MainViewController.swift */; };
 		ADB9EC52203E310A00457A61 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB9EC51203E310A00457A61 /* logo.gif */; };
 		ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */; };
@@ -104,7 +106,9 @@
 		AD81FFBA2040756B001CBFDA /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		AD81FFBC20407706001CBFDA /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web2HelpViewController.swift; sourceTree = "<group>"; };
-		AD9DFBC7205234DA00E4FE5B /* AdminToServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminToServer.swift; sourceTree = "<group>"; };
+		AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorker.swift; sourceTree = "<group>"; };
+		AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsers.swift; sourceTree = "<group>"; };
+		AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableUsers.swift; sourceTree = "<group>"; };
 		ADB9EC49203E0BDC00457A61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB9EC51203E310A00457A61 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 		ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -225,10 +229,10 @@
 		9AA2B38A20508BB00042E03E /* AdminControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9AA2B38B20508C080042E03E /* AddWorkerController.swift */,
+				AD9DFBCF20525AF900E4FE5B /* Helpers */,
 				9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */,
 				9AA2B38F20508E030042E03E /* SystemChangesController.swift */,
-				AD9DFBC7205234DA00E4FE5B /* AdminToServer.swift */,
+				9AA2B38B20508C080042E03E /* AddWorkerController.swift */,
 			);
 			path = AdminControllers;
 			sourceTree = "<group>";
@@ -280,6 +284,16 @@
 				AD81FFBC20407706001CBFDA /* DataStore.swift */,
 			);
 			path = productCollection;
+			sourceTree = "<group>";
+		};
+		AD9DFBCF20525AF900E4FE5B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */,
+				AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */,
+				AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		ADAAF38720518A7000F3883B /* Login */ = {
@@ -588,8 +602,10 @@
 				AD2F6A212050E8B000D38E85 /* DoneDonatingController.swift in Sources */,
 				9AA2B39020508E030042E03E /* SystemChangesController.swift in Sources */,
 				FC9FB36A2047102D00A3B508 /* Methods.swift in Sources */,
+				AD9DFBD120525E4800E4FE5B /* EnableUsers.swift in Sources */,
+				AD9DFBCE205259FC00E4FE5B /* GetUsers.swift in Sources */,
 				ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */,
-				AD9DFBC8205234DA00E4FE5B /* AdminToServer.swift in Sources */,
+				AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */,
 				AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */,
 				ADF30ACC203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift in Sources */,
 				9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */,

@@ -17,7 +17,15 @@ class AddWorkerController: UIViewController {
         /*
         createDelivery(idNumberInput: <#T##String#>, nameInput: <#T##String#>, lastnameInput: <#T##String#>, passwordInput: <#T##String#>, phoneNumberInput: <#T##String#>, addressInput: <#T##String#>, latitudeInput: <#T##Double#>, longitudeInput: <#T##Double#>, vehicleInput: <#T##String#>)
          */
-        let success = createDelivery(idNumberInput: "delivery111", nameInput: "<#T##String#>", lastnameInput: "<#T##String#>", passwordInput: "<#T##String#>", phoneNumberInput: "<#T##String#>", addressInput: "<#T##String#>", latitudeInput: 34.25, longitudeInput: 34.27, vehicleInput: "<#T##String#>")
+        //create Admin:
+        var success = createWorker(user: .Admin, userNameInput: "", nameInput: "Admin22", lastnameInput: "<#T##String#>", passwordInput: "<#T##String#>", phoneNumberInput: "<#T##String#>", addressInput: "<#T##String#>", latitudeInput: 23.65, longitudeInput: 23.12, vehicleInput: "<#T##String#>")
+        print ("create user: \(success)")
+        //create Store:
+        success = createWorker(user: .Store, userNameInput: "Store222", nameInput: "<#T##String#>", lastnameInput: "<#T##String#>", passwordInput: "<#T##String#>", phoneNumberInput: "<#T##String#>", addressInput: "<#T##String#>", latitudeInput: 23.65, longitudeInput: 23.12, vehicleInput: "<#T##String#>")
+        print ("create user: \(success)")
+        //create Delivery:
+        success = createWorker(user: .Delivery, userNameInput: "Delivery2222", nameInput: "<#T##String#>", lastnameInput: "<#T##String#>", passwordInput: "<#T##String#>", phoneNumberInput: "<#T##String#>", addressInput: "<#T##String#>", latitudeInput: 23.65, longitudeInput: 23.12, vehicleInput: "<#T##String#>")
+        print ("create user: \(success)")
         print ("create user: \(success)")
     }
 
