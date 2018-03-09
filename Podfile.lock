@@ -1,12 +1,22 @@
 PODS:
-  - Alamofire (4.6.0)
+  - Alamofire (4.7.0)
+  - BMSAnalyticsAPI (2.2.3)
+  - BMSCore (2.3.5):
+    - BMSAnalyticsAPI (~> 2.2)
+  - BMSPush (3.3.2):
+    - BMSCore (~> 2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
+  - BMSCore (~> 2.0)
+  - BMSPush (~> 3.0)
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  BMSAnalyticsAPI: d259379069bb11d2ff365bf5b796a2677dfc3849
+  BMSCore: 446c16a7dbe14b5019751617a00dd947c65cca82
+  BMSPush: 14b286eb476c45d20f4f14c644495bba446c331d
 
-PODFILE CHECKSUM: a9c5ff121df00f802032b9893d0ae7178854ccb5
+PODFILE CHECKSUM: bf69f0df713a4b7b7543af8ada965ad804b22d87
 
 COCOAPODS: 1.4.0
