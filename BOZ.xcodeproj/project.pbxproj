@@ -42,6 +42,9 @@
 		ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */; };
 		ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9823D203F2F74004BD58B /* AboutViewController.swift */; };
 		ADF30ACC203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF30ACB203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift */; };
+		FC12A1F42052A51C002912AD /* CrewEditCVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12A1F32052A51C002912AD /* CrewEditCVVC.swift */; };
+		FC12A1F62052AC1A002912AD /* CrewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12A1F52052AC1A002912AD /* CrewCell.swift */; };
+		FC12A1F82052B1D1002912AD /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12A1F72052B1D1002912AD /* Crew.swift */; };
 		FC9FB3642045F69200A3B508 /* DonationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB3632045F69200A3B508 /* DonationVC.swift */; };
 		FC9FB36720470F3F00A3B508 /* BranchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB36620470F3F00A3B508 /* BranchCell.swift */; };
 		FC9FB36A2047102D00A3B508 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FB3692047102D00A3B508 /* Methods.swift */; };
@@ -118,6 +121,9 @@
 		C3385E772ACECB2377B52A22 /* Pods-BOZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BOZ/Pods-BOZ.release.xcconfig"; sourceTree = "<group>"; };
 		D62B66EA755D8BFBC5B5350A /* Pods_BOZTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOZTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56D87A6385A089C9D413F05 /* Pods_BOZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC12A1F32052A51C002912AD /* CrewEditCVVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewEditCVVC.swift; sourceTree = "<group>"; };
+		FC12A1F52052AC1A002912AD /* CrewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewCell.swift; sourceTree = "<group>"; };
+		FC12A1F72052B1D1002912AD /* Crew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crew.swift; sourceTree = "<group>"; };
 		FC9FB3632045F69200A3B508 /* DonationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationVC.swift; sourceTree = "<group>"; };
 		FC9FB36620470F3F00A3B508 /* BranchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchCell.swift; sourceTree = "<group>"; };
 		FC9FB3692047102D00A3B508 /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
@@ -269,7 +275,6 @@
 			children = (
 				AD6C475A204F474600C9A115 /* DistributerViewController.swift */,
 				AD6C475C204F476200C9A115 /* StorageViewController.swift */,
-				AD6C475E204F477500C9A115 /* AdminViewController.swift */,
 			);
 			path = mainScreens;
 			sourceTree = "<group>";
@@ -320,6 +325,8 @@
 				FC9FB3632045F69200A3B508 /* DonationVC.swift */,
 				FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */,
 				FC9FB3712048670600A3B508 /* ProductListCVVC.swift */,
+				AD6C475E204F477500C9A115 /* AdminViewController.swift */,
+				FC12A1F32052A51C002912AD /* CrewEditCVVC.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -338,6 +345,7 @@
 				AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */,
 				FC9FB36C2047196500A3B508 /* Branch.swift */,
 				FC9FB3752048864C00A3B508 /* DonationProduct.swift */,
+				FC12A1F72052B1D1002912AD /* Crew.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -363,6 +371,7 @@
 			children = (
 				FC9FB36620470F3F00A3B508 /* BranchCell.swift */,
 				FC9FB3772049904200A3B508 /* MyTextField.swift */,
+				FC12A1F52052AC1A002912AD /* CrewCell.swift */,
 			);
 			path = customViews;
 			sourceTree = "<group>";
@@ -607,7 +616,9 @@
 				ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */,
 				AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */,
 				AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */,
+				FC12A1F42052A51C002912AD /* CrewEditCVVC.swift in Sources */,
 				ADF30ACC203F58D000839FF2 /* TakeFromMe1_Details_ViewController.swift in Sources */,
+				FC12A1F62052AC1A002912AD /* CrewCell.swift in Sources */,
 				9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */,
 				AD81FFBB2040756B001CBFDA /* ApiClient.swift in Sources */,
 				FC9FB3762048864C00A3B508 /* DonationProduct.swift in Sources */,
@@ -621,6 +632,7 @@
 				AD81FFB620406FEE001CBFDA /* ProductCollectionViewCell.swift in Sources */,
 				FC9FB36720470F3F00A3B508 /* BranchCell.swift in Sources */,
 				FC9FB37A2049990F00A3B508 /* LoginVC.swift in Sources */,
+				FC12A1F82052B1D1002912AD /* Crew.swift in Sources */,
 				AD6C475F204F477500C9A115 /* AdminViewController.swift in Sources */,
 				AD81FFBD20407706001CBFDA /* DataStore.swift in Sources */,
 				FC9FB3642045F69200A3B508 /* DonationVC.swift in Sources */,
