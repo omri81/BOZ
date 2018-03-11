@@ -8,16 +8,16 @@
 
 import UIKit
 
-public class DonationProduct{
+public class DonationProduct: Codable{
     
     var name: String!
     var description: String!
-    var image : UIImage!
+    var image : String!
     
-    init(name: String, description: String, image: UIImage?) {
-        self.name = name
-        self.description = description
-        self.image = image
-    }
+//    init(name: String, description: String, image: UIImage?) {
+//        self.name = name
+//        self.description = description
+//        self.image = image
+//    }
     
 }

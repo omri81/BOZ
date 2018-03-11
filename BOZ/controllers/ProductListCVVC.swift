@@ -7,23 +7,26 @@
 //
 
 import UIKit
-
+import Alamofire
 
 class ProductListCVVC: UICollectionViewController {
 
     private let reuseIdentifier = "productCell"
     
-    private var products: [DonationProduct] = [
+    private var products: [DonationProduct] = []
+        /*
         DonationProduct(name: "מטרנה", description: "תכולה: 700ג׳, גילאים: 3-7 חודשים", image: UIImage(named: "baby_food_ex")),
         DonationProduct(name: "סימילאק", description: "תכולה: 750ג׳, גילאים: 5-7 חודשים", image: UIImage(named: "baby_food_ex")),
         DonationProduct(name: "מטרנה", description: "תכולה: 600ג׳, גילאים: 1-3 חודשים", image: UIImage(named: "baby_food_ex")),
         DonationProduct(name: "סימילאק", description: "תכולה: קֿֿֿֿֿ/״ג, גילאים: 3-7 חודשים", image: UIImage(named: "baby_food_ex")),
         DonationProduct(name: "סימילאק", description: "תכולה: קֿֿֿֿֿ/״ג, גילאים: 3-7 חודשים", image: UIImage(named: "baby_food_ex")),
         DonationProduct(name: "סימילאק", description: "תכולה: קֿֿֿֿֿ/״ג, גילאים: 3-7 חודשים", image: UIImage(named: "baby_food_ex")),
-    ]
+    ]*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
     }
 
@@ -52,7 +55,7 @@ class ProductCell: UICollectionViewCell{
         self.nameLbl.text? = product.name
         self.descriptionLbl.text? = product.description
         print(product.image)
-        self.image.image! = product.image
+        //self.image.image! = product.image
     }
     
 }
