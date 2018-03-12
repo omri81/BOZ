@@ -42,6 +42,8 @@
 		ADFA43B02056787D00D164F5 /* TakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA43AF2056787D00D164F5 /* TakeVC.swift */; };
 		ADFA43B220567AB600D164F5 /* HoursVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA43B120567AB600D164F5 /* HoursVC.swift */; };
 		ADFA43B420567AD200D164F5 /* BarCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA43B320567AD200D164F5 /* BarCodeVC.swift */; };
+		ADFA43B620567C8000D164F5 /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA43B520567C8000D164F5 /* AddressVC.swift */; };
+		ADFA43B820568F1800D164F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA43B720568F1800D164F5 /* Constants.swift */; };
 		FC12A1F42052A51C002912AD /* CrewEditCVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12A1F32052A51C002912AD /* CrewEditCVVC.swift */; };
 		FC12A1F62052AC1A002912AD /* CrewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12A1F52052AC1A002912AD /* CrewCell.swift */; };
 		FC12A1F82052B1D1002912AD /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12A1F72052B1D1002912AD /* Crew.swift */; };
@@ -117,6 +119,8 @@
 		ADFA43AF2056787D00D164F5 /* TakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeVC.swift; sourceTree = "<group>"; };
 		ADFA43B120567AB600D164F5 /* HoursVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursVC.swift; sourceTree = "<group>"; };
 		ADFA43B320567AD200D164F5 /* BarCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeVC.swift; sourceTree = "<group>"; };
+		ADFA43B520567C8000D164F5 /* AddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
+		ADFA43B720568F1800D164F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B12BBA2B9D86DDF33FCA879C /* Pods_BOZUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOZUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3385E772ACECB2377B52A22 /* Pods-BOZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BOZ/Pods-BOZ.release.xcconfig"; sourceTree = "<group>"; };
 		D62B66EA755D8BFBC5B5350A /* Pods_BOZTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOZTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +201,7 @@
 		9A99C892203C93FA0057D607 /* BOZ */ = {
 			isa = PBXGroup;
 			children = (
+				ADFA43B720568F1800D164F5 /* Constants.swift */,
 				AD02E8D3204E939E004D8DFC /* Push */,
 				FC9FB3682047101E00A3B508 /* utils */,
 				FC9FB36520470E9900A3B508 /* customViews */,
@@ -268,6 +273,7 @@
 				ADFA43AF2056787D00D164F5 /* TakeVC.swift */,
 				ADFA43B120567AB600D164F5 /* HoursVC.swift */,
 				ADFA43B320567AD200D164F5 /* BarCodeVC.swift */,
+				ADFA43B520567C8000D164F5 /* AddressVC.swift */,
 			);
 			path = Donator;
 			sourceTree = "<group>";
@@ -616,6 +622,8 @@
 				AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */,
 				AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */,
 				FC12A1F42052A51C002912AD /* CrewEditCVVC.swift in Sources */,
+				ADFA43B620567C8000D164F5 /* AddressVC.swift in Sources */,
+				ADFA43B820568F1800D164F5 /* Constants.swift in Sources */,
 				ADFA43B220567AB600D164F5 /* HoursVC.swift in Sources */,
 				FC12A1F62052AC1A002912AD /* CrewCell.swift in Sources */,
 				9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */,
