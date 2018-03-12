@@ -9,11 +9,13 @@
 import UIKit
 import Alamofire
 
+
 class BarCodeVC: UIViewController {
     var bookMark = ""
     
     @IBAction func barcode(_ sender: Any, forEvent event: UIEvent) {
-        getBarcode()
+        getProducts()
+        //getBarcode()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,24 @@ class BarCodeVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getBarcode() {
+    func getProducts() {
+        struct Doc {
+            let docs : [Product]
+        }
+        struct Product {
+            var _id:String
+            var _rev:String
+            var cosher:String
+            var amount:Double
+            var description:String
+            var manufacter:String
+            var qr:String
+            var spaciel:String
+            var stage:Int
+            var title:String
+            var age:String
+        }
+        
         let parameters: Parameters = [
             "bookMark" : bookMark
         ]
@@ -42,9 +61,18 @@ class BarCodeVC: UIViewController {
                         else {return}
                     if status == "OK" {
                         print("retrive success")
-                        guard let docs = responseJSON["docs"] as? [[String: Any]]
-                            else { return }
-                        print(docs)
+                        guard let docs = responseJSON["docs"] as? [Dictionary<String,AnyObject>]                            else { return }
+                            for data in docs
+                            {
+                                print (data["title"] as! String)
+
+                            }
+                       
+                        
+                      //  for doc in docs {
+                      //      print(doc)
+                      //  }
+                        
                         }
                 case .failure(let error):
                         print("error:\(error)")
