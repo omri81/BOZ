@@ -19,6 +19,7 @@ class DoneDonatingController: UIViewController {
     var resultSearchController:UISearchController? = nil
     var selectedPin:MKPlacemark? = nil
     
+    @IBOutlet weak var myNav: UINavigationItem!
     @IBOutlet weak var phoneNumberTF: UITextField!
     @IBOutlet weak var addressTV: UITextView!
     @IBOutlet weak var mapView: MKMapView!
@@ -50,16 +51,18 @@ class DoneDonatingController: UIViewController {
         
         // uisearchcontroller:
         let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
+        
         resultSearchController = UISearchController(searchResultsController: locationSearchTable)
         resultSearchController?.searchResultsUpdater = locationSearchTable
     
         //searchbar:
-        var searchBar = UISearchBar(frame: CGRect(x: 0, y:500 , width: 700, height: 50))
-        view.addSubview(searchBar)
-        searchBar = resultSearchController!.searchBar
+        
+        
+        let searchBar = resultSearchController!.searchBar
         searchBar.sizeToFit()
         searchBar.placeholder = "הזן כתובת"
-        navigationItem.titleView = resultSearchController?.searchBar
+        
+        myNav.titleView = resultSearchController?.searchBar
         
         // UISearchController appearance
         resultSearchController?.hidesNavigationBarDuringPresentation = false

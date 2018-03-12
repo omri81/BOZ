@@ -2033,6 +2033,13 @@
                                     <action selector="done:" destination="fvg-TM-w19" eventType="touchUpInside" id="X1m-yg-mPC"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LC7-MR-ezJ">
+                                <rect key="frame" x="0.0" y="285" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="YLk-pP-Zeo"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -2075,6 +2082,7 @@
                     <connections>
                         <outlet property="addressTV" destination="xPb-d8-LCC" id="bo8-Pu-NKw"/>
                         <outlet property="mapView" destination="gtp-cA-wP5" id="je4-ca-22B"/>
+                        <outlet property="myNav" destination="YLk-pP-Zeo" id="yxm-ig-MbL"/>
                         <outlet property="name" destination="HuC-Zm-u0X" id="y3C-Cg-NuK"/>
                         <outlet property="phoneNumberTF" destination="gAz-AA-FBX" id="lwn-W6-bA4"/>
                     </connections>
