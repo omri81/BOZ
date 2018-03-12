@@ -21,7 +21,7 @@ class DoneDonatingController: UIViewController {
     
     @IBOutlet weak var myNav: UINavigationItem!
     @IBOutlet weak var phoneNumberTF: UITextField!
-    @IBOutlet weak var addressTV: UITextView!
+    
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet var name: UITextField!
     
@@ -89,7 +89,7 @@ extension DoneDonatingController : CLLocationManagerDelegate {
         }
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        addressTV.text = "לא מצליח לאתר מיקום, רשום ידנית בבקשה"
+        resultSearchController!.searchBar.text = "לא מצליח לאתר מיקום, רשום ידנית בבקשה"
         print("error: \(error)")
     }
     
@@ -129,7 +129,7 @@ extension DoneDonatingController: MKMapViewDelegate {
                          }*/
                         print("locality:")
                         print(result)
-                        self.addressTV.text = result;
+                        self.resultSearchController!.searchBar.text = result;
                     }
                 }
                 else {
@@ -155,7 +155,7 @@ extension DoneDonatingController: HandleMapSearch {
             annotation.subtitle = "\(String(describing: placemark.name!))"
             let searchBar = self.resultSearchController!.searchBar
             searchBar.text = placemark.name
-            self.addressTV.text = searchBar.text
+            self.resultSearchController!.searchBar.text = searchBar.text
         }
         mapView.addAnnotation(annotation)
         let span = MKCoordinateSpanMake(0.05, 0.05)
