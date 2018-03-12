@@ -54,7 +54,9 @@ class DoneDonatingController: UIViewController {
         resultSearchController?.searchResultsUpdater = locationSearchTable
     
         //searchbar:
-        let searchBar = resultSearchController!.searchBar
+        var searchBar = UISearchBar(frame: CGRect(x: 0, y:500 , width: 700, height: 50))
+        view.addSubview(searchBar)
+        searchBar = resultSearchController!.searchBar
         searchBar.sizeToFit()
         searchBar.placeholder = "הזן כתובת"
         navigationItem.titleView = resultSearchController?.searchBar
@@ -148,7 +150,9 @@ extension DoneDonatingController: HandleMapSearch {
         if let _ = placemark.locality,
             let _ = placemark.administrativeArea {
             annotation.subtitle = "\(String(describing: placemark.name!))"
-            self.addressTV.text = placemark.name
+            let searchBar = self.resultSearchController!.searchBar
+            searchBar.text = placemark.name
+            self.addressTV.text = searchBar.text
         }
         mapView.addAnnotation(annotation)
         let span = MKCoordinateSpanMake(0.05, 0.05)

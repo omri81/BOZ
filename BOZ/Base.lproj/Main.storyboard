@@ -1701,6 +1701,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onBtnClickedWithSender:" destination="jtu-ez-KRt" eventType="touchUpInside" id="0hb-BW-rHG"/>
+                                                    <segue destination="fvg-TM-w19" kind="show" identifier="toComeTakeVC" id="Jce-3m-9eR"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6U9-Ld-2Fn">
@@ -1788,12 +1789,9 @@
                         <viewLayoutGuide key="safeArea" id="k3i-P1-ylh"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" id="Bj4-Xj-k1f">
-                        <barButtonItem key="backBarButtonItem" title="חזור" id="Uzh-Fs-NSf"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Bj4-Xj-k1f"/>
                     <connections>
                         <outlet property="logoImg" destination="0dx-Eq-iEU" id="Mas-HL-xDp"/>
-                        <segue destination="9HG-YH-39H" kind="show" identifier="toComeTakeVC" id="eYf-et-hHI"/>
                         <segue destination="Y6U-rw-7pE" kind="show" identifier="toImComingVC" id="2hd-A9-pkh"/>
                         <segue destination="cO6-oF-zeG" kind="show" identifier="toProductVC" id="T3B-J1-zR3"/>
                     </connections>
@@ -2074,7 +2072,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fGd-Ih-168"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9cO-wb-nvT"/>
                     <connections>
                         <outlet property="addressTV" destination="xPb-d8-LCC" id="bo8-Pu-NKw"/>
                         <outlet property="mapView" destination="gtp-cA-wP5" id="je4-ca-22B"/>
@@ -2466,24 +2463,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCW-Rm-A30" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4807" y="-669"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="zI9-1i-mkz">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9HG-YH-39H" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d8h-pz-9cD">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="fvg-TM-w19" kind="relationship" relationship="rootViewController" id="euH-DH-DfE"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I0p-4D-KL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-32" y="3662.807881773399"/>
         </scene>
     </scenes>
     <resources>
