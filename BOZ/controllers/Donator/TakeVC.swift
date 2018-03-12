@@ -1,14 +1,14 @@
 //
-//  TakeFromMe1_Details_ViewController.swift
+//  TakeVC.swift
 //  BOZ
 //
-//  Created by user134028 on 2/22/18.
+//  Created by user134028 on 3/12/18.
 //  Copyright © 2018 Ovadia. All rights reserved.
 //
 
 import UIKit
 
-class TakeFromMe1_Details_ViewController: BaseViewController {
+class TakeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

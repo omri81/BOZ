@@ -20,7 +20,7 @@ class DonationVC: UIViewController {
     private let OFFICE_NUMBER = "0507888094"
     
     
-    private let TO_COME_TAKE_VC = "toComeTakeVC"
+    private let TO_COME_TAKE_VC = "to_take_vc"
     private let TO_LEFT_AT_VC = "toLeftAtVC"
     private let TO_IM_COMING_VC = "toImComingVC"
     private let TO_PRODUCT_VC = "toProductVC"
@@ -49,7 +49,7 @@ class DonationVC: UIViewController {
             case MONEY_BTN:
                 Methods.makePhoneCallToOffice()
             case COME_TAKE_BTN:
-                performSegue(withIdentifier: TO_COME_TAKE_VC, sender: self)
+                performSegue(withIdentifier: TO_COME_TAKE_VC, sender: self)            
             case LEFT_AT_BTN:
                 performSegue(withIdentifier: TO_IM_COMING_VC, sender: self)
             case IM_COMING_BTN:
