@@ -17,4 +17,6 @@ public let DONATOR_LONGTITUDE = "DONATOR_LONGTITUDE"
 public let DONATOR_LATITUDE = "DONATOR_LATITUDE"
 public let DONATOR_TOKEN = "notRegistered" // to destinguish in the DB who is aloowed to reciev push
 public let DONATOR_IDNUMBER = "DONATOR_IDNUMBER " // phone number
+public let URL_PRODUCTS = "https://zeevtesthu.mybluemix.net/api/Milk/GetProductListForDonators"
+public let URL_BARCODE = "https://zeevtesthu.mybluemix.net/api/Milk/GetQR"
 
