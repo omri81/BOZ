@@ -20,6 +20,7 @@
 		9AA2B38C20508C080042E03E /* AddWorkerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38B20508C080042E03E /* AddWorkerController.swift */; };
 		9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */; };
 		9AA2B39020508E030042E03E /* SystemChangesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38F20508E030042E03E /* SystemChangesController.swift */; };
+		9AFB82A82057F5A30099ABD5 /* BarCodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */; };
 		AD02E8D5204E93D5004D8DFC /* push.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D4204E93D5004D8DFC /* push.swift */; };
 		AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */; };
 		AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */; };
@@ -99,6 +100,7 @@
 		9AA2B38B20508C080042E03E /* AddWorkerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkerController.swift; sourceTree = "<group>"; };
 		9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyAprovalController.swift; sourceTree = "<group>"; };
 		9AA2B38F20508E030042E03E /* SystemChangesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemChangesController.swift; sourceTree = "<group>"; };
+		9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerController.swift; sourceTree = "<group>"; };
 		AD02E8D4204E93D5004D8DFC /* push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = push.swift; sourceTree = "<group>"; };
 		AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Push_Init.swift; sourceTree = "<group>"; };
 		AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDonationViewController.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				FC9FB3712048670600A3B508 /* ProductListCVVC.swift */,
 				AD6C475E204F477500C9A115 /* AdminViewController.swift */,
 				FC12A1F32052A51C002912AD /* CrewEditCVVC.swift */,
+				9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 				ADFA43B820568F1800D164F5 /* Constants.swift in Sources */,
 				ADFA43B220567AB600D164F5 /* HoursVC.swift in Sources */,
 				FC12A1F62052AC1A002912AD /* CrewCell.swift in Sources */,
+				9AFB82A82057F5A30099ABD5 /* BarCodeScannerController.swift in Sources */,
 				9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */,
 				AD81FFBB2040756B001CBFDA /* ApiClient.swift in Sources */,
 				FC9FB3762048864C00A3B508 /* DonationProduct.swift in Sources */,
@@ -819,10 +823,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94A5KG8Q6V;
+				DEVELOPMENT_TEAM = PMSF2JXC98;
 				INFOPLIST_FILE = BOZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovadia.BOZ;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ovadia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -835,10 +839,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94A5KG8Q6V;
+				DEVELOPMENT_TEAM = PMSF2JXC98;
 				INFOPLIST_FILE = BOZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovadia.BOZ;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ovadia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

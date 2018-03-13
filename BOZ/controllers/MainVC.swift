@@ -42,11 +42,11 @@ class MainVC: UIViewController {
         
         logoImg.loadGif(name: "logo")
         
-        Data1.searchRequest(term: "5099864006704") { json, error  in
-            print(error ?? "nil")
-            print(json ?? "nil")
-            print("Update views")
-        }        
+//        Data1.searchRequest(term: "5099864006704") { json, error  in
+//            print(error ?? "nil")
+//            print(json ?? "nil")
+//            print("Update views")
+//        }
     }
 
     @IBAction func onBtnClicked(sender: UIButton){
@@ -57,6 +57,7 @@ class MainVC: UIViewController {
                 performSegue(withIdentifier: TO_LOGIN_VC, sender: self)
             case QUICK_DONATION_BTN?:
                 performSegue(withIdentifier: TO_QUICK_DONATION_VC, sender: self)
+                
             case ASK_DONATION_BTN?:
                 performSegue(withIdentifier: TO_ASK_DONATION_VC, sender: self)      
             case PHONE_BTN?:
@@ -70,6 +71,7 @@ class MainVC: UIViewController {
         }
     }
 
+    
 }
 
 

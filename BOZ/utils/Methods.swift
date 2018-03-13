@@ -41,6 +41,7 @@ public class Methods{
         guard let url = URL(string: OFFICIAL_WEBSITE) else {return}
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
+   
     
     public static func openFacebookPage(){
         
