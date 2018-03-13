@@ -41,6 +41,12 @@ class MainVC: UIViewController {
         }
         
         logoImg.loadGif(name: "logo")
+        
+        Data1.searchRequest(term: "5099864006704") { json, error  in
+            print(error ?? "nil")
+            print(json ?? "nil")
+            print("Update views")
+        }        
     }
 
     @IBAction func onBtnClicked(sender: UIButton){

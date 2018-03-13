@@ -59,6 +59,7 @@ class BarCodeVC: UIViewController , WKUIDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let myURL = URL(string: "https://zeevtesthu.mybluemix.net/api/Milk/GetQR/5099864006704")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
@@ -68,6 +69,7 @@ class BarCodeVC: UIViewController , WKUIDelegate
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     func getBarcode(qr:String) {
         
