@@ -49,7 +49,7 @@ class ProductListCVVC: UICollectionViewController {
         Alamofire.request(methodeUrl, method: HTTPMethod.post , parameters: parameters ,
                           encoding: JSONEncoding.default, headers: [:])
             .validate(contentType: ["application/json"]).responseJSON { response in
-                print("response: \(response)")
+                // print("response: \(response)")
                 switch response.result {
                 case .success:
                     print("sucess response from server")
@@ -62,13 +62,25 @@ class ProductListCVVC: UICollectionViewController {
                     }
                     if status == "OK" {
                         print("login success")
-                        guard let docs = responseJSON as? [[String: Any]]
+                        guard let docs = responseJSON["docs"] as? [[String:Any]]
                             else {return}
-                        var docsArray:[[String:Any]] = []
                         for d in docs {
-                            docsArray.append(d)
+                            guard let _id = d["_id"] as? String,
+                            let _rev = d["_rev"] as? String,
+                            let title = d["title"] as? String,
+                            let description = d["description"]
+                                as? String
+                                // you can add  here more fileds
+                                else{return}
+                            var newProduct = DonationProduct()
+                            newProduct.name = title
+                            newProduct.description = description
+                            newProduct.image = methodeUrl + "GetImg/"+_id
+                            self.products.append(newProduct)
                         }
-                        print(docs)
+                        print("products are:\(self.products)")
+                        self.collectionView?.reloadData()
+                        
                     } else {
                         print("server response: " + statusMsg)
                     }
