@@ -29,7 +29,7 @@ class LoginVC: UIViewController {
     func loginSucess(role:String) {
         print("login success, role is: \(role)")
         //asking permision to push
-        pushInit()
+        //pushInit()
         //   application(<#T##application: UIApplication##UIApplication#>, didRegisterForRemoteNotificationsWithDeviceToken: <#T##Data#>)
         //showEnterScreen(role)
         var nextUI:UIViewController

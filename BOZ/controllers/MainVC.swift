@@ -59,7 +59,23 @@ class MainVC: UIViewController {
                 performSegue(withIdentifier: TO_QUICK_DONATION_VC, sender: self)
                 
             case ASK_DONATION_BTN?:
-                performSegue(withIdentifier: TO_ASK_DONATION_VC, sender: self)      
+            
+            let alert = UIAlertController(title: "האם רשום כבר?", message: "הכנס אימייל", preferredStyle: .alert)
+            alert.addTextField(configurationHandler: {(tf) in
+                tf.placeholder = "הכנס אימייל"
+            })
+            alert.addAction(UIAlertAction(title: "הכנס", style: .default, handler: {(check) in
+                //check with server if email is registerd
+                self.performSegue(withIdentifier: self.TO_ASK_DONATION_VC, sender: self)
+            }))
+            alert.addAction(UIAlertAction(title: "הרשם כעת", style: .default, handler: {(apply) in
+               Methods.openDonationFormWebsite()
+            }))
+            alert.addAction(UIAlertAction(title: "ביטול", style: .cancel, handler: nil))
+            
+            show(alert, sender: self)
+        
+            
             case PHONE_BTN?:
                 Methods.makePhoneCallToOffice()
             case WEBSITE_BTN?:

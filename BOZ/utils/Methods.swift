@@ -13,6 +13,7 @@ public class Methods{
     private static let OFFICE_NUMBER = "0507888094"
     private static let OFFICIAL_WEBSITE = "https://www.2help.org.il/"
     private static let OFFICIAL_FACEBOOK_PAGE_ID = "138399090105076"
+    private static let DONATION_APPLICATION_FORM = "https://www.2help.org.il/food"
     
     public static func makePhoneCall(toNumber : String){
         guard let url = URL(string: "tel://\(toNumber)") else { return }
@@ -39,6 +40,10 @@ public class Methods{
     
     public static func openOfficialWebsite(){
         guard let url = URL(string: OFFICIAL_WEBSITE) else {return}
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    public static func openDonationFormWebsite(){
+        guard let url = URL(string: DONATION_APPLICATION_FORM) else {return}
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
    
