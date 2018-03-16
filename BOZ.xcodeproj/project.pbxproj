@@ -39,6 +39,7 @@
 		AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */; };
 		AD9DFBCE205259FC00E4FE5B /* GetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */; };
 		AD9DFBD120525E4800E4FE5B /* EnableUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */; };
+		AD9EE94C205B80B100F218E8 /* getProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9EE94B205B80B100F218E8 /* getProducts.swift */; };
 		ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC49203E0BDC00457A61 /* MainViewController.swift */; };
 		ADB9EC52203E310A00457A61 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB9EC51203E310A00457A61 /* logo.gif */; };
 		ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */; };
@@ -120,6 +121,7 @@
 		AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorker.swift; sourceTree = "<group>"; };
 		AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsers.swift; sourceTree = "<group>"; };
 		AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableUsers.swift; sourceTree = "<group>"; };
+		AD9EE94B205B80B100F218E8 /* getProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getProducts.swift; sourceTree = "<group>"; };
 		ADB9EC49203E0BDC00457A61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB9EC51203E310A00457A61 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 		ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 				FCC458382045C6B900A89CDE /* MainVC.swift */,
 				FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */,
 				FC9FB3712048670600A3B508 /* ProductListCVVC.swift */,
+				AD9EE94B205B80B100F218E8 /* getProducts.swift */,
 				AD6C475E204F477500C9A115 /* AdminViewController.swift */,
 				FC12A1F32052A51C002912AD /* CrewEditCVVC.swift */,
 				9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */,
@@ -620,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9EE94C205B80B100F218E8 /* getProducts.swift in Sources */,
 				9A99C89C203C93FA0057D607 /* BOZ.xcdatamodeld in Sources */,
 				FCC458392045C6B900A89CDE /* MainVC.swift in Sources */,
 				FCC458372045B5D300A89CDE /* GifImageView.swift in Sources */,

@@ -73,23 +73,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <wkWebView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hA0-LJ-HFg">
-                                <rect key="frame" x="0.0" y="369" width="375" height="160"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="xpa-0G-3wK"/>
-                                </constraints>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="hA0-LJ-HFg" firstAttribute="centerX" secondItem="xnw-nr-z6e" secondAttribute="centerX" id="MkI-aV-0gP"/>
-                            <constraint firstItem="hA0-LJ-HFg" firstAttribute="width" secondItem="uV0-R9-O81" secondAttribute="width" constant="0.5" id="iF8-qe-zO1"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xnw-nr-z6e"/>
                     </view>
                 </viewController>
