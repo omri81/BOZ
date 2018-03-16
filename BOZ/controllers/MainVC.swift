@@ -9,7 +9,8 @@
 import UIKit
 
 class MainVC: UIViewController {
-
+    var products = [Doc.Product]()
+    
     private let TO_ABOUT_VC = "toAboutVC"
     private let TO_LOGIN_VC = "toLoginVC"
     private let TO_QUICK_DONATION_VC = "toQuickDonationVC"
@@ -41,12 +42,8 @@ class MainVC: UIViewController {
         }
         
         logoImg.loadGif(name: "logo")
-        
-//        Data1.searchRequest(term: "5099864006704") { json, error  in
-//            print(error ?? "nil")
-//            print(json ?? "nil")
-//            print("Update views")
-//        }
+        getProducts(bookMark: "")
+
     }
 
     @IBAction func onBtnClicked(sender: UIButton){
