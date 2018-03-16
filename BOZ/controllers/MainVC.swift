@@ -42,7 +42,6 @@ class MainVC: UIViewController {
         }
         
         logoImg.loadGif(name: "logo")
-        getProducts(bookMark: "")
 
     }
 
