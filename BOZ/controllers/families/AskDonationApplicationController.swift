@@ -12,10 +12,7 @@ class AskDonationApplicationController: UIViewController {
 
     @IBOutlet var webView: UIWebView!
     override func viewDidLoad() {
-        super.viewDidLoad()
-        let url = URL(string: "https://www.2help.org.il/food")
-        let urlRequest = URLRequest(url: url!)
-        webView.loadRequest(urlRequest)
+        
     }
 
     override func didReceiveMemoryWarning() {
