@@ -10,6 +10,7 @@
 import Foundation
 
 // user defaults:
+public let DONATOR_ROLE = "DONATOR_ROLE"
 public let DONATOR_FIRST_NAME = "DONATOR_FIRST_NAME"
 public let DONATOR_LAST_NAME = "DONATOR_LAST_NAME"
 public let DONATOR_PHONE_NUMBER = "DONATOR_PHONE_NUMBER"

@@ -18,6 +18,7 @@ class LoginVC: UIViewController {
     private static let TO_ADMIN_VC = "toAdminVC"
     private static let TO_DELIVERY_VC = "toDeliveryVC"
     private static let TO_STORAGE_VC = "toStorageVC"
+    private static let TO_HELPLESS_VC = "toHelplessVC"
     private let TO_REGISTRATION_VC = "toRegisterVC"
     
     
@@ -45,8 +46,10 @@ class LoginVC: UIViewController {
         case "storeManager":
             nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_STORAGE_VC) as! StorageViewController
                 show(nextUI, sender: self)
-      //  case "helples":
-       //     performSegue(withIdentifier: LoginVC.TO_DELIVERY_VC, sender: self)
+        case "helples":
+            nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_HELPLESS_VC) as! HelplessVC
+            show(nextUI, sender: self)
+            
         default:
             alertServerProblem()
         }
@@ -165,6 +168,7 @@ class LoginVC: UIViewController {
                             // store private token
                             if let privateToken = responseJSON["userGuid"] as? String {
                             prefs.set(privateToken, forKey: BaseViewController.PRIVATE_GUID)
+                            prefs.set(role, forKey: DONATOR_ROLE)
                             }
                                 else {
                                     self.alertServerProblem()

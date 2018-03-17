@@ -16,8 +16,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let prefs = UserDefaults.standard
+        let role = prefs.string(forKey: DONATOR_ROLE)
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var initialViewController = storyboard.instantiateViewController(withIdentifier: "toLoginVC")
+        switch(role) {
+        case "admin"?:
+             initialViewController = storyboard.instantiateViewController(withIdentifier: "toAdminVC")
+        case "deistributer"?:
+             initialViewController = storyboard.instantiateViewController(withIdentifier: "toDeliveryVC")
+        case "helples"?:
+             initialViewController = storyboard.instantiateViewController(withIdentifier: "toHelplessVC")
+        case .none:
+             initialViewController = storyboard.instantiateViewController(withIdentifier: "toLoginVC")
+        default:
+             initialViewController = storyboard.instantiateViewController(withIdentifier: "toLoginVC")
+        }
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
         return true
+ 
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
