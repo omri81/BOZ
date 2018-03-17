@@ -18,6 +18,7 @@
 		9A99C8A1203C93FA0057D607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A99C89F203C93FA0057D607 /* LaunchScreen.storyboard */; };
 		9A99C8AC203C93FA0057D607 /* BOZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8AB203C93FA0057D607 /* BOZTests.swift */; };
 		9A99C8B7203C93FA0057D607 /* BOZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8B6203C93FA0057D607 /* BOZUITests.swift */; };
+		9AA126CF205D490C0044B832 /* DonationCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA126CE205D490C0044B832 /* DonationCellController.swift */; };
 		9AA2B38C20508C080042E03E /* AddWorkerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38B20508C080042E03E /* AddWorkerController.swift */; };
 		9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */; };
 		9AA2B39020508E030042E03E /* SystemChangesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38F20508E030042E03E /* SystemChangesController.swift */; };
@@ -99,6 +100,7 @@
 		9A99C8B2203C93FA0057D607 /* BOZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BOZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A99C8B6203C93FA0057D607 /* BOZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOZUITests.swift; sourceTree = "<group>"; };
 		9A99C8B8203C93FA0057D607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AA126CE205D490C0044B832 /* DonationCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationCellController.swift; sourceTree = "<group>"; };
 		9AA2B38B20508C080042E03E /* AddWorkerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkerController.swift; sourceTree = "<group>"; };
 		9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyAprovalController.swift; sourceTree = "<group>"; };
 		9AA2B38F20508E030042E03E /* SystemChangesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemChangesController.swift; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				ADFA43B320567AD200D164F5 /* BarCodeVC.swift */,
 				ADFA43B520567C8000D164F5 /* AddressVC.swift */,
 				AD89F4AC2057230D00E96174 /* jsonMilkSubst.swift */,
+				9AA126CE205D490C0044B832 /* DonationCellController.swift */,
 			);
 			path = Donator;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */,
 				AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */,
 				AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */,
+				9AA126CF205D490C0044B832 /* DonationCellController.swift in Sources */,
 				FC12A1F42052A51C002912AD /* CrewEditCVVC.swift in Sources */,
 				ADFA43B620567C8000D164F5 /* AddressVC.swift in Sources */,
 				ADFA43B820568F1800D164F5 /* Constants.swift in Sources */,

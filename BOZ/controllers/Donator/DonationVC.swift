@@ -49,7 +49,8 @@ class DonationVC: UIViewController {
             case MONEY_BTN:
                 Methods.makePhoneCallToOffice()
             case COME_TAKE_BTN:
-                performSegue(withIdentifier: TO_COME_TAKE_VC, sender: self)            
+                let next = storyboard!.instantiateViewController(withIdentifier: "takeVC")
+                navigationController?.pushViewController(next, animated: true)
             case LEFT_AT_BTN:
                 performSegue(withIdentifier: TO_IM_COMING_VC, sender: self)
             case IM_COMING_BTN:

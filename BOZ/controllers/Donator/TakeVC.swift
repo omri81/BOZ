@@ -9,8 +9,9 @@
 import UIKit
 import  Alamofire
 
-class TakeVC: UIViewController {
+class TakeVC: UIViewController, UICollectionViewDataSource {
 
+    @IBOutlet var collectionView: UICollectionView!
     private var longtitude:Double!
     private var latitude:Double!    
     @IBOutlet weak var phoneNumber: UITextField!
@@ -18,9 +19,18 @@ class TakeVC: UIViewController {
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var addressTF: UITextField!
     
+    var itemDescription:[String] = []
+    var itemScanned:[String] = []
+    
+    @IBAction func toScan(_ sender: Any) {
+        let next = storyboard!.instantiateViewController(withIdentifier: "barcodeScanner")
+        navigationController?.pushViewController(next, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         readFromDefault()
+        
+        
     }
 
     func alertWrongInput(){
@@ -99,6 +109,24 @@ class TakeVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func addItemToArray(item: String){
+        itemDescription.append(item)
+        print(itemDescription)
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return itemDescription.count
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DonationCellController
+        
+        cell.desc.text = itemDescription[indexPath.item]
+        
+        return cell
     }
     
 

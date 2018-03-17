@@ -4,13 +4,15 @@ import AVFoundation
 
 class BarCodeScannerController: UIViewController {
 
-    @IBOutlet var messageLabel:UILabel!
+    
+    @IBOutlet var messageLabel: UILabel!
     @IBOutlet var topbar: UIView!
     
     var captureSession = AVCaptureSession()
     
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
+    var qrString: String!
     
     private let supportedCodeTypes = [AVMetadataObject.ObjectType.upce,
                                       AVMetadataObject.ObjectType.code39,
@@ -70,7 +72,7 @@ class BarCodeScannerController: UIViewController {
         captureSession.startRunning()
         
         // Move the message label and top bar to the front
-        view.bringSubview(toFront: messageLabel)
+        
         view.bringSubview(toFront: topbar)
         
         // Initialize QR Code Frame to highlight the QR code
@@ -81,6 +83,22 @@ class BarCodeScannerController: UIViewController {
             qrCodeFrameView.layer.borderWidth = 2
             view.addSubview(qrCodeFrameView)
             view.bringSubview(toFront: qrCodeFrameView)
+        }
+    }
+    @IBAction func Done(_ sender: UIButton) {
+        if qrString != nil {
+            Data1.searchRequest(term: qrString) { json, error  in
+                if error == nil{
+                    let next = self.storyboard!.instantiateViewController(withIdentifier: "takeVC") as! TakeVC
+                    next.addItemToArray(item: (json?.description)!)
+                    self.show(next, sender: self)
+                }
+                if error != nil{
+                    self.messageLabel.text = "מוצר זה אינו ברשימה"
+                }
+                
+            }
+           
         }
     }
     
@@ -96,42 +114,48 @@ class BarCodeScannerController: UIViewController {
         if presentedViewController != nil {
             return
         }
-      
-//        let alert = UIAlertController(title: "מוצר שנסרק:", message: decodedURL, preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler:{(ok) in
-//            self.captureSession.stopRunning()
-//        }))
-//        show(alert, sender: self)
         
-        Data1.searchRequest(term: decodedURL) { json, error  in
-            print(error ?? "success")
-            print(json ?? "nil")
-            print("Update views")
-            
-        }
+        
+      
+        
+        print(decodedURL)
+        qrString = decodedURL
+        captureSession.stopRunning()
+        
+        
+        
+      
+
+     
         
     
         
 
-        let alertPrompt = UIAlertController(title: "מספר שנסרק:", message:decodedURL, preferredStyle: .actionSheet)
-        let confirmAction = UIAlertAction(title: "מסכים", style: .default, handler: {(confirm) in
-        /*
-            Data1.searchRequest(term: decodedURL) { json, error  in
-                if error != nil {
-                    
-                }else{
-                    
-                }
-            }
-          */
-        })
-
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
-
-        alertPrompt.addAction(confirmAction)
-        alertPrompt.addAction(cancelAction)
-
-        present(alertPrompt, animated: true, completion: nil)
+//        let alertPrompt = UIAlertController(title: "מספר שנסרק:", message:decodedURL, preferredStyle: .actionSheet)
+//        alertPrompt.addAction(UIAlertAction(title: "מסכים", style: .destructive, handler: {(confirm) in
+//
+//            Data1.searchRequest(term: decodedURL) { json, error  in
+//                if error == nil {
+//                    let next = self.storyboard!.instantiateViewController(withIdentifier: "takeVC") as! TakeVC
+//                    next.addItemToArray(item: (json?.description)!)
+//                    self.show(next, sender: confirm)
+//
+//
+//                }else if error != nil{
+//                    print(error)
+//
+//                    print("מוצר זה אינו ")
+//                }
+//            }
+//
+//        }))
+//
+//        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
+//
+//
+//        alertPrompt.addAction(cancelAction)
+//
+//        present(alertPrompt, animated: true, completion: nil)
     }
     
 }
