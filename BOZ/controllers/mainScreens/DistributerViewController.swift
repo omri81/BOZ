@@ -13,6 +13,10 @@ class DistributerViewController: UIViewController {
 
     var donations:[Package] = []
     
+    @IBAction func logout() {
+        let next = storyboard!.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
+        show(next, sender: self)
+    }
     
     
     override func viewDidLoad() {

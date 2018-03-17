@@ -12,6 +12,13 @@ import Alamofire
 
 class LoginVC: UIViewController {
 
+    @IBAction func back() {
+        let navigationController = self.presentingViewController as? UINavigationController
+        
+        self.dismiss(animated: true) {
+            let _ = navigationController?.popToRootViewController(animated: true)
+        }
+    }
     @IBOutlet weak var tokenTF: MyTextField!
     @IBOutlet weak var idNumberTF: MyTextField!
     private static let TO_REGISTER_VC = "toRegisterVC"
