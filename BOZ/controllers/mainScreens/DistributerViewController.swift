@@ -11,7 +11,7 @@ import Alamofire
 
 class DistributerViewController: UIViewController {
 
-    var donations:[[String:Any]] = []
+    var donations:[DonatorDetails] = []
     
     
     
@@ -64,9 +64,13 @@ class DistributerViewController: UIViewController {
                             guard let productList = d["productList"] as? [[String:Any]]
                                 else{return}
                             // initiate Donatordetails
+                            for p in productList {
+                                // do some..
+                            }
+                            let donation = DonatorDetails(idNumber: idNumber, name: name, famelyName: famelyName, phoneNumber: phoneNumber, address: address, latitude: latitude, longitude: longitude, productList: productList as! [DistributerViewController.DonatorDetails.Item])
                             // chanfe donations to be: [DonatorDetails]
                             //append the struct to donations
-                            self.donations.append(d)
+                            self.donations.append(donation)
                         }
                         
                         
@@ -82,30 +86,44 @@ class DistributerViewController: UIViewController {
 
 }
 
-public struct DonatorDetails {
-    let idNumber:String
-    let name:String
-    let famelyName:String
-    let phoneNumber:String
-    let address:String
-    let latitude:Double
-    let longitude:Double
-    init (
-        idNumber:String,
-        name:String,
-        famelyName:String,
-        phoneNumber:String,
-        address:String,
-        latitude:Double,
-        longitude:Double)
-    {
-        self.idNumber = idNumber
-        self.name = name
-        self.famelyName = famelyName
-        self.phoneNumber = phoneNumber
-        self.address = address
-        self.latitude = latitude
-        self.longitude = longitude
+extension DistributerViewController {
+    public struct DonatorDetails {
+        let idNumber:String
+        let name:String
+        let famelyName:String
+        let phoneNumber:String
+        let address:String
+        let latitude:Double
+        let longitude:Double
+        let productList:[Item]
+        init (
+            idNumber:String,
+            name:String,
+            famelyName:String,
+            phoneNumber:String,
+            address:String,
+            latitude:Double,
+            longitude:Double,
+            productList:[Item])
+        {
+            self.idNumber = idNumber
+            self.name = name
+            self.famelyName = famelyName
+            self.phoneNumber = phoneNumber
+            self.address = address
+            self.latitude = latitude
+            self.longitude = longitude
+            self.productList = productList
+        }
+        struct Item {
+            let title:String
+            let amount:Int
+            init (title:String,amount:Int)
+            {
+                self.title = title
+                self.amount = amount
+            }
+        }
     }
-}
 
+}
