@@ -45,7 +45,8 @@ class ProductListCVVC: UICollectionViewController {
         let parameters: Parameters = [
             "bookmark" : bookMark
         ]
-        let methodeUrl = "https://zeevtesthu.mybluemix.net/api/Milk/" + url
+        let baseUrl = "https://zeevtesthu.mybluemix.net/api/Milk/"
+        let methodeUrl = baseUrl + url
         Alamofire.request(methodeUrl, method: HTTPMethod.post , parameters: parameters ,
                           encoding: JSONEncoding.default, headers: [:])
             .validate(contentType: ["application/json"]).responseJSON { response in
@@ -75,7 +76,7 @@ class ProductListCVVC: UICollectionViewController {
                             var newProduct = DonationProduct()
                             newProduct.name = title
                             newProduct.description = description
-                            newProduct.image = methodeUrl + "GetImg/"+_id
+                            newProduct.image = baseUrl + "GetImg/"+_id
                             self.products.append(newProduct)
                         }
                         print("products are:\(self.products)")

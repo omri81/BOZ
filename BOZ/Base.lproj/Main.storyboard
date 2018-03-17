@@ -261,6 +261,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSm-7B-2s8">
                                 <rect key="frame" x="180" y="516" width="30" height="30"/>
                                 <state key="normal" title="שלח"/>
+                                <connections>
+                                    <action selector="doneClick" destination="079-2s-aS7" eventType="touchUpInside" id="u9O-YI-zLx"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="לעשות אלרט עם תודה  וחזרה למסך הראשי" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LAt-Se-LBk">
                                 <rect key="frame" x="55" y="569" width="240" height="128"/>
