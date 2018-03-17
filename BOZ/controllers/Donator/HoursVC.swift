@@ -99,7 +99,7 @@ class HoursVC: UIViewController {
                             return
                     }
                     if status == "OK" {
-                        print("login success")
+                        print("server success")
                         // self.alertSucess()
                         // make alert
                                                 
