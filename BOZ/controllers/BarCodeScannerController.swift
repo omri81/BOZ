@@ -107,6 +107,7 @@ class BarCodeScannerController: UIViewController {
             print(error ?? "success")
             print(json ?? "nil")
             print("Update views")
+            
         }
         
     
@@ -114,7 +115,7 @@ class BarCodeScannerController: UIViewController {
 
         let alertPrompt = UIAlertController(title: "מספר שנסרק:", message:decodedURL, preferredStyle: .actionSheet)
         let confirmAction = UIAlertAction(title: "מסכים", style: .default, handler: {(confirm) in
-            
+        /*
             Data1.searchRequest(term: decodedURL) { json, error  in
                 if error != nil {
                     
@@ -122,7 +123,7 @@ class BarCodeScannerController: UIViewController {
                     
                 }
             }
-            
+          */
         })
 
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)

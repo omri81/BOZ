@@ -25,9 +25,9 @@ class ProductListCVVC: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getPoducts(url: "GetProductListForDonators",bookMark: "")
+        //GetProductListForHelpless
         
-        
-
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -40,6 +40,56 @@ class ProductListCVVC: UICollectionViewController {
         cell.setCell(products[indexPath.row])
     
         return cell
+    }
+    public func getPoducts(url:String,bookMark:String) {
+        let parameters: Parameters = [
+            "bookmark" : bookMark
+        ]
+        let baseUrl = "https://zeevtesthu.mybluemix.net/api/Milk/"
+        let methodeUrl = baseUrl + url
+        Alamofire.request(methodeUrl, method: HTTPMethod.post , parameters: parameters ,
+                          encoding: JSONEncoding.default, headers: [:])
+            .validate(contentType: ["application/json"]).responseJSON { response in
+                // print("response: \(response)")
+                switch response.result {
+                case .success:
+                    print("sucess response from server")
+                    guard let responseJSON = response.result.value as? [String: Any],
+                        let status = responseJSON["status"] as? String,
+                        let statusMsg = responseJSON["statusMsg"] as? String
+                        else {
+                            print("server problem")
+                            return
+                    }
+                    if status == "OK" {
+                        print("login success")
+                        guard let docs = responseJSON["docs"] as? [[String:Any]]
+                            else {return}
+                        for d in docs {
+                            guard let _id = d["_id"] as? String,
+                            let _rev = d["_rev"] as? String,
+                            let title = d["title"] as? String,
+                            let description = d["description"]
+                                as? String
+                                // you can add  here more fileds
+                                else{return}
+                            var newProduct = DonationProduct()
+                            newProduct.name = title
+                            newProduct.description = description
+                            newProduct.image = baseUrl + "GetImg/"+_id
+                            self.products.append(newProduct)
+                        }
+                        print("products are:\(self.products)")
+                        self.collectionView?.reloadData()
+                        
+                    } else {
+                        print("server response: " + statusMsg)
+                    }
+                    
+                case .failure(let error):
+                    print("error:\(error)")
+                }
+        }
     }
 }
 
