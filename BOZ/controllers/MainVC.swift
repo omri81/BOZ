@@ -33,15 +33,6 @@ class MainVC: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         // first time user logs in, we store the privte key return from the server so next time we'll not ask credentials from the user and server and only inform the server for the login.
-        
-        let prefs = UserDefaults.standard
-        let privateToken = prefs.string(forKey: BaseViewController.PRIVATE_GUID)
-        if (privateToken != nil && privateToken != "")
-        {
-            print (privateToken!)
-            let next = storyboard!.instantiateViewController(withIdentifier: "toLoginVC") as! LoginVC
-            next.Login(id:"",token:"", withPrivateToken:true)
-        }
     }
     @IBAction func onBtnClicked(sender: UIButton){
         switch(sender.restorationIdentifier){

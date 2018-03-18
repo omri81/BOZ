@@ -25,8 +25,11 @@
 		9AFB82A82057F5A30099ABD5 /* BarCodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */; };
 		AD02E8D5204E93D5004D8DFC /* push.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D4204E93D5004D8DFC /* push.swift */; };
 		AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */; };
+		AD18979D205E49170020ADF2 /* DistributerMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18979C205E49170020ADF2 /* DistributerMainVC.swift */; };
 		AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */; };
 		AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */; };
+		AD5B0313205DE26100E740FE /* TasksWaitingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */; };
+		AD5B0315205DE5D900E740FE /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B0314205DE5D900E740FE /* Package.swift */; };
 		AD6C475B204F474600C9A115 /* DistributerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475A204F474600C9A115 /* DistributerViewController.swift */; };
 		AD6C475D204F476200C9A115 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475C204F476200C9A115 /* StorageViewController.swift */; };
 		AD6C475F204F477500C9A115 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475E204F477500C9A115 /* AdminViewController.swift */; };
@@ -40,6 +43,7 @@
 		AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */; };
 		AD9DFBCE205259FC00E4FE5B /* GetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */; };
 		AD9DFBD120525E4800E4FE5B /* EnableUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */; };
+		ADA546B1205D7E5200A27568 /* HelplessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA546B0205D7E5200A27568 /* HelplessVC.swift */; };
 		ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC49203E0BDC00457A61 /* MainViewController.swift */; };
 		ADB9EC52203E310A00457A61 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB9EC51203E310A00457A61 /* logo.gif */; };
 		ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */; };
@@ -107,8 +111,11 @@
 		9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerController.swift; sourceTree = "<group>"; };
 		AD02E8D4204E93D5004D8DFC /* push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = push.swift; sourceTree = "<group>"; };
 		AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Push_Init.swift; sourceTree = "<group>"; };
+		AD18979C205E49170020ADF2 /* DistributerMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerMainVC.swift; sourceTree = "<group>"; };
 		AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDonationViewController.swift; sourceTree = "<group>"; };
 		AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
+		AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksWaitingCell.swift; sourceTree = "<group>"; };
+		AD5B0314205DE5D900E740FE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		AD6C475A204F474600C9A115 /* DistributerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerViewController.swift; sourceTree = "<group>"; };
 		AD6C475C204F476200C9A115 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
 		AD6C475E204F477500C9A115 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +129,7 @@
 		AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorker.swift; sourceTree = "<group>"; };
 		AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsers.swift; sourceTree = "<group>"; };
 		AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableUsers.swift; sourceTree = "<group>"; };
+		ADA546B0205D7E5200A27568 /* HelplessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelplessVC.swift; sourceTree = "<group>"; };
 		ADB9EC49203E0BDC00457A61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB9EC51203E310A00457A61 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 		ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -298,10 +306,20 @@
 			path = Donator;
 			sourceTree = "<group>";
 		};
-		AD6C4759204F471E00C9A115 /* mainScreens */ = {
+		AD5B0311205DE20200E740FE /* distributer */ = {
 			isa = PBXGroup;
 			children = (
 				AD6C475A204F474600C9A115 /* DistributerViewController.swift */,
+				AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */,
+				AD5B0314205DE5D900E740FE /* Package.swift */,
+				AD18979C205E49170020ADF2 /* DistributerMainVC.swift */,
+			);
+			path = distributer;
+			sourceTree = "<group>";
+		};
+		AD6C4759204F471E00C9A115 /* mainScreens */ = {
+			isa = PBXGroup;
+			children = (
 				AD6C475C204F476200C9A115 /* StorageViewController.swift */,
 			);
 			path = mainScreens;
@@ -341,6 +359,7 @@
 		ADB9EC47203E0B5300457A61 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD5B0311205DE20200E740FE /* distributer */,
 				9A121A7C2059A48C00B6368C /* families */,
 				ADAAF38720518A7000F3883B /* Login */,
 				AD2F6A1F2050E88600D38E85 /* Donator */,
@@ -356,6 +375,7 @@
 				AD6C475E204F477500C9A115 /* AdminViewController.swift */,
 				FC12A1F32052A51C002912AD /* CrewEditCVVC.swift */,
 				9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */,
+				ADA546B0205D7E5200A27568 /* HelplessVC.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -648,8 +668,12 @@
 				9AA126CF205D490C0044B832 /* DonationCellController.swift in Sources */,
 				FC12A1F42052A51C002912AD /* CrewEditCVVC.swift in Sources */,
 				ADFA43B620567C8000D164F5 /* AddressVC.swift in Sources */,
+				ADA546B1205D7E5200A27568 /* HelplessVC.swift in Sources */,
+				AD18979D205E49170020ADF2 /* DistributerMainVC.swift in Sources */,
 				ADFA43B820568F1800D164F5 /* Constants.swift in Sources */,
 				ADFA43B220567AB600D164F5 /* HoursVC.swift in Sources */,
+				AD5B0315205DE5D900E740FE /* Package.swift in Sources */,
+				AD5B0313205DE26100E740FE /* TasksWaitingCell.swift in Sources */,
 				FC12A1F62052AC1A002912AD /* CrewCell.swift in Sources */,
 				9AFB82A82057F5A30099ABD5 /* BarCodeScannerController.swift in Sources */,
 				9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */,

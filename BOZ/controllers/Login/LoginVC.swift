@@ -12,12 +12,20 @@ import Alamofire
 
 class LoginVC: UIViewController {
 
+    @IBAction func back() {
+        let navigationController = self.presentingViewController as? UINavigationController
+        
+        self.dismiss(animated: true) {
+            let _ = navigationController?.popToRootViewController(animated: true)
+        }
+    }
     @IBOutlet weak var tokenTF: MyTextField!
     @IBOutlet weak var idNumberTF: MyTextField!
     private static let TO_REGISTER_VC = "toRegisterVC"
     private static let TO_ADMIN_VC = "toAdminVC"
-    private static let TO_DELIVERY_VC = "toDeliveryVC"
+    private static let TO_DELIVERY_VC = "toDistributerMainVC"
     private static let TO_STORAGE_VC = "toStorageVC"
+    private static let TO_HELPLESS_VC = "toHelplessVC"
     private let TO_REGISTRATION_VC = "toRegisterVC"
     
     
@@ -35,7 +43,7 @@ class LoginVC: UIViewController {
         var nextUI:UIViewController
         switch role {
         case "deistributer" :
-             nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_DELIVERY_VC) as! DistributerViewController
+             nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_DELIVERY_VC) as! DistributerMainVC
                 show(nextUI, sender: self)
             
         case "admin" :
@@ -45,8 +53,10 @@ class LoginVC: UIViewController {
         case "storeManager":
             nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_STORAGE_VC) as! StorageViewController
                 show(nextUI, sender: self)
-      //  case "helples":
-       //     performSegue(withIdentifier: LoginVC.TO_DELIVERY_VC, sender: self)
+        case "helples":
+            nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_HELPLESS_VC) as! HelplessVC
+            show(nextUI, sender: self)
+            
         default:
             alertServerProblem()
         }
@@ -153,7 +163,9 @@ class LoginVC: UIViewController {
                         }
                     if status == "OK" {
                         print("login success")
-                        guard let role = responseJSON["role"] as? String
+                        guard let role = responseJSON["role"] as? String,
+                        let _id = responseJSON["id"] as? String,
+                        let _rev = responseJSON["rev"] as? String
                         else {
                             self.alertServerProblem()
                             return
@@ -165,6 +177,9 @@ class LoginVC: UIViewController {
                             // store private token
                             if let privateToken = responseJSON["userGuid"] as? String {
                             prefs.set(privateToken, forKey: BaseViewController.PRIVATE_GUID)
+                            prefs.set(role, forKey: DONATOR_ROLE)
+                            prefs.set(_rev,forKey: DONATOR_REV )
+                            prefs.set(_id,forKey: DONATOR_IDNUMBER)
                             }
                                 else {
                                     self.alertServerProblem()
