@@ -17,17 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        //-----
-        //toDistributerMainVC
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController =  storyBoard.instantiateViewController(withIdentifier: "toDistributerMainVC") as! DistributerMainVC
-        self.window?.rootViewController = viewController
-        self.window?.makeKeyAndVisible()
+/*
         
-        window?.tintColor = themeColor
-        //------
-        /*
         let prefs = UserDefaults.standard
         let role = prefs.string(forKey: DONATOR_ROLE)
         

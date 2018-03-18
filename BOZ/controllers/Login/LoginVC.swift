@@ -23,7 +23,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var idNumberTF: MyTextField!
     private static let TO_REGISTER_VC = "toRegisterVC"
     private static let TO_ADMIN_VC = "toAdminVC"
-    private static let TO_DELIVERY_VC = "toDistributerMainVC"
+    private static let TO_DELIVERY_VC = "toDeliveryVC"
     private static let TO_STORAGE_VC = "toStorageVC"
     private static let TO_HELPLESS_VC = "toHelplessVC"
     private let TO_REGISTRATION_VC = "toRegisterVC"
@@ -43,7 +43,7 @@ class LoginVC: UIViewController {
         var nextUI:UIViewController
         switch role {
         case "deistributer" :
-             nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_DELIVERY_VC) as! DistributerMainVC
+             nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_DELIVERY_VC) as! DistributerViewController
                 show(nextUI, sender: self)
             
         case "admin" :

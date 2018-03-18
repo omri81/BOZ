@@ -9,7 +9,15 @@
 import UIKit
 import Alamofire
 
-class DistributerViewController: UICollectionViewController  {
+class DistributerViewController: UIViewController,UICollectionViewDataSource  {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
 
     var donations:[Package] = []
     
@@ -23,18 +31,6 @@ class DistributerViewController: UICollectionViewController  {
         let myId = prefs.string(forKey: DONATOR_IDNUMBER)
         // zohar: call to server getMy tasks(ID)
         // Do any additional setup after loading the view.
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return donations.count
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "waitingTasks", for: indexPath) as! TasksWaitingCell
-        
-        cell.setCellData(package: donations[indexPath.row])
-        
-        return cell
     }
     
     override func didReceiveMemoryWarning() {
@@ -91,7 +87,7 @@ class DistributerViewController: UICollectionViewController  {
                         }  // outer loop of docs
                         print("---------------------")
                         print(self.donations)
-                        self.collectionView?.reloadData()
+                      //  self.collectionView?.reloadData()
                     } else {
                         // status != "ok"
                         self.alertMsg(title: "בעיה בשרת", msg: "סליחה, קרתה שגיאה, נא לנסות שנית בבקשה.")
