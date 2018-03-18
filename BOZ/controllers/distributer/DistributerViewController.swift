@@ -9,22 +9,34 @@
 import UIKit
 import Alamofire
 
-class DistributerViewController: UIViewController {
+class DistributerViewController: UICollectionViewController  {
 
     var donations:[Package] = []
-    
-    @IBAction func logout() {
-        let next = storyboard!.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
-        show(next, sender: self)
-    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = #colorLiteral(red: 0, green: 0.9921568627, blue: 1, alpha: 0.1793931935)
+        
         getAllEmptyDestributer(bookmark: "")
+        let prefs = UserDefaults.standard
+        let myId = prefs.string(forKey: DONATOR_IDNUMBER)
+        // zohar: call to server getMy tasks(ID)
         // Do any additional setup after loading the view.
     }
 
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return donations.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "waitingTasks", for: indexPath) as! TasksWaitingCell
+        
+        cell.setCellData(package: donations[indexPath.row])
+        
+        return cell
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -79,6 +91,7 @@ class DistributerViewController: UIViewController {
                         }  // outer loop of docs
                         print("---------------------")
                         print(self.donations)
+                        self.collectionView?.reloadData()
                     } else {
                         // status != "ok"
                         self.alertMsg(title: "בעיה בשרת", msg: "סליחה, קרתה שגיאה, נא לנסות שנית בבקשה.")
@@ -87,48 +100,6 @@ class DistributerViewController: UIViewController {
                 case .failure(let error):
                     self.alertMsg(title: "בעיה בשרת", msg: "סליחה, קרתה שגיאה, נא לנסות שנית בבקשה.")
                 }
-        }
-    }
-
-}
-
-extension DistributerViewController {
-    public struct Package {
-        let idNumber:String
-        let name:String
-        let famelyName:String
-        let phoneNumber:String
-        let address:String
-        let latitude:Double
-        let longitude:Double
-        var itemList:[Item]
-        init (
-            idNumber:String,
-            name:String,
-            famelyName:String,
-            phoneNumber:String,
-            address:String,
-            latitude:Double,
-            longitude:Double,
-            itemList:[Item])
-        {
-            self.idNumber = idNumber
-            self.name = name
-            self.famelyName = famelyName
-            self.phoneNumber = phoneNumber
-            self.address = address
-            self.latitude = latitude
-            self.longitude = longitude
-            self.itemList = itemList
-        }
-    }
-    struct Item {
-        let title:String
-        let amount:Int
-        init (title:String,amount:Int)
-        {
-            self.title = title
-            self.amount = amount
         }
     }
 

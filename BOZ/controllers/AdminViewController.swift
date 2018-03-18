@@ -10,6 +10,10 @@ import UIKit
 
 class AdminViewController: UIViewController {
     
+    @IBAction func logout() {
+        let next = storyboard!.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
+        show(next, sender: self)
+    }
     private let CREW_EDIT_BTN = "crewEditBtn"
     private let BRANCH_EDIT_BTN = "branchEditBtn"
     private let PRODUCT_EDIT_BTN = "productEditBtn"

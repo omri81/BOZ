@@ -8,22 +8,26 @@
 
 import UIKit
 import CoreData
+let themeColor = UIColor(red: 0.01, green: 0.41, blue: 0.22, alpha: 1.0)
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    /*
-     let rootViewController = self.window!.rootViewController as!
-     UINavigationController
-     let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-     let profileViewController = mainStoryboard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-     rootViewController.pushViewController(profileViewController, animated: true)
-     
-     */
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        //-----
+        //toDistributerMainVC
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController =  storyBoard.instantiateViewController(withIdentifier: "toDistributerMainVC") as! DistributerMainVC
+        self.window?.rootViewController = viewController
+        self.window?.makeKeyAndVisible()
         
+        window?.tintColor = themeColor
+        //------
+        /*
         let prefs = UserDefaults.standard
         let role = prefs.string(forKey: DONATOR_ROLE)
         
@@ -47,9 +51,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         default:
             viewController = storyBoard.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
         }
+    
         self.window?.rootViewController = viewController
         self.window?.makeKeyAndVisible()
         
+        window?.tintColor = themeColor
+        */
         return true
         
     }
