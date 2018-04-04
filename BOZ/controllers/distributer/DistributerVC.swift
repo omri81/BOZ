@@ -9,13 +9,22 @@
 import UIKit
 import Alamofire
 
-class DistributerViewController: UIViewController,UICollectionViewDataSource  {
+class DistributerVC: UIViewController,UICollectionViewDataSource  {
+    
+    
+    @IBAction func logout(_ sender: Any) {
+        let mainVC = storyboard!.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
+        UIApplication.shared.keyWindow?.rootViewController = mainVC
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return donations.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+       let cell = UICollectionViewCell()
+    
+        return cell
     }
     
 
@@ -101,7 +110,7 @@ class DistributerViewController: UIViewController,UICollectionViewDataSource  {
 
 }
 
-extension DistributerViewController {
+extension DistributerVC {
     func alertMsg(title ttl:String,msg:String) {
         let alert = UIAlertController(
             title: ttl,

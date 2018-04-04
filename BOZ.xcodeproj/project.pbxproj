@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6D0B84C72057C361007FE670 /* Data1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B84C62057C361007FE670 /* Data1.swift */; };
 		82D92A8D8665A59C66E4D45C /* Pods_BOZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56D87A6385A089C9D413F05 /* Pods_BOZ.framework */; };
-		9A121A7E2059A4BA00B6368C /* AskDonationApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A121A7D2059A4BA00B6368C /* AskDonationApplicationController.swift */; };
+		9A121A7E2059A4BA00B6368C /* AskDonationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A121A7D2059A4BA00B6368C /* AskDonationVC.swift */; };
 		9A99C894203C93FA0057D607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C893203C93FA0057D607 /* AppDelegate.swift */; };
 		9A99C896203C93FA0057D607 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C895203C93FA0057D607 /* BaseViewController.swift */; };
 		9A99C899203C93FA0057D607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A99C897203C93FA0057D607 /* Main.storyboard */; };
@@ -25,14 +25,13 @@
 		9AFB82A82057F5A30099ABD5 /* BarCodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */; };
 		AD02E8D5204E93D5004D8DFC /* push.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D4204E93D5004D8DFC /* push.swift */; };
 		AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */; };
-		AD18979D205E49170020ADF2 /* DistributerMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18979C205E49170020ADF2 /* DistributerMainVC.swift */; };
 		AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */; };
 		AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */; };
 		AD5B0313205DE26100E740FE /* TasksWaitingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */; };
 		AD5B0315205DE5D900E740FE /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B0314205DE5D900E740FE /* Package.swift */; };
-		AD6C475B204F474600C9A115 /* DistributerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475A204F474600C9A115 /* DistributerViewController.swift */; };
+		AD6C475B204F474600C9A115 /* DistributerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475A204F474600C9A115 /* DistributerVC.swift */; };
 		AD6C475D204F476200C9A115 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475C204F476200C9A115 /* StorageViewController.swift */; };
-		AD6C475F204F477500C9A115 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475E204F477500C9A115 /* AdminViewController.swift */; };
+		AD6C475F204F477500C9A115 /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475E204F477500C9A115 /* AdminVC.swift */; };
 		AD81FFB4204067A2001CBFDA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB3204067A2001CBFDA /* ProductListViewController.swift */; };
 		AD81FFB620406FEE001CBFDA /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB520406FEE001CBFDA /* ProductCollectionViewCell.swift */; };
 		AD81FFB920407495001CBFDA /* MilkSubst.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB820407495001CBFDA /* MilkSubst.swift */; };
@@ -46,8 +45,11 @@
 		ADA546B1205D7E5200A27568 /* HelplessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA546B0205D7E5200A27568 /* HelplessVC.swift */; };
 		ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC49203E0BDC00457A61 /* MainViewController.swift */; };
 		ADB9EC52203E310A00457A61 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB9EC51203E310A00457A61 /* logo.gif */; };
+		ADBA26442074A960004B2639 /* AskDonationNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBA26432074A960004B2639 /* AskDonationNC.swift */; };
 		ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */; };
 		ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9823D203F2F74004BD58B /* AboutViewController.swift */; };
+		ADCFBBAF2070A380009EB6E8 /* AdminNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCFBBAE2070A380009EB6E8 /* AdminNC.swift */; };
+		ADCFBBB12070B1E8009EB6E8 /* DistributerNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCFBBB02070B1E8009EB6E8 /* DistributerNC.swift */; };
 		ADFA43B02056787D00D164F5 /* TakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA43AF2056787D00D164F5 /* TakeVC.swift */; };
 		ADFA43B220567AB600D164F5 /* HoursVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA43B120567AB600D164F5 /* HoursVC.swift */; };
 		ADFA43B420567AD200D164F5 /* BarCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA43B320567AD200D164F5 /* BarCodeVC.swift */; };
@@ -89,7 +91,7 @@
 /* Begin PBXFileReference section */
 		6D0B84C62057C361007FE670 /* Data1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data1.swift; sourceTree = "<group>"; };
 		989B71E47CDE8A953A937D13 /* Pods-BOZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOZ/Pods-BOZ.debug.xcconfig"; sourceTree = "<group>"; };
-		9A121A7D2059A4BA00B6368C /* AskDonationApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskDonationApplicationController.swift; sourceTree = "<group>"; };
+		9A121A7D2059A4BA00B6368C /* AskDonationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskDonationVC.swift; sourceTree = "<group>"; };
 		9A99C890203C93FA0057D607 /* BOZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A99C893203C93FA0057D607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A99C895203C93FA0057D607 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -111,14 +113,13 @@
 		9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerController.swift; sourceTree = "<group>"; };
 		AD02E8D4204E93D5004D8DFC /* push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = push.swift; sourceTree = "<group>"; };
 		AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Push_Init.swift; sourceTree = "<group>"; };
-		AD18979C205E49170020ADF2 /* DistributerMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerMainVC.swift; sourceTree = "<group>"; };
 		AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDonationViewController.swift; sourceTree = "<group>"; };
 		AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksWaitingCell.swift; sourceTree = "<group>"; };
 		AD5B0314205DE5D900E740FE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		AD6C475A204F474600C9A115 /* DistributerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerViewController.swift; sourceTree = "<group>"; };
+		AD6C475A204F474600C9A115 /* DistributerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerVC.swift; sourceTree = "<group>"; };
 		AD6C475C204F476200C9A115 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
-		AD6C475E204F477500C9A115 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		AD6C475E204F477500C9A115 /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
 		AD81FFB3204067A2001CBFDA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		AD81FFB520406FEE001CBFDA /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD81FFB820407495001CBFDA /* MilkSubst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkSubst.swift; sourceTree = "<group>"; };
@@ -132,8 +133,11 @@
 		ADA546B0205D7E5200A27568 /* HelplessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelplessVC.swift; sourceTree = "<group>"; };
 		ADB9EC49203E0BDC00457A61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB9EC51203E310A00457A61 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
+		ADBA26432074A960004B2639 /* AskDonationNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskDonationNC.swift; sourceTree = "<group>"; };
 		ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		ADC9823D203F2F74004BD58B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		ADCFBBAE2070A380009EB6E8 /* AdminNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminNC.swift; sourceTree = "<group>"; };
+		ADCFBBB02070B1E8009EB6E8 /* DistributerNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerNC.swift; sourceTree = "<group>"; };
 		ADFA43AF2056787D00D164F5 /* TakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeVC.swift; sourceTree = "<group>"; };
 		ADFA43B120567AB600D164F5 /* HoursVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursVC.swift; sourceTree = "<group>"; };
 		ADFA43B320567AD200D164F5 /* BarCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeVC.swift; sourceTree = "<group>"; };
@@ -197,7 +201,8 @@
 		9A121A7C2059A48C00B6368C /* families */ = {
 			isa = PBXGroup;
 			children = (
-				9A121A7D2059A4BA00B6368C /* AskDonationApplicationController.swift */,
+				9A121A7D2059A4BA00B6368C /* AskDonationVC.swift */,
+				ADBA26432074A960004B2639 /* AskDonationNC.swift */,
 			);
 			path = families;
 			sourceTree = "<group>";
@@ -263,15 +268,17 @@
 			path = BOZUITests;
 			sourceTree = "<group>";
 		};
-		9AA2B38A20508BB00042E03E /* AdminControllers */ = {
+		9AA2B38A20508BB00042E03E /* Admin */ = {
 			isa = PBXGroup;
 			children = (
 				AD9DFBCF20525AF900E4FE5B /* Helpers */,
+				AD6C475E204F477500C9A115 /* AdminVC.swift */,
 				9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */,
 				9AA2B38F20508E030042E03E /* SystemChangesController.swift */,
 				9AA2B38B20508C080042E03E /* AddWorkerController.swift */,
+				ADCFBBAE2070A380009EB6E8 /* AdminNC.swift */,
 			);
-			path = AdminControllers;
+			path = Admin;
 			sourceTree = "<group>";
 		};
 		A1CEEB6EC4773F9F2F23CF94 /* Frameworks */ = {
@@ -309,10 +316,10 @@
 		AD5B0311205DE20200E740FE /* distributer */ = {
 			isa = PBXGroup;
 			children = (
-				AD6C475A204F474600C9A115 /* DistributerViewController.swift */,
+				AD6C475A204F474600C9A115 /* DistributerVC.swift */,
 				AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */,
 				AD5B0314205DE5D900E740FE /* Package.swift */,
-				AD18979C205E49170020ADF2 /* DistributerMainVC.swift */,
+				ADCFBBB02070B1E8009EB6E8 /* DistributerNC.swift */,
 			);
 			path = distributer;
 			sourceTree = "<group>";
@@ -363,7 +370,7 @@
 				9A121A7C2059A48C00B6368C /* families */,
 				ADAAF38720518A7000F3883B /* Login */,
 				AD2F6A1F2050E88600D38E85 /* Donator */,
-				9AA2B38A20508BB00042E03E /* AdminControllers */,
+				9AA2B38A20508BB00042E03E /* Admin */,
 				AD6C4759204F471E00C9A115 /* mainScreens */,
 				ADC67FE1204DA6AC009BD328 /* registration */,
 				FC9FB370204866A500A3B508 /* oldControllers */,
@@ -372,7 +379,6 @@
 				FCC458382045C6B900A89CDE /* MainVC.swift */,
 				FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */,
 				FC9FB3712048670600A3B508 /* ProductListCVVC.swift */,
-				AD6C475E204F477500C9A115 /* AdminViewController.swift */,
 				FC12A1F32052A51C002912AD /* CrewEditCVVC.swift */,
 				9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */,
 				ADA546B0205D7E5200A27568 /* HelplessVC.swift */,
@@ -647,7 +653,8 @@
 				FCC458392045C6B900A89CDE /* MainVC.swift in Sources */,
 				FCC458372045B5D300A89CDE /* GifImageView.swift in Sources */,
 				AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */,
-				AD6C475B204F474600C9A115 /* DistributerViewController.swift in Sources */,
+				AD6C475B204F474600C9A115 /* DistributerVC.swift in Sources */,
+				ADBA26442074A960004B2639 /* AskDonationNC.swift in Sources */,
 				FC9FB36F2047223500A3B508 /* BranchListCVVC.swift in Sources */,
 				AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */,
 				AD6C475D204F476200C9A115 /* StorageViewController.swift in Sources */,
@@ -669,7 +676,6 @@
 				FC12A1F42052A51C002912AD /* CrewEditCVVC.swift in Sources */,
 				ADFA43B620567C8000D164F5 /* AddressVC.swift in Sources */,
 				ADA546B1205D7E5200A27568 /* HelplessVC.swift in Sources */,
-				AD18979D205E49170020ADF2 /* DistributerMainVC.swift in Sources */,
 				ADFA43B820568F1800D164F5 /* Constants.swift in Sources */,
 				ADFA43B220567AB600D164F5 /* HoursVC.swift in Sources */,
 				AD5B0315205DE5D900E740FE /* Package.swift in Sources */,
@@ -684,16 +690,18 @@
 				FC9FB36D2047196500A3B508 /* Branch.swift in Sources */,
 				ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */,
 				9AA2B38C20508C080042E03E /* AddWorkerController.swift in Sources */,
-				9A121A7E2059A4BA00B6368C /* AskDonationApplicationController.swift in Sources */,
+				9A121A7E2059A4BA00B6368C /* AskDonationVC.swift in Sources */,
+				ADCFBBAF2070A380009EB6E8 /* AdminNC.swift in Sources */,
 				AD81FFB4204067A2001CBFDA /* ProductListViewController.swift in Sources */,
 				ADFA43B420567AD200D164F5 /* BarCodeVC.swift in Sources */,
+				ADCFBBB12070B1E8009EB6E8 /* DistributerNC.swift in Sources */,
 				AD02E8D5204E93D5004D8DFC /* push.swift in Sources */,
 				AD81FFB620406FEE001CBFDA /* ProductCollectionViewCell.swift in Sources */,
 				FC9FB36720470F3F00A3B508 /* BranchCell.swift in Sources */,
 				AD89F4AD2057230D00E96174 /* jsonMilkSubst.swift in Sources */,
 				FC9FB37A2049990F00A3B508 /* LoginVC.swift in Sources */,
 				FC12A1F82052B1D1002912AD /* Crew.swift in Sources */,
-				AD6C475F204F477500C9A115 /* AdminViewController.swift in Sources */,
+				AD6C475F204F477500C9A115 /* AdminVC.swift in Sources */,
 				AD81FFBD20407706001CBFDA /* DataStore.swift in Sources */,
 				FC9FB3642045F69200A3B508 /* DonationVC.swift in Sources */,
 			);

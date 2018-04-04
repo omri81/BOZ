@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-/*
+
         
         let prefs = UserDefaults.standard
         let role = prefs.string(forKey: DONATOR_ROLE)
@@ -25,29 +25,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         
-        var viewController:UIViewController
-        
         switch(role) {
+            
         case "admin"?:
-            viewController =  storyBoard.instantiateViewController(withIdentifier: "toAdminVC") as! AdminViewController
+           let mainNC =  storyBoard.instantiateViewController(withIdentifier: "toAdminNC") as! AdminNC
+           self.window?.rootViewController = mainNC
             
         case "deistributer"?:
-            viewController = storyBoard.instantiateViewController(withIdentifier: "toDeliveryVC") as! DistributerViewController
+           let mainNC = storyBoard.instantiateViewController(withIdentifier: "toDistributerNC") as! DistributerNC
+            self.window?.rootViewController = mainNC
             
         case "helples"?:
-            viewController =  storyBoard.instantiateViewController(withIdentifier: "toHelplessVC") as! HelplessVC
+           let mainVC =  storyBoard.instantiateViewController(withIdentifier: "toAskDonationNC") as! AskDonationNC
+            self.window?.rootViewController = mainVC
             
         case .none:
-            viewController = storyBoard.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
+           let mainVC = storyBoard.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
+            self.window?.rootViewController = mainVC
+            
         default:
-            viewController = storyBoard.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
+          let  mainVC = storyBoard.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
+            self.window?.rootViewController = mainVC
         }
-    
-        self.window?.rootViewController = viewController
         self.window?.makeKeyAndVisible()
-        
         window?.tintColor = themeColor
-        */
         return true
         
     }

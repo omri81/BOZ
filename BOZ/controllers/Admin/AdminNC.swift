@@ -1,18 +1,19 @@
 //
-//  AskDonationApplicationController.swift
+//  AdimnNC.swift
 //  BOZ
 //
-//  Created by MacMini on 14/03/2018.
+//  Created by user134028 on 4/1/18.
 //  Copyright © 2018 Ovadia. All rights reserved.
 //
 
 import UIKit
 
-class AskDonationApplicationController: UIViewController {
+class AdminNC: UINavigationController {
 
-    @IBOutlet var webView: UIWebView!
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,11 +8,12 @@
 
 import UIKit
 
-class AdminViewController: UIViewController {
+class AdminVC: UIViewController {
+
     
     @IBAction func logout() {
-        let next = storyboard!.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
-        show(next, sender: self)
+        let mainVC = storyboard!.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
+        UIApplication.shared.keyWindow?.rootViewController = mainVC
     }
     private let CREW_EDIT_BTN = "crewEditBtn"
     private let BRANCH_EDIT_BTN = "branchEditBtn"
