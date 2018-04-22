@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6D0B84C72057C361007FE670 /* Data1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B84C62057C361007FE670 /* Data1.swift */; };
 		82D92A8D8665A59C66E4D45C /* Pods_BOZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56D87A6385A089C9D413F05 /* Pods_BOZ.framework */; };
-		9A121A7E2059A4BA00B6368C /* AskDonationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A121A7D2059A4BA00B6368C /* AskDonationVC.swift */; };
+		9A121A7E2059A4BA00B6368C /* HelplessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A121A7D2059A4BA00B6368C /* HelplessVC.swift */; };
 		9A99C894203C93FA0057D607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C893203C93FA0057D607 /* AppDelegate.swift */; };
 		9A99C896203C93FA0057D607 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C895203C93FA0057D607 /* BaseViewController.swift */; };
 		9A99C899203C93FA0057D607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A99C897203C93FA0057D607 /* Main.storyboard */; };
@@ -43,10 +43,9 @@
 		AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */; };
 		AD9DFBCE205259FC00E4FE5B /* GetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */; };
 		AD9DFBD120525E4800E4FE5B /* EnableUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */; };
-		ADA546B1205D7E5200A27568 /* HelplessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA546B0205D7E5200A27568 /* HelplessVC.swift */; };
 		ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC49203E0BDC00457A61 /* MainViewController.swift */; };
 		ADB9EC52203E310A00457A61 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB9EC51203E310A00457A61 /* logo.gif */; };
-		ADBA26442074A960004B2639 /* AskDonationNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBA26432074A960004B2639 /* AskDonationNC.swift */; };
+		ADBA26442074A960004B2639 /* HelplessNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBA26432074A960004B2639 /* HelplessNC.swift */; };
 		ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */; };
 		ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9823D203F2F74004BD58B /* AboutViewController.swift */; };
 		ADCFBBAF2070A380009EB6E8 /* AdminNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCFBBAE2070A380009EB6E8 /* AdminNC.swift */; };
@@ -92,7 +91,7 @@
 /* Begin PBXFileReference section */
 		6D0B84C62057C361007FE670 /* Data1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data1.swift; sourceTree = "<group>"; };
 		989B71E47CDE8A953A937D13 /* Pods-BOZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOZ/Pods-BOZ.debug.xcconfig"; sourceTree = "<group>"; };
-		9A121A7D2059A4BA00B6368C /* AskDonationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskDonationVC.swift; sourceTree = "<group>"; };
+		9A121A7D2059A4BA00B6368C /* HelplessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelplessVC.swift; sourceTree = "<group>"; };
 		9A99C890203C93FA0057D607 /* BOZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A99C893203C93FA0057D607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A99C895203C93FA0057D607 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -132,10 +131,9 @@
 		AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorker.swift; sourceTree = "<group>"; };
 		AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsers.swift; sourceTree = "<group>"; };
 		AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableUsers.swift; sourceTree = "<group>"; };
-		ADA546B0205D7E5200A27568 /* HelplessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelplessVC.swift; sourceTree = "<group>"; };
 		ADB9EC49203E0BDC00457A61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB9EC51203E310A00457A61 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
-		ADBA26432074A960004B2639 /* AskDonationNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskDonationNC.swift; sourceTree = "<group>"; };
+		ADBA26432074A960004B2639 /* HelplessNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelplessNC.swift; sourceTree = "<group>"; };
 		ADC67FE4204DB54E009BD328 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		ADC9823D203F2F74004BD58B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		ADCFBBAE2070A380009EB6E8 /* AdminNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminNC.swift; sourceTree = "<group>"; };
@@ -200,13 +198,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9A121A7C2059A48C00B6368C /* families */ = {
+		9A121A7C2059A48C00B6368C /* helpless */ = {
 			isa = PBXGroup;
 			children = (
-				9A121A7D2059A4BA00B6368C /* AskDonationVC.swift */,
-				ADBA26432074A960004B2639 /* AskDonationNC.swift */,
+				9A121A7D2059A4BA00B6368C /* HelplessVC.swift */,
+				ADBA26432074A960004B2639 /* HelplessNC.swift */,
 			);
-			path = families;
+			path = helpless;
 			sourceTree = "<group>";
 		};
 		9A99C887203C93FA0057D607 = {
@@ -371,7 +369,7 @@
 				AD5105C6208C539B003FFA66 /* Storage */,
 				AD2F6A1F2050E88600D38E85 /* Donator */,
 				AD5B0311205DE20200E740FE /* distributer */,
-				9A121A7C2059A48C00B6368C /* families */,
+				9A121A7C2059A48C00B6368C /* helpless */,
 				ADAAF38720518A7000F3883B /* Login */,
 				AD9DFBCF20525AF900E4FE5B /* Helpers */,
 				9AA2B38A20508BB00042E03E /* Admin */,
@@ -380,11 +378,9 @@
 				AD81FFB720407447001CBFDA /* productCollection */,
 				ADB9EC48203E0B6900457A61 /* basecontroller */,
 				FCC458382045C6B900A89CDE /* MainVC.swift */,
-				FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */,
 				FC9FB3712048670600A3B508 /* ProductListCVVC.swift */,
 				FC12A1F32052A51C002912AD /* CrewEditCVVC.swift */,
 				9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */,
-				ADA546B0205D7E5200A27568 /* HelplessVC.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -392,6 +388,7 @@
 		ADB9EC48203E0B6900457A61 /* basecontroller */ = {
 			isa = PBXGroup;
 			children = (
+				FC9FB36E2047223400A3B508 /* BranchListCVVC.swift */,
 				9A99C895203C93FA0057D607 /* BaseViewController.swift */,
 			);
 			path = basecontroller;
@@ -657,7 +654,7 @@
 				FCC458372045B5D300A89CDE /* GifImageView.swift in Sources */,
 				AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */,
 				AD6C475B204F474600C9A115 /* DistributerVC.swift in Sources */,
-				ADBA26442074A960004B2639 /* AskDonationNC.swift in Sources */,
+				ADBA26442074A960004B2639 /* HelplessNC.swift in Sources */,
 				FC9FB36F2047223500A3B508 /* BranchListCVVC.swift in Sources */,
 				AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */,
 				AD6C475D204F476200C9A115 /* StorageVC.swift in Sources */,
@@ -678,7 +675,6 @@
 				9AA126CF205D490C0044B832 /* DonationCellController.swift in Sources */,
 				FC12A1F42052A51C002912AD /* CrewEditCVVC.swift in Sources */,
 				ADFA43B620567C8000D164F5 /* AddressVC.swift in Sources */,
-				ADA546B1205D7E5200A27568 /* HelplessVC.swift in Sources */,
 				ADFA43B820568F1800D164F5 /* Constants.swift in Sources */,
 				ADFA43B220567AB600D164F5 /* HoursVC.swift in Sources */,
 				AD5B0315205DE5D900E740FE /* Package.swift in Sources */,
@@ -694,7 +690,7 @@
 				ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */,
 				AD5105C8208C5B45003FFA66 /* StorageNC.swift in Sources */,
 				9AA2B38C20508C080042E03E /* AddWorkerController.swift in Sources */,
-				9A121A7E2059A4BA00B6368C /* AskDonationVC.swift in Sources */,
+				9A121A7E2059A4BA00B6368C /* HelplessVC.swift in Sources */,
 				ADCFBBAF2070A380009EB6E8 /* AdminNC.swift in Sources */,
 				AD81FFB4204067A2001CBFDA /* ProductListViewController.swift in Sources */,
 				ADFA43B420567AD200D164F5 /* BarCodeVC.swift in Sources */,

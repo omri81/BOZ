@@ -20,6 +20,7 @@ class MainVC: UIViewController {
     
     private let ABOUT_BTN = "aboutBtn"
     private let LOGIN_BTN = "loginBtn"
+    private let LOGOUT_BTN = "logoutBtn"
     private let QUICK_DONATION_BTN = "quickDonationBtn"
     private let ASK_DONATION_BTN = "askDonationBtn"
     private let PHONE_BTN = "phoneBtn"
@@ -41,6 +42,9 @@ class MainVC: UIViewController {
                 performSegue(withIdentifier: TO_ABOUT_VC, sender: self)
             case LOGIN_BTN?:
                 performSegue(withIdentifier: TO_LOGIN_VC, sender: self)
+        case LOGOUT_BTN?:
+            dismiss(animated: true, completion: nil)
+            
             case QUICK_DONATION_BTN?:
                 performSegue(withIdentifier: TO_QUICK_DONATION_VC, sender: self)
                 
@@ -113,7 +117,7 @@ class MainVC: UIViewController {
                             prefs.set(privateToken, forKey: BaseViewController.PRIVATE_GUID)
                             prefs.set(role, forKey: DONATOR_ROLE)
                             
-                            let mainVC =  self.storyboard?.instantiateViewController(withIdentifier: "toAskDonationNC") as! AskDonationNC
+                            let mainVC =  self.storyboard?.instantiateViewController(withIdentifier: "toHelplessNC") as! HelplessNC
                             self.show(mainVC, sender: self)
                             
                         } else

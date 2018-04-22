@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AskDonationVC: UIViewController {
+class HelplessVC: UIViewController {
 
     @IBAction func logout() {
         let mainVC = storyboard!.instantiateViewController(withIdentifier: "toMainVC") as! MainVC

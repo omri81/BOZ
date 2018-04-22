@@ -396,22 +396,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Qhr-nP-vwk">
-                                <rect key="frame" x="0.0" y="24" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="24" width="375" height="754"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osf-bZ-sn9" userLabel="section1">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="215.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="244.66666666666666"/>
                                         <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NG6-Xc-H1s" userLabel="section2">
-                                        <rect key="frame" x="0.0" y="215.66666666666663" width="375" height="235.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="244.66666666666666" width="375" height="264.66666666666674"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2B-ZQ-1oJ" userLabel="section3">
-                                        <rect key="frame" x="0.0" y="451.33333333333331" width="375" height="215.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="509.33333333333343" width="375" height="244.66666666666669"/>
                                         <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -423,24 +423,24 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="8HY-Ns-q4Q">
-                                <rect key="frame" x="54.666666666666657" y="332" width="266" height="71"/>
+                                <rect key="frame" x="54.666666666666657" y="332" width="266" height="158"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="LBt-bJ-6ue" userLabel="img1">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="71"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="158"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="71" id="40N-o8-bAc"/>
                                             <constraint firstAttribute="width" constant="68" id="Byc-qf-Q1X"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omri" translatesAutoresizingMaskIntoConstraints="NO" id="vSZ-AA-dA3" userLabel="img2">
-                                        <rect key="frame" x="99" y="0.0" width="68" height="71"/>
+                                        <rect key="frame" x="99" y="0.0" width="68" height="158"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="68" id="0lT-en-edc"/>
                                             <constraint firstAttribute="height" constant="71" id="agM-fY-Ig0"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zohar" translatesAutoresizingMaskIntoConstraints="NO" id="L7q-Lf-Px9" userLabel="img3">
-                                        <rect key="frame" x="198" y="0.0" width="68" height="71"/>
+                                        <rect key="frame" x="198" y="0.0" width="68" height="158"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="68" id="DBB-1s-lzm"/>
                                             <constraint firstAttribute="height" constant="71" id="lqo-x3-MwF"/>
@@ -1284,7 +1284,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Izz-wE-BhM">
-                                        <rect key="frame" x="0.0" y="155" width="335" height="80"/>
+                                        <rect key="frame" x="0.0" y="155" width="335" height="186.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" restorationIdentifier="loginBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSX-GX-NHy">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
@@ -1306,13 +1306,19 @@
                                                     <action selector="onClickedWithSender:" destination="WL9-93-xcu" eventType="touchUpInside" id="bW9-CG-v3C"/>
                                                 </connections>
                                             </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="users: admin123 store123 delivery123 helpless123  password: 123  " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="94l-Mw-ROp">
+                                                <rect key="frame" x="0.0" y="80" width="335" height="106.66666666666669"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bLx-Qx-p4F">
-                                        <rect key="frame" x="0.0" y="280" width="317.33333333333331" height="296"/>
+                                        <rect key="frame" x="0.0" y="386.66666666666663" width="317.33333333333331" height="189.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" restorationIdentifier="registerBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x72-BS-RfQ">
-                                                <rect key="frame" x="0.0" y="256" width="164" height="40"/>
+                                                <rect key="frame" x="0.0" y="149.33333333333337" width="164" height="40"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="gGV-SE-32A"/>
@@ -1332,7 +1338,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="עדיין לא נרשמתם?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nN-Tw-Ba9">
-                                                <rect key="frame" x="174" y="270" width="143.33333333333337" height="26"/>
+                                                <rect key="frame" x="174" y="163.33333333333337" width="143.33333333333337" height="26"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1425,10 +1431,10 @@
             </objects>
             <point key="canvasLocation" x="-4903.1999999999998" y="2499.7536945812808"/>
         </scene>
-        <!--Ask DonationVC-->
+        <!--HelplessVC-->
         <scene sceneID="1Ph-8K-y66">
             <objects>
-                <viewController storyboardIdentifier="toAskDonationVC" id="8wx-WA-1FF" customClass="AskDonationVC" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toAskDonationVC" id="8wx-WA-1FF" customClass="HelplessVC" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQJ-dI-DD0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1458,10 +1464,10 @@
             </objects>
             <point key="canvasLocation" x="-2730.4000000000001" y="2231.5270935960593"/>
         </scene>
-        <!--MainVC-->
+        <!--מסך ראשי-->
         <scene sceneID="Zvk-mM-4pL">
             <objects>
-                <viewController storyboardIdentifier="toMainVC" id="3UE-c6-eqe" customClass="MainVC" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toMainVC" title="מסך ראשי" id="3UE-c6-eqe" customClass="MainVC" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hoe-GT-OY4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1471,100 +1477,118 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaT-YU-BB6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.4392658390410959" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="416-Rj-Nhg">
-                                <rect key="frame" x="307" y="44" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="416-Rj-Nhg" secondAttribute="height" multiplier="1:1" id="ePD-r2-UCe"/>
-                                    <constraint firstAttribute="height" constant="60" id="l67-h3-RAw"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="aboutBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ryh-nB-kVe">
-                                <rect key="frame" x="189" y="44" width="118" height="60"/>
-                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.14528039383561644" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
-                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
-                                <state key="normal">
-                                    <string key="title">הבנק החברתי
-למזון תינוקות</string>
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="lYB-W5-74m"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="loginBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6e-pw-uzk">
-                                <rect key="frame" x="8" y="44" width="139" height="34"/>
-                                <color key="backgroundColor" red="0.13534801411555555" green="0.49416805309166673" blue="0.71183268229166663" alpha="0.37548159246575341" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                                <state key="normal" title="התחברות למערכת">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.30375107020547948" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="B2L-MM-xqo"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="dHh-rZ-2En">
-                                <rect key="frame" x="8" y="179" width="359" height="321"/>
                                 <subviews>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" restorationIdentifier="quickDonationBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNL-5P-bQQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="150"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696061643838" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="uwa-d7-glW"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
-                                        <state key="normal" title="תרומה מהירה">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="loginBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6e-pw-uzk">
+                                        <rect key="frame" x="8" y="54" width="139" height="34"/>
+                                        <color key="backgroundColor" red="0.13534801411555555" green="0.49416805309166673" blue="0.71183268229166663" alpha="0.37548159246575341" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="התחברות למערכת">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.30375107020547948" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="xvS-EC-pPe"/>
+                                            <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="B2L-MM-xqo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" restorationIdentifier="askDonationBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K0-Zl-RQD">
-                                        <rect key="frame" x="0.0" y="171" width="359" height="150"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
-                                        <state key="normal" title="בקשה למזון תינוקות">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="E6m-Vq-aru"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAf-YT-1Re">
+                                        <rect key="frame" x="189" y="41" width="178" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="aboutBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ryh-nB-kVe">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="60"/>
+                                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.14528039383561644" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <string key="title">הבנק החברתי
+למזון תינוקות</string>
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="lYB-W5-74m"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="416-Rj-Nhg">
+                                                <rect key="frame" x="118" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="416-Rj-Nhg" secondAttribute="height" multiplier="1:1" id="ePD-r2-UCe"/>
+                                                    <constraint firstAttribute="height" constant="60" id="l67-h3-RAw"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.4392658390410959" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="qNL-5P-bQQ" firstAttribute="leading" secondItem="dHh-rZ-2En" secondAttribute="leading" id="G3l-Om-QgO"/>
-                                    <constraint firstAttribute="trailing" secondItem="qNL-5P-bQQ" secondAttribute="trailing" id="KFz-u0-QuB"/>
+                                    <constraint firstAttribute="trailing" secondItem="gAf-YT-1Re" secondAttribute="trailing" constant="8" id="4ZJ-QT-QgP"/>
+                                    <constraint firstItem="q6e-pw-uzk" firstAttribute="centerY" secondItem="gAf-YT-1Re" secondAttribute="centerY" id="BKA-Jz-5kc"/>
+                                    <constraint firstItem="q6e-pw-uzk" firstAttribute="leading" secondItem="LaT-YU-BB6" secondAttribute="leading" constant="8" id="HlU-FU-0PA"/>
+                                    <constraint firstItem="gAf-YT-1Re" firstAttribute="top" secondItem="LaT-YU-BB6" secondAttribute="top" constant="41" id="aBd-MC-L1G"/>
                                 </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="dHh-rZ-2En">
+                                <rect key="frame" x="8" y="127" width="359" height="230"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Iq3-eG-2uH">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="230"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" restorationIdentifier="quickDonationBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNL-5P-bQQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="100"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696061643838" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="fDQ-N4-Cj6"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="uwa-d7-glW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
+                                                <state key="normal" title="תרומה מהירה">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="xvS-EC-pPe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" restorationIdentifier="askDonationBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K0-Zl-RQD">
+                                                <rect key="frame" x="0.0" y="130" width="359" height="100"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34484696059999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="37"/>
+                                                <state key="normal" title="בקשה למזון תינוקות">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onBtnClickedWithSender:" destination="3UE-c6-eqe" eventType="touchUpInside" id="E6m-Vq-aru"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8K0-Zl-RQD" firstAttribute="height" secondItem="qNL-5P-bQQ" secondAttribute="height" id="ZkE-oN-uXS"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="facebookBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg5-uJ-GFv">
                                 <rect key="frame" x="8" y="688" width="70" height="70"/>
@@ -1584,7 +1608,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="websiteBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20S-ew-e9g">
-                                <rect key="frame" x="93.666666666666671" y="704" width="187.33333333333331" height="38"/>
+                                <rect key="frame" x="94" y="704" width="187" height="38"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.35129494863013699" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
                                 <state key="normal" title="www.2help.org.il">
@@ -1623,27 +1647,19 @@
                             <constraint firstItem="20S-ew-e9g" firstAttribute="centerX" secondItem="Hoe-GT-OY4" secondAttribute="centerX" id="33T-Z5-kmH"/>
                             <constraint firstItem="CvM-uk-SgO" firstAttribute="trailing" secondItem="Igv-oG-Nls" secondAttribute="trailing" constant="8" id="4St-DQ-m6I"/>
                             <constraint firstItem="CvM-uk-SgO" firstAttribute="bottom" secondItem="Igv-oG-Nls" secondAttribute="bottom" constant="20" id="DGV-tT-lPS"/>
-                            <constraint firstItem="ryh-nB-kVe" firstAttribute="height" secondItem="416-Rj-Nhg" secondAttribute="height" id="DTc-Fy-GNV"/>
                             <constraint firstItem="vg5-uJ-GFv" firstAttribute="leading" secondItem="CvM-uk-SgO" secondAttribute="leading" constant="8" id="HxJ-hY-KPo"/>
-                            <constraint firstItem="CvM-uk-SgO" firstAttribute="trailing" secondItem="416-Rj-Nhg" secondAttribute="trailing" constant="8" id="Iby-77-wyD"/>
                             <constraint firstItem="LaT-YU-BB6" firstAttribute="centerY" secondItem="Hoe-GT-OY4" secondAttribute="centerY" id="LL0-OS-ERr"/>
                             <constraint firstItem="20S-ew-e9g" firstAttribute="width" secondItem="Hoe-GT-OY4" secondAttribute="width" multiplier="50%" id="N4U-kF-IlU"/>
-                            <constraint firstItem="q6e-pw-uzk" firstAttribute="leading" secondItem="CvM-uk-SgO" secondAttribute="leading" constant="8" id="P50-R1-Rbb"/>
                             <constraint firstItem="LaT-YU-BB6" firstAttribute="centerX" secondItem="Hoe-GT-OY4" secondAttribute="centerX" id="QTr-p6-SuD"/>
-                            <constraint firstItem="ryh-nB-kVe" firstAttribute="top" secondItem="416-Rj-Nhg" secondAttribute="top" id="R1V-h4-ggr"/>
-                            <constraint firstItem="q6e-pw-uzk" firstAttribute="top" secondItem="CvM-uk-SgO" secondAttribute="top" id="Ufl-b6-evQ"/>
-                            <constraint firstItem="dHh-rZ-2En" firstAttribute="top" secondItem="ryh-nB-kVe" secondAttribute="bottom" constant="75" id="btZ-Pd-sAY"/>
-                            <constraint firstItem="416-Rj-Nhg" firstAttribute="leading" secondItem="ryh-nB-kVe" secondAttribute="trailing" id="e6t-Cl-vOw"/>
                             <constraint firstAttribute="bottom" secondItem="dzz-TN-PrH" secondAttribute="bottom" id="fal-Py-qJj"/>
                             <constraint firstItem="dzz-TN-PrH" firstAttribute="top" secondItem="Hoe-GT-OY4" secondAttribute="top" id="ffh-HI-END"/>
                             <constraint firstItem="dzz-TN-PrH" firstAttribute="leading" secondItem="Hoe-GT-OY4" secondAttribute="leading" id="gS8-6p-8On"/>
                             <constraint firstItem="CvM-uk-SgO" firstAttribute="bottom" secondItem="vg5-uJ-GFv" secondAttribute="bottom" constant="20" id="giG-Q4-6BX"/>
                             <constraint firstItem="dzz-TN-PrH" firstAttribute="trailing" secondItem="CvM-uk-SgO" secondAttribute="trailing" id="h45-iR-hK5"/>
                             <constraint firstItem="dHh-rZ-2En" firstAttribute="leading" secondItem="CvM-uk-SgO" secondAttribute="leading" constant="8" id="hwS-lh-TEn"/>
-                            <constraint firstItem="416-Rj-Nhg" firstAttribute="top" secondItem="CvM-uk-SgO" secondAttribute="top" id="kuc-rE-Cec"/>
+                            <constraint firstItem="dHh-rZ-2En" firstAttribute="top" secondItem="ryh-nB-kVe" secondAttribute="bottom" constant="26" id="kZ2-vf-xAD"/>
                             <constraint firstItem="LaT-YU-BB6" firstAttribute="height" secondItem="dzz-TN-PrH" secondAttribute="height" id="vch-TT-W1H"/>
                             <constraint firstItem="20S-ew-e9g" firstAttribute="centerY" secondItem="vg5-uJ-GFv" secondAttribute="centerY" id="wDa-E4-hO1"/>
-                            <constraint firstItem="CvM-uk-SgO" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="dHh-rZ-2En" secondAttribute="bottom" constant="278" id="yWP-8r-b1V"/>
                             <constraint firstItem="CvM-uk-SgO" firstAttribute="trailing" secondItem="dHh-rZ-2En" secondAttribute="trailing" constant="8" id="zfI-VA-leu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CvM-uk-SgO"/>
@@ -2502,10 +2518,10 @@
             </objects>
             <point key="canvasLocation" x="-724" y="780"/>
         </scene>
-        <!--Ask DonationNC-->
+        <!--HelplessNC-->
         <scene sceneID="3tM-31-p3v">
             <objects>
-                <navigationController storyboardIdentifier="toAskDonationNC" automaticallyAdjustsScrollViewInsets="NO" id="Kud-Ti-hKy" customClass="AskDonationNC" customModule="BOZ" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="toHelplessNC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kud-Ti-hKy" customClass="HelplessNC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="69f-bF-D9a">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>

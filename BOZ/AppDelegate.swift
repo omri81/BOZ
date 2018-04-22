@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = mainNC
             
         case "helples"?:
-           let mainVC =  storyBoard.instantiateViewController(withIdentifier: "toAskDonationNC") as! AskDonationNC
+           let mainVC =  storyBoard.instantiateViewController(withIdentifier: "toHelplessNC") as! HelplessNC
             self.window?.rootViewController = mainVC
             
         case .none:

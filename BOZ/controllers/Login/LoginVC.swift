@@ -25,7 +25,7 @@ class LoginVC: UIViewController {
     private static let TO_ADMIN_VC = "toAdminNC"
     private static let TO_DELIVERY_VC = "toDistributerNC"
     private static let TO_STORAGE_VC = "toStorageNC"
-    private static let TO_HELPLESS_VC = "toHelplessVC"
+    private static let TO_HELPLESS_VC = "toHelplessNC"
     private let TO_REGISTRATION_VC = "toRegisterVC"
     
     
@@ -54,7 +54,7 @@ class LoginVC: UIViewController {
             nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_STORAGE_VC) as! StorageNC
                 show(nextUI, sender: self)
         case "helples":
-            nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_HELPLESS_VC) as! HelplessVC
+            nextUI = storyboard!.instantiateViewController(withIdentifier: LoginVC.TO_HELPLESS_VC) as! HelplessNC
             show(nextUI, sender: self)
             
         default:

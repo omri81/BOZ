@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AskDonationNC: UINavigationController {
+class HelplessNC: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
