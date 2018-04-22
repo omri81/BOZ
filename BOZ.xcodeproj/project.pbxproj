@@ -27,10 +27,11 @@
 		AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */; };
 		AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */; };
 		AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */; };
+		AD5105C8208C5B45003FFA66 /* StorageNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5105C7208C5B45003FFA66 /* StorageNC.swift */; };
 		AD5B0313205DE26100E740FE /* TasksWaitingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */; };
 		AD5B0315205DE5D900E740FE /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B0314205DE5D900E740FE /* Package.swift */; };
 		AD6C475B204F474600C9A115 /* DistributerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475A204F474600C9A115 /* DistributerVC.swift */; };
-		AD6C475D204F476200C9A115 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475C204F476200C9A115 /* StorageViewController.swift */; };
+		AD6C475D204F476200C9A115 /* StorageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475C204F476200C9A115 /* StorageVC.swift */; };
 		AD6C475F204F477500C9A115 /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475E204F477500C9A115 /* AdminVC.swift */; };
 		AD81FFB4204067A2001CBFDA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB3204067A2001CBFDA /* ProductListViewController.swift */; };
 		AD81FFB620406FEE001CBFDA /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB520406FEE001CBFDA /* ProductCollectionViewCell.swift */; };
@@ -115,10 +116,11 @@
 		AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Push_Init.swift; sourceTree = "<group>"; };
 		AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDonationViewController.swift; sourceTree = "<group>"; };
 		AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
+		AD5105C7208C5B45003FFA66 /* StorageNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageNC.swift; sourceTree = "<group>"; };
 		AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksWaitingCell.swift; sourceTree = "<group>"; };
 		AD5B0314205DE5D900E740FE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		AD6C475A204F474600C9A115 /* DistributerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerVC.swift; sourceTree = "<group>"; };
-		AD6C475C204F476200C9A115 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
+		AD6C475C204F476200C9A115 /* StorageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageVC.swift; sourceTree = "<group>"; };
 		AD6C475E204F477500C9A115 /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
 		AD81FFB3204067A2001CBFDA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		AD81FFB520406FEE001CBFDA /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -271,7 +273,6 @@
 		9AA2B38A20508BB00042E03E /* Admin */ = {
 			isa = PBXGroup;
 			children = (
-				AD9DFBCF20525AF900E4FE5B /* Helpers */,
 				AD6C475E204F477500C9A115 /* AdminVC.swift */,
 				9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */,
 				9AA2B38F20508E030042E03E /* SystemChangesController.swift */,
@@ -313,6 +314,15 @@
 			path = Donator;
 			sourceTree = "<group>";
 		};
+		AD5105C6208C539B003FFA66 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				AD6C475C204F476200C9A115 /* StorageVC.swift */,
+				AD5105C7208C5B45003FFA66 /* StorageNC.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		AD5B0311205DE20200E740FE /* distributer */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,14 +332,6 @@
 				ADCFBBB02070B1E8009EB6E8 /* DistributerNC.swift */,
 			);
 			path = distributer;
-			sourceTree = "<group>";
-		};
-		AD6C4759204F471E00C9A115 /* mainScreens */ = {
-			isa = PBXGroup;
-			children = (
-				AD6C475C204F476200C9A115 /* StorageViewController.swift */,
-			);
-			path = mainScreens;
 			sourceTree = "<group>";
 		};
 		AD81FFB720407447001CBFDA /* productCollection */ = {
@@ -366,12 +368,13 @@
 		ADB9EC47203E0B5300457A61 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD5105C6208C539B003FFA66 /* Storage */,
+				AD2F6A1F2050E88600D38E85 /* Donator */,
 				AD5B0311205DE20200E740FE /* distributer */,
 				9A121A7C2059A48C00B6368C /* families */,
 				ADAAF38720518A7000F3883B /* Login */,
-				AD2F6A1F2050E88600D38E85 /* Donator */,
+				AD9DFBCF20525AF900E4FE5B /* Helpers */,
 				9AA2B38A20508BB00042E03E /* Admin */,
-				AD6C4759204F471E00C9A115 /* mainScreens */,
 				ADC67FE1204DA6AC009BD328 /* registration */,
 				FC9FB370204866A500A3B508 /* oldControllers */,
 				AD81FFB720407447001CBFDA /* productCollection */,
@@ -657,7 +660,7 @@
 				ADBA26442074A960004B2639 /* AskDonationNC.swift in Sources */,
 				FC9FB36F2047223500A3B508 /* BranchListCVVC.swift in Sources */,
 				AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */,
-				AD6C475D204F476200C9A115 /* StorageViewController.swift in Sources */,
+				AD6C475D204F476200C9A115 /* StorageVC.swift in Sources */,
 				ADFA43B02056787D00D164F5 /* TakeVC.swift in Sources */,
 				6D0B84C72057C361007FE670 /* Data1.swift in Sources */,
 				FC9FB3722048670600A3B508 /* ProductListCVVC.swift in Sources */,
@@ -689,6 +692,7 @@
 				9A99C894203C93FA0057D607 /* AppDelegate.swift in Sources */,
 				FC9FB36D2047196500A3B508 /* Branch.swift in Sources */,
 				ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */,
+				AD5105C8208C5B45003FFA66 /* StorageNC.swift in Sources */,
 				9AA2B38C20508C080042E03E /* AddWorkerController.swift in Sources */,
 				9A121A7E2059A4BA00B6368C /* AskDonationVC.swift in Sources */,
 				ADCFBBAF2070A380009EB6E8 /* AdminNC.swift in Sources */,

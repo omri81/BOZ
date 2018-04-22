@@ -1,14 +1,14 @@
 //
-//  StoreManagerViewController.swift
+//  StorageNC.swift
 //  BOZ
 //
-//  Created by user134028 on 3/6/18.
+//  Created by user134028 on 4/22/18.
 //  Copyright © 2018 Ovadia. All rights reserved.
 //
 
 import UIKit
 
-class StorageViewController: UIViewController {
+class StorageNC: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

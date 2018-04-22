@@ -35,6 +35,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
            let mainNC = storyBoard.instantiateViewController(withIdentifier: "toDistributerNC") as! DistributerNC
             self.window?.rootViewController = mainNC
             
+        case "storeManager"?:
+            let mainNC = storyBoard.instantiateViewController(withIdentifier: "toStorageNC") as! StorageNC
+            self.window?.rootViewController = mainNC
+            
         case "helples"?:
            let mainVC =  storyBoard.instantiateViewController(withIdentifier: "toAskDonationNC") as! AskDonationNC
             self.window?.rootViewController = mainVC
