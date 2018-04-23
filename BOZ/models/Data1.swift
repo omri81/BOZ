@@ -32,6 +32,7 @@ class Data1 {
                         let status = responseJSON["status"] as? String,
                         let statusMsg = responseJSON["statusMsg"] as? String
                         else {return}
+                    print ("\(responseJSON)")
                     if status == "OK" {
                         print("retrive success")
                         guard let _id = responseJSON["id"] as? String,
@@ -46,6 +47,7 @@ class Data1 {
                             let title = responseJSON["title"] as? String,
                             let age = responseJSON["age"] as? String
                         else {return}
+                        
                         Data1.mainQueue.async {
                             let barcodeResult = Doc.Product(
                                 _id: _id,
@@ -62,7 +64,23 @@ class Data1 {
                             closure((barcodeResult) , nil)
                         }
                         
-                        } // later also a bookmark
+                    }else{
+                        Data1.mainQueue.async {
+                            let barcodeResult = Doc.Product(
+                                _id: nil,
+                                _rev: nil,
+                                cosher: nil,
+                                amount: 0,
+                                description: "מוצר זה אינו ברשימה",
+                                manufacter: nil,
+                                qr: nil,
+                                spaciel: nil,
+                                stage: nil,
+                                title: nil,
+                                age: nil)
+                            closure((barcodeResult) , nil)
+                        }
+                } // later also a bookmark
                 } // switch
             } // redponse
     }; // function closure
