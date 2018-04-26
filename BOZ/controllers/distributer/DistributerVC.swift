@@ -12,6 +12,7 @@ import Alamofire
 class DistributerVC: UIViewController,UICollectionViewDataSource  {
     
     
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBAction func logout(_ sender: Any) {
         let mainVC = storyboard!.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
         UIApplication.shared.keyWindow?.rootViewController = mainVC
@@ -22,11 +23,15 @@ class DistributerVC: UIViewController,UICollectionViewDataSource  {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-       let cell = UICollectionViewCell()
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DistributerCell
+        
+        cell.addressLB.text = donations[indexPath.item].address
+        cell.nameLB.text = donations[indexPath.item].famelyName
+        cell.phoneLB.text = donations[indexPath.item].phoneNumber
+        
         return cell
     }
-    
+
 
     var donations:[Package] = []
     
@@ -96,7 +101,7 @@ class DistributerVC: UIViewController,UICollectionViewDataSource  {
                         }  // outer loop of docs
                         print("---------------------")
                         print(self.donations)
-                      //  self.collectionView?.reloadData()
+                        self.collectionView.reloadData()
                     } else {
                         // status != "ok"
                         self.alertMsg(title: "בעיה בשרת", msg: "סליחה, קרתה שגיאה, נא לנסות שנית בבקשה.")

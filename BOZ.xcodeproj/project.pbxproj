@@ -27,6 +27,7 @@
 		AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */; };
 		AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */; };
 		AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */; };
+		AD420EFE2091E526006FC183 /* DistributerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD420EFD2091E526006FC183 /* DistributerCell.swift */; };
 		AD5105C8208C5B45003FFA66 /* StorageNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5105C7208C5B45003FFA66 /* StorageNC.swift */; };
 		AD5B0313205DE26100E740FE /* TasksWaitingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */; };
 		AD5B0315205DE5D900E740FE /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B0314205DE5D900E740FE /* Package.swift */; };
@@ -115,6 +116,7 @@
 		AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Push_Init.swift; sourceTree = "<group>"; };
 		AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDonationViewController.swift; sourceTree = "<group>"; };
 		AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
+		AD420EFD2091E526006FC183 /* DistributerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerCell.swift; sourceTree = "<group>"; };
 		AD5105C7208C5B45003FFA66 /* StorageNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageNC.swift; sourceTree = "<group>"; };
 		AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksWaitingCell.swift; sourceTree = "<group>"; };
 		AD5B0314205DE5D900E740FE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */,
 				AD5B0314205DE5D900E740FE /* Package.swift */,
 				ADCFBBB02070B1E8009EB6E8 /* DistributerNC.swift */,
+				AD420EFD2091E526006FC183 /* DistributerCell.swift */,
 			);
 			path = distributer;
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 				FC9FB36F2047223500A3B508 /* BranchListCVVC.swift in Sources */,
 				AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */,
 				AD6C475D204F476200C9A115 /* StorageVC.swift in Sources */,
+				AD420EFE2091E526006FC183 /* DistributerCell.swift in Sources */,
 				ADFA43B02056787D00D164F5 /* TakeVC.swift in Sources */,
 				6D0B84C72057C361007FE670 /* Data1.swift in Sources */,
 				FC9FB3722048670600A3B508 /* ProductListCVVC.swift in Sources */,
