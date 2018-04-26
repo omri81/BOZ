@@ -85,22 +85,8 @@ class BarCodeScannerController: UIViewController {
             view.bringSubview(toFront: qrCodeFrameView)
         }
     }
-    @IBAction func Done(_ sender: UIButton) {
-        if qrString != nil {
-            Data1.searchRequest(term: qrString) { json, error  in
-                if error == nil{
-                    let next = self.storyboard!.instantiateViewController(withIdentifier: "takeVC") as! TakeVC
-                    next.addItemToArray(item: (json?.description)!)
-                    self.show(next, sender: self)
-                }
-                if error != nil{
-                    self.messageLabel.text = "מוצר זה אינו ברשימה"
-                }
-                
-            }
-           
-        }
-    }
+   
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -181,6 +167,25 @@ extension BarCodeScannerController: AVCaptureMetadataOutputObjectsDelegate {
             if metadataObj.stringValue != nil {
                 launchApp(decodedURL: metadataObj.stringValue!)
                 messageLabel.text = metadataObj.stringValue
+                if qrString != nil {
+                    Data1.searchRequest(term: qrString) { json, error  in
+                        print(json ?? "no json")
+                        if json?.description == "מוצר זה אינו ברשימה"{
+                            print(json ?? "no json")
+                            self.messageLabel.text = "מוצר זה אינו ברשימה"
+                            self.captureSession.startRunning()
+                        }
+                        else{
+                            let next = self.storyboard!.instantiateViewController(withIdentifier: "takeVC") as! TakeVC
+                            next.addItemToArray(item: (json?.description)!)
+                            self.show(next, sender: self)
+                        }
+                        
+                        
+                    }
+                    
+                }
+                
             }
         }
     }
