@@ -2,11 +2,16 @@
 import UIKit
 import AVFoundation
 
+protocol ScannerDelegate{
+    func addItemToArray(item: String)
+}
+
 class BarCodeScannerController: UIViewController {
 
     
     @IBOutlet var messageLabel: UILabel!
     @IBOutlet var topbar: UIView!
+    var delegate: ScannerDelegate?
     
     var captureSession = AVCaptureSession()
     
@@ -176,9 +181,11 @@ extension BarCodeScannerController: AVCaptureMetadataOutputObjectsDelegate {
                             self.captureSession.startRunning()
                         }
                         else{
-                            let next = self.storyboard!.instantiateViewController(withIdentifier: "takeVC") as! TakeVC
-                            next.addItemToArray(item: (json?.description)!)
-                            self.show(next, sender: self)
+//                            let next = self.storyboard!.instantiateViewController(withIdentifier: "takeVC") as! TakeVC
+//                            next.addItemToArray(item: (json?.description)!)
+//                            self.show(next, sender: self)
+                            self.delegate?.addItemToArray(item: (json?.description)!)
+                            self.navigationController?.popViewController(animated: true)
                         }
                         
                         

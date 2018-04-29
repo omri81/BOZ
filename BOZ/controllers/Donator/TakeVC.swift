@@ -9,7 +9,9 @@
 import UIKit
 import  Alamofire
 
-class TakeVC: UIViewController, UICollectionViewDataSource {
+class TakeVC: UIViewController, UICollectionViewDataSource, ScannerDelegate {
+   
+    
 
     @IBOutlet var collectionView: UICollectionView!
     private var longtitude:Double!
@@ -23,7 +25,8 @@ class TakeVC: UIViewController, UICollectionViewDataSource {
     var itemScanned:[String] = []
     
     @IBAction func toScan(_ sender: Any) {
-        let next = storyboard!.instantiateViewController(withIdentifier: "barcodeScanner")
+        let next = storyboard!.instantiateViewController(withIdentifier: "barcodeScanner") as! BarCodeScannerController
+        next.delegate = self
         navigationController?.pushViewController(next, animated: true)
     }
     override func viewDidLoad() {
@@ -112,11 +115,16 @@ class TakeVC: UIViewController, UICollectionViewDataSource {
     }
     
     func addItemToArray(item: String){
+        if(!itemDescription.contains(item)){
         itemDescription.append(item)
         print(itemDescription)
-        
+        collectionView.reloadData()
+        }else{
+            //add 1 to counter
+        }
+
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return itemDescription.count
         
