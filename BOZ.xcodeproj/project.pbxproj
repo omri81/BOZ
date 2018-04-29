@@ -326,13 +326,29 @@
 		AD5B0311205DE20200E740FE /* distributer */ = {
 			isa = PBXGroup;
 			children = (
-				AD6C475A204F474600C9A115 /* DistributerVC.swift */,
-				AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */,
+				AD6F98612095CEB7003EFCDF /* MyTasks */,
+				AD6F98602095CE85003EFCDF /* WaitingToDelivery */,
 				AD5B0314205DE5D900E740FE /* Package.swift */,
 				ADCFBBB02070B1E8009EB6E8 /* DistributerNC.swift */,
-				AD420EFD2091E526006FC183 /* DistributerCell.swift */,
 			);
 			path = distributer;
+			sourceTree = "<group>";
+		};
+		AD6F98602095CE85003EFCDF /* WaitingToDelivery */ = {
+			isa = PBXGroup;
+			children = (
+				AD6C475A204F474600C9A115 /* DistributerVC.swift */,
+				AD420EFD2091E526006FC183 /* DistributerCell.swift */,
+			);
+			path = WaitingToDelivery;
+			sourceTree = "<group>";
+		};
+		AD6F98612095CEB7003EFCDF /* MyTasks */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */,
+			);
+			path = MyTasks;
 			sourceTree = "<group>";
 		};
 		AD81FFB720407447001CBFDA /* productCollection */ = {
