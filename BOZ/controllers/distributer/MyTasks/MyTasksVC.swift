@@ -1,16 +1,17 @@
 //
-//  DistributerViewController.swift
+//  TasksVC.swift
 //  BOZ
 //
-//  Created by user134028 on 3/6/18.
+//  Created by user134028 on 4/29/18.
 //  Copyright © 2018 Ovadia. All rights reserved.
 //
 
 import UIKit
 import Alamofire
 
-class DistributerVC: UIViewController,UICollectionViewDataSource  {
-    
+class MyTasksVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+
+     var donations:[Package] = []
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBAction func logout(_ sender: Any) {
@@ -23,24 +24,23 @@ class DistributerVC: UIViewController,UICollectionViewDataSource  {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DistributerCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MyTasksCell
         
         cell.addressLB.text = donations[indexPath.item].address
         cell.nameLB.text = donations[indexPath.item].famelyName
-        cell.phoneLB.text = donations[indexPath.item].phoneNumber
         
         return cell
     }
-
-
-    var donations:[Package] = []
+    
+    
+   
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0, green: 0.9921568627, blue: 1, alpha: 0.1793931935)
         
-        getAllEmptyDestributer(bookmark: "")
+        getMyTasks(bookmark: "")
         let prefs = UserDefaults.standard
         let myId = prefs.string(forKey: DONATOR_IDNUMBER)
         // zohar: call to server getMy tasks(ID)
@@ -52,7 +52,7 @@ class DistributerVC: UIViewController,UICollectionViewDataSource  {
         // Dispose of any resources that can be recreated.
     }
     
-    func getAllEmptyDestributer(bookmark:String)
+    func getMyTasks(bookmark:String)
     {
         let parameters : Parameters = [
             "bookmark": bookmark
@@ -77,7 +77,7 @@ class DistributerVC: UIViewController,UICollectionViewDataSource  {
                     if status == "OK" {
                         print("retrived success")
                         guard let docs = responseJSON["docs"] as? [[String:Any]]
-                        else {return}
+                            else {return}
                         for d in docs{
                             guard let idNumber = d["idNumber"] as? String ,
                                 let name = d["name"] as? String ,
@@ -112,10 +112,10 @@ class DistributerVC: UIViewController,UICollectionViewDataSource  {
                 }
         }
     }
-
+    
 }
 
-extension DistributerVC {
+extension MyTasksVC {
     func alertMsg(title ttl:String,msg:String) {
         let alert = UIAlertController(
             title: ttl,

@@ -3,6 +3,20 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "DistributerVC.collectionView(_:didSelectItemAt:):DistributerVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "personalView">
+            </PersistentString>
+            <PersistentString
+               value = "cell.isSelected">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DistributerVC.filterBtn(_:):DistributerVC.swift">
+      </ContextState>
+      <ContextState
          contextName = "DistributerVC.collectionView(_:cellForItemAt:):DistributerVC.swift">
          <PersistentStrings>
             <PersistentString

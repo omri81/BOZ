@@ -25,6 +25,8 @@
 		9AFB82A82057F5A30099ABD5 /* BarCodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */; };
 		AD02E8D5204E93D5004D8DFC /* push.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D4204E93D5004D8DFC /* push.swift */; };
 		AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */; };
+		AD0708EB20961FA80082DC64 /* MyTasksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0708EA20961FA80082DC64 /* MyTasksVC.swift */; };
+		AD0708ED20961FF40082DC64 /* MyTasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0708EC20961FF40082DC64 /* MyTasksCell.swift */; };
 		AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */; };
 		AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */; };
 		AD420EFE2091E526006FC183 /* DistributerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD420EFD2091E526006FC183 /* DistributerCell.swift */; };
@@ -34,6 +36,8 @@
 		AD6C475B204F474600C9A115 /* DistributerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475A204F474600C9A115 /* DistributerVC.swift */; };
 		AD6C475D204F476200C9A115 /* StorageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475C204F476200C9A115 /* StorageVC.swift */; };
 		AD6C475F204F477500C9A115 /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475E204F477500C9A115 /* AdminVC.swift */; };
+		AD706D622097006600AAFBEC /* waitingToDelivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD706D612097006600AAFBEC /* waitingToDelivery.swift */; };
+		AD706D642097007E00AAFBEC /* myTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD706D632097007E00AAFBEC /* myTasks.swift */; };
 		AD81FFB4204067A2001CBFDA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB3204067A2001CBFDA /* ProductListViewController.swift */; };
 		AD81FFB620406FEE001CBFDA /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB520406FEE001CBFDA /* ProductCollectionViewCell.swift */; };
 		AD81FFB920407495001CBFDA /* MilkSubst.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFB820407495001CBFDA /* MilkSubst.swift */; };
@@ -114,6 +118,8 @@
 		9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerController.swift; sourceTree = "<group>"; };
 		AD02E8D4204E93D5004D8DFC /* push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = push.swift; sourceTree = "<group>"; };
 		AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Push_Init.swift; sourceTree = "<group>"; };
+		AD0708EA20961FA80082DC64 /* MyTasksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksVC.swift; sourceTree = "<group>"; };
+		AD0708EC20961FF40082DC64 /* MyTasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksCell.swift; sourceTree = "<group>"; };
 		AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDonationViewController.swift; sourceTree = "<group>"; };
 		AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		AD420EFD2091E526006FC183 /* DistributerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerCell.swift; sourceTree = "<group>"; };
@@ -123,6 +129,8 @@
 		AD6C475A204F474600C9A115 /* DistributerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerVC.swift; sourceTree = "<group>"; };
 		AD6C475C204F476200C9A115 /* StorageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageVC.swift; sourceTree = "<group>"; };
 		AD6C475E204F477500C9A115 /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
+		AD706D612097006600AAFBEC /* waitingToDelivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waitingToDelivery.swift; sourceTree = "<group>"; };
+		AD706D632097007E00AAFBEC /* myTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTasks.swift; sourceTree = "<group>"; };
 		AD81FFB3204067A2001CBFDA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		AD81FFB520406FEE001CBFDA /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD81FFB820407495001CBFDA /* MilkSubst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkSubst.swift; sourceTree = "<group>"; };
@@ -326,27 +334,31 @@
 		AD5B0311205DE20200E740FE /* distributer */ = {
 			isa = PBXGroup;
 			children = (
-				AD6F98612095CEB7003EFCDF /* MyTasks */,
-				AD6F98602095CE85003EFCDF /* WaitingToDelivery */,
 				AD5B0314205DE5D900E740FE /* Package.swift */,
 				ADCFBBB02070B1E8009EB6E8 /* DistributerNC.swift */,
+				AD6C475A204F474600C9A115 /* DistributerVC.swift */,
+				AD420EFD2091E526006FC183 /* DistributerCell.swift */,
+				AD6F98602095CE85003EFCDF /* callToServer */,
+				AD6F98612095CEB7003EFCDF /* MyTasks */,
 			);
 			path = distributer;
 			sourceTree = "<group>";
 		};
-		AD6F98602095CE85003EFCDF /* WaitingToDelivery */ = {
+		AD6F98602095CE85003EFCDF /* callToServer */ = {
 			isa = PBXGroup;
 			children = (
-				AD6C475A204F474600C9A115 /* DistributerVC.swift */,
-				AD420EFD2091E526006FC183 /* DistributerCell.swift */,
+				AD706D612097006600AAFBEC /* waitingToDelivery.swift */,
+				AD706D632097007E00AAFBEC /* myTasks.swift */,
 			);
-			path = WaitingToDelivery;
+			path = callToServer;
 			sourceTree = "<group>";
 		};
 		AD6F98612095CEB7003EFCDF /* MyTasks */ = {
 			isa = PBXGroup;
 			children = (
 				AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */,
+				AD0708EA20961FA80082DC64 /* MyTasksVC.swift */,
+				AD0708EC20961FF40082DC64 /* MyTasksCell.swift */,
 			);
 			path = MyTasks;
 			sourceTree = "<group>";
@@ -670,6 +682,7 @@
 			files = (
 				9A99C89C203C93FA0057D607 /* BOZ.xcdatamodeld in Sources */,
 				FCC458392045C6B900A89CDE /* MainVC.swift in Sources */,
+				AD0708EB20961FA80082DC64 /* MyTasksVC.swift in Sources */,
 				FCC458372045B5D300A89CDE /* GifImageView.swift in Sources */,
 				AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */,
 				AD6C475B204F474600C9A115 /* DistributerVC.swift in Sources */,
@@ -679,7 +692,9 @@
 				AD6C475D204F476200C9A115 /* StorageVC.swift in Sources */,
 				AD420EFE2091E526006FC183 /* DistributerCell.swift in Sources */,
 				ADFA43B02056787D00D164F5 /* TakeVC.swift in Sources */,
+				AD0708ED20961FF40082DC64 /* MyTasksCell.swift in Sources */,
 				6D0B84C72057C361007FE670 /* Data1.swift in Sources */,
+				AD706D622097006600AAFBEC /* waitingToDelivery.swift in Sources */,
 				FC9FB3722048670600A3B508 /* ProductListCVVC.swift in Sources */,
 				ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */,
 				AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */,
@@ -713,6 +728,7 @@
 				9A121A7E2059A4BA00B6368C /* HelplessVC.swift in Sources */,
 				ADCFBBAF2070A380009EB6E8 /* AdminNC.swift in Sources */,
 				AD81FFB4204067A2001CBFDA /* ProductListViewController.swift in Sources */,
+				AD706D642097007E00AAFBEC /* myTasks.swift in Sources */,
 				ADFA43B420567AD200D164F5 /* BarCodeVC.swift in Sources */,
 				ADCFBBB12070B1E8009EB6E8 /* DistributerNC.swift in Sources */,
 				AD02E8D5204E93D5004D8DFC /* push.swift in Sources */,

@@ -10,10 +10,23 @@ import UIKit
 
 class DistributerCell: UICollectionViewCell {
     
+    @IBAction func phoneCall() {
+        
+    }
+    @IBAction func gotoWaze() {
+    }
+    
+    @IBAction func myTasksBtn(_ sender: UIButton) {
+        
+    }
+    @IBAction func assigBtn(_ sender: UIButton) {
+    }
     @IBOutlet weak var nameLB: UILabel!
     @IBOutlet weak var addressLB: UILabel!
-    @IBOutlet weak var phoneLB: UILabel!
-    override var isSelected: Bool{
+    @IBOutlet weak var dayLB: UILabel!
+    @IBOutlet weak var hourLB: UILabel!
+  /*
+     override var isSelected: Bool{
         didSet{
             if self.isSelected
             {
@@ -27,4 +40,5 @@ class DistributerCell: UICollectionViewCell {
             }
         }
     }
+   */
 }
