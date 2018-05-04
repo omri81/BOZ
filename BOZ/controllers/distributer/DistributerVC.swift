@@ -36,6 +36,7 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             alertMsg(title: "שיבוץ", msg: "בחר יעדים לשיבוץ")
         } else {
             //call to server , pass selected array and set it to []
+            alertMsg(title: "selectedItems",msg: "\(selectedItems.count)")
         }
     }
     
@@ -56,60 +57,38 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             myTasks[indexPath.item].address : donations[indexPath.item].address
         cell.nameLB.text = personalView ?
             myTasks [indexPath.item].famelyName : donations[indexPath.item].famelyName
+        cell.layer.borderWidth = 100
+        cell.layer.borderColor = UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 0).cgColor
         
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
-        switch(cell?.isSelected) {
-        case nil,false?:
-            cell?.isSelected = true
+        if cell?.layer.borderWidth == 100 {
+        //if this is the first time:
+        //mark it and add it to the selectedTasks
+            cell?.layer.borderWidth = 200.0
+            cell?.layer.borderColor = UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.4).cgColor
+            addSelectedItem(item: indexPath.item)
+        } else {
+        //if this cell already been selected,
+        //unmark it and remove it from selectedTasks
             cell?.layer.borderWidth = 100.0
-            cell?.layer.borderColor = UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.1).cgColor
-            
-            break
-        case true?:
-            if cell?.layer.borderWidth == 100 {
-                
-            //if this is the first time:
-            //mark it and add it to the selectedTasks
-                cell?.layer.borderWidth = 200.0
-                cell?.layer.borderColor = UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.4).cgColor
-                handelSelectedItem(action: personalView ? .remove : .add, item: indexPath.item)
-            } else {
-            //if this cell already been selected,
-            //unmark it and remove it from selectedTasks
-                cell?.layer.borderWidth = 100.0
-                cell?.layer.borderColor = UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.1).cgColor
-                handelSelectedItem(action: personalView ? .add : .remove, item: indexPath.item)
-            }
-            break
+            cell?.layer.borderColor = UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 0).cgColor
+            removeSelectedItem(item: indexPath.item)
         }
     }
-    enum handleAction {
-        case add
-        case remove
+    func addSelectedItem (item:Int) {
+        personalView ?
+            selectedItems.append(myTasks[item]) :
+            selectedItems.append(donations[item])
     }
-    func handelSelectedItem (action:handleAction, item:Int) {
-        if action == .add {
-            personalView ?
-                selectedItems.append(myTasks[item]) :
-                selectedItems.append(donations[item])
-        } else { //remove
-            if personalView {
-                if let index = selectedItems.index(where: {$0.idNumber == myTasks[item].idNumber}){
-                    selectedItems.remove(at: index)
-                }
-
-            } else {
-                if let index = selectedItems.index(where: {$0.idNumber == donations[item].idNumber}){
-                    selectedItems.remove(at: index)
-                }
-
-            }
-        }
-        
+    func removeSelectedItem (item:Int) {
+        if let index = personalView ?
+            selectedItems.index(where: {$0.idNumber == myTasks[item].idNumber}) :
+            selectedItems.index(where: {$0.idNumber == donations[item].idNumber})
+        { selectedItems.remove(at: index) }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
