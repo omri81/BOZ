@@ -396,22 +396,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Qhr-nP-vwk">
-                                <rect key="frame" x="0.0" y="24" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="24" width="375" height="754"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osf-bZ-sn9" userLabel="section1">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="215.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="244.66666666666666"/>
                                         <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NG6-Xc-H1s" userLabel="section2">
-                                        <rect key="frame" x="0.0" y="215.66666666666663" width="375" height="235.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="244.66666666666666" width="375" height="264.66666666666674"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2B-ZQ-1oJ" userLabel="section3">
-                                        <rect key="frame" x="0.0" y="451.33333333333331" width="375" height="215.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="509.33333333333343" width="375" height="244.66666666666669"/>
                                         <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -423,24 +423,24 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="8HY-Ns-q4Q">
-                                <rect key="frame" x="54.666666666666657" y="332" width="266" height="71"/>
+                                <rect key="frame" x="54.666666666666657" y="332" width="266" height="158"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="LBt-bJ-6ue" userLabel="img1">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="71"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="158"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="71" id="40N-o8-bAc"/>
                                             <constraint firstAttribute="width" constant="68" id="Byc-qf-Q1X"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omri" translatesAutoresizingMaskIntoConstraints="NO" id="vSZ-AA-dA3" userLabel="img2">
-                                        <rect key="frame" x="99" y="0.0" width="68" height="71"/>
+                                        <rect key="frame" x="99" y="0.0" width="68" height="158"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="68" id="0lT-en-edc"/>
                                             <constraint firstAttribute="height" constant="71" id="agM-fY-Ig0"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zohar" translatesAutoresizingMaskIntoConstraints="NO" id="L7q-Lf-Px9" userLabel="img3">
-                                        <rect key="frame" x="198" y="0.0" width="68" height="71"/>
+                                        <rect key="frame" x="198" y="0.0" width="68" height="158"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="68" id="DBB-1s-lzm"/>
                                             <constraint firstAttribute="height" constant="71" id="lqo-x3-MwF"/>
@@ -1251,6 +1251,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="actionBtn" destination="0B4-QP-wks" id="ACv-6c-2Ly"/>
                         <outlet property="collectionView" destination="371-v0-IRP" id="ubE-CH-jru"/>
                         <segue destination="ZCd-lB-vdX" kind="show" id="Xgn-cf-Ohe"/>
                     </connections>

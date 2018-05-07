@@ -15,14 +15,17 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
     var donations:[Package] = []
     var myTasks:[Package] = []
     var personalView:Bool = false
-    var selectedItems:[Package] = []
+    var selectedItems:[String] = [] //  idNumber of each product
     
+    @IBOutlet weak var actionBtn: UIButton!
     @IBAction func filterBtn(_ sender: UIButton) {
         personalView = !personalView
         if personalView {
             sender.setTitle("פנוי", for: UIControlState.normal)
+            actionBtn.setTitle("שיבוץ", for: .normal)
         } else {
             sender.setTitle("שלי", for: UIControlState.normal)
+            actionBtn.setTitle("שיחרור", for: .normal)
         }
         navigationItem.title = personalView ? "המשימות שלי" : "תרומות ממתינות לשיבוץ"
         if personalView {
@@ -36,7 +39,7 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             alertMsg(title: "שיבוץ", msg: "בחר יעדים לשיבוץ")
         } else {
             //call to server , pass selected array and set it to []
-            alertMsg(title: "selectedItems",msg: "\(selectedItems.count)")
+            updateTasks(delivererId: myId,donations: selectedItems)            
         }
     }
     
@@ -81,13 +84,13 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
     }
     func addSelectedItem (item:Int) {
         personalView ?
-            selectedItems.append(myTasks[item]) :
-            selectedItems.append(donations[item])
+            selectedItems.append(myTasks[item]._id) :
+            selectedItems.append(donations[item]._id)
     }
     func removeSelectedItem (item:Int) {
         if let index = personalView ?
-            selectedItems.index(where: {$0.idNumber == myTasks[item].idNumber}) :
-            selectedItems.index(where: {$0.idNumber == donations[item].idNumber})
+            selectedItems.index(where: {$0 == myTasks[item]._id}) :
+            selectedItems.index(where: {$0 == donations[item]._id})
         { selectedItems.remove(at: index) }
     }
     override func viewDidLoad() {

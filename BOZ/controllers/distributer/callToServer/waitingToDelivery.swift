@@ -39,6 +39,7 @@ extension DistributerVC {
                         self.donations = []
                         for d in docs{
                             guard let idNumber = d["idNumber"] as? String ,
+                                let _id = d["_id"] as? String,
                                 let name = d["name"] as? String ,
                                 let famelyName = d["famelyName"] as? String ,
                                 let phoneNumber = d["phoneNumber"] as? String ,
@@ -49,7 +50,7 @@ extension DistributerVC {
                             guard let productList = d["productList"] as? [[String:Any]]
                                 else{return}
                             // initiate Donatordetails
-                            var package = Package(idNumber: idNumber, name: name, famelyName: famelyName, phoneNumber: phoneNumber, address: address, latitude: latitude, longitude: longitude, itemList: [])
+                            var package = Package(idNumber: idNumber,_id: _id, name: name, famelyName: famelyName, phoneNumber: phoneNumber, address: address, latitude: latitude, longitude: longitude, itemList: [])
                             for _ in productList {
                                 let title = ""
                                 let amount = 2
