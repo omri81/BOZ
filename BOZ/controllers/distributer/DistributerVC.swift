@@ -22,10 +22,10 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
         personalView = !personalView
         if personalView {
             sender.setTitle("פנוי", for: UIControlState.normal)
-            actionBtn.setTitle("שיבוץ", for: .normal)
+            actionBtn.setTitle("שיחרור", for: .normal)
         } else {
             sender.setTitle("שלי", for: UIControlState.normal)
-            actionBtn.setTitle("שיחרור", for: .normal)
+            actionBtn.setTitle("שיבוץ", for: .normal)
         }
         navigationItem.title = personalView ? "המשימות שלי" : "תרומות ממתינות לשיבוץ"
         if personalView {
@@ -39,7 +39,7 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             alertMsg(title: "שיבוץ", msg: "בחר יעדים לשיבוץ")
         } else {
             //call to server , pass selected array and set it to []
-            updateTasks(delivererId: myId,donations: selectedItems)            
+            updateTasks(delivererId: myId,donations: selectedItems)
         }
     }
     
