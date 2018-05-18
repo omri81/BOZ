@@ -31,9 +31,6 @@
          contextName = "DistributerVC.assignBtn():DistributerVC.swift">
       </ContextState>
       <ContextState
-         contextName = "DistributerVC.updateTasks(delivererId:donations:):updateMyTasks.swift">
-      </ContextState>
-      <ContextState
          contextName = "closure #1 in DistributerVC.updateTasks(delivererId:donations:):updateMyTasks.swift">
          <PersistentStrings>
             <PersistentString
@@ -41,6 +38,34 @@
             </PersistentString>
             <PersistentString
                value = "tryme()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DistributerVC.handleLongPress(longPressGR:):DistributerVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "myTasks[indexPath.row].phoneNumber">
+            </PersistentString>
+            <PersistentString
+               value = "cell.nameLB.text">
+            </PersistentString>
+            <PersistentString
+               value = "donations[indexPath.row].phoneNumber">
+            </PersistentString>
+            <PersistentString
+               value = "cell.addressLB.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in DistributerVC.getMyTasks(bookmark:delivererId:):myTasks.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DistributerVC.collectionView(_:numberOfItemsInSection:):DistributerVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "myTasks.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

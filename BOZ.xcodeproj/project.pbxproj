@@ -25,13 +25,12 @@
 		9AFB82A82057F5A30099ABD5 /* BarCodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */; };
 		AD02E8D5204E93D5004D8DFC /* push.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D4204E93D5004D8DFC /* push.swift */; };
 		AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */; };
-		AD0708EB20961FA80082DC64 /* MyTasksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0708EA20961FA80082DC64 /* MyTasksVC.swift */; };
-		AD0708ED20961FF40082DC64 /* MyTasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0708EC20961FF40082DC64 /* MyTasksCell.swift */; };
 		AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */; };
 		AD3A6C372041C1FF0004C825 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */; };
 		AD420EFE2091E526006FC183 /* DistributerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD420EFD2091E526006FC183 /* DistributerCell.swift */; };
 		AD5105C8208C5B45003FFA66 /* StorageNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5105C7208C5B45003FFA66 /* StorageNC.swift */; };
-		AD5B0313205DE26100E740FE /* TasksWaitingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */; };
+		AD52B66220AF08D0007F8711 /* PakageDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52B66120AF08D0007F8711 /* PakageDetailsVC.swift */; };
+		AD52B66420AF231A007F8711 /* PakageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52B66320AF231A007F8711 /* PakageCell.swift */; };
 		AD5B0315205DE5D900E740FE /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B0314205DE5D900E740FE /* Package.swift */; };
 		AD6C475B204F474600C9A115 /* DistributerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475A204F474600C9A115 /* DistributerVC.swift */; };
 		AD6C475D204F476200C9A115 /* StorageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C475C204F476200C9A115 /* StorageVC.swift */; };
@@ -119,13 +118,12 @@
 		9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerController.swift; sourceTree = "<group>"; };
 		AD02E8D4204E93D5004D8DFC /* push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = push.swift; sourceTree = "<group>"; };
 		AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Push_Init.swift; sourceTree = "<group>"; };
-		AD0708EA20961FA80082DC64 /* MyTasksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksVC.swift; sourceTree = "<group>"; };
-		AD0708EC20961FF40082DC64 /* MyTasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksCell.swift; sourceTree = "<group>"; };
 		AD2AFD7D203F3F77006B93A5 /* QuickDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDonationViewController.swift; sourceTree = "<group>"; };
 		AD3A6C362041C1FF0004C825 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		AD420EFD2091E526006FC183 /* DistributerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerCell.swift; sourceTree = "<group>"; };
 		AD5105C7208C5B45003FFA66 /* StorageNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageNC.swift; sourceTree = "<group>"; };
-		AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksWaitingCell.swift; sourceTree = "<group>"; };
+		AD52B66120AF08D0007F8711 /* PakageDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PakageDetailsVC.swift; sourceTree = "<group>"; };
+		AD52B66320AF231A007F8711 /* PakageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PakageCell.swift; sourceTree = "<group>"; };
 		AD5B0314205DE5D900E740FE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		AD6C475A204F474600C9A115 /* DistributerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributerVC.swift; sourceTree = "<group>"; };
 		AD6C475C204F476200C9A115 /* StorageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageVC.swift; sourceTree = "<group>"; };
@@ -340,8 +338,9 @@
 				ADCFBBB02070B1E8009EB6E8 /* DistributerNC.swift */,
 				AD6C475A204F474600C9A115 /* DistributerVC.swift */,
 				AD420EFD2091E526006FC183 /* DistributerCell.swift */,
+				AD52B66120AF08D0007F8711 /* PakageDetailsVC.swift */,
+				AD52B66320AF231A007F8711 /* PakageCell.swift */,
 				AD6F98602095CE85003EFCDF /* callToServer */,
-				AD6F98612095CEB7003EFCDF /* MyTasks */,
 			);
 			path = distributer;
 			sourceTree = "<group>";
@@ -354,16 +353,6 @@
 				AD9B9734209CDD36002936AC /* updateMyTasks.swift */,
 			);
 			path = callToServer;
-			sourceTree = "<group>";
-		};
-		AD6F98612095CEB7003EFCDF /* MyTasks */ = {
-			isa = PBXGroup;
-			children = (
-				AD5B0312205DE26100E740FE /* TasksWaitingCell.swift */,
-				AD0708EA20961FA80082DC64 /* MyTasksVC.swift */,
-				AD0708EC20961FF40082DC64 /* MyTasksCell.swift */,
-			);
-			path = MyTasks;
 			sourceTree = "<group>";
 		};
 		AD81FFB720407447001CBFDA /* productCollection */ = {
@@ -683,9 +672,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD52B66220AF08D0007F8711 /* PakageDetailsVC.swift in Sources */,
 				9A99C89C203C93FA0057D607 /* BOZ.xcdatamodeld in Sources */,
 				FCC458392045C6B900A89CDE /* MainVC.swift in Sources */,
-				AD0708EB20961FA80082DC64 /* MyTasksVC.swift in Sources */,
 				FCC458372045B5D300A89CDE /* GifImageView.swift in Sources */,
 				AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */,
 				AD6C475B204F474600C9A115 /* DistributerVC.swift in Sources */,
@@ -695,7 +684,6 @@
 				AD6C475D204F476200C9A115 /* StorageVC.swift in Sources */,
 				AD420EFE2091E526006FC183 /* DistributerCell.swift in Sources */,
 				ADFA43B02056787D00D164F5 /* TakeVC.swift in Sources */,
-				AD0708ED20961FF40082DC64 /* MyTasksCell.swift in Sources */,
 				6D0B84C72057C361007FE670 /* Data1.swift in Sources */,
 				AD9B9735209CDD36002936AC /* updateMyTasks.swift in Sources */,
 				AD706D622097006600AAFBEC /* waitingToDelivery.swift in Sources */,
@@ -717,7 +705,6 @@
 				ADFA43B820568F1800D164F5 /* Constants.swift in Sources */,
 				ADFA43B220567AB600D164F5 /* HoursVC.swift in Sources */,
 				AD5B0315205DE5D900E740FE /* Package.swift in Sources */,
-				AD5B0313205DE26100E740FE /* TasksWaitingCell.swift in Sources */,
 				FC12A1F62052AC1A002912AD /* CrewCell.swift in Sources */,
 				9AFB82A82057F5A30099ABD5 /* BarCodeScannerController.swift in Sources */,
 				9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */,
@@ -741,6 +728,7 @@
 				AD89F4AD2057230D00E96174 /* jsonMilkSubst.swift in Sources */,
 				FC9FB37A2049990F00A3B508 /* LoginVC.swift in Sources */,
 				FC12A1F82052B1D1002912AD /* Crew.swift in Sources */,
+				AD52B66420AF231A007F8711 /* PakageCell.swift in Sources */,
 				AD6C475F204F477500C9A115 /* AdminVC.swift in Sources */,
 				AD81FFBD20407706001CBFDA /* DataStore.swift in Sources */,
 				FC9FB3642045F69200A3B508 /* DonationVC.swift in Sources */,

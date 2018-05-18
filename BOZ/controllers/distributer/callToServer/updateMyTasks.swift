@@ -5,13 +5,15 @@ import Alamofire
 extension DistributerVC {
     func updateTasks(delivererId:String, donations:[String])
     {
+        let free:Bool = personalView //if it personal, free = tru so the request from server is to free the selected items
         let parameters : Parameters = [
+            "free" : free as Bool,
             "delivererId" : delivererId,
             "donations": donations
         ]
         print(parameters)
         let url = "https://zeevtesthu.mybluemix.net/api/DeliverDonation/BulkUpdate"
-        Alamofire.request(url, method: HTTPMethod.put , parameters: parameters ,
+        Alamofire.request(url, method: HTTPMethod.put , parameters: parameters ,		
                           encoding: JSONEncoding.default, headers: [:])
             .validate(contentType: ["application/json"]).responseJSON { response in
                 print("response: \(response)")
@@ -26,7 +28,8 @@ extension DistributerVC {
                             return
                     }
                     if status == "OK" {
-                        // reload tasks to ui
+                        // cleare selected items and reload tasks to ui
+                        self.selectedItems = []
                         if self.personalView {
                             self.getMyTasks(bookmark: "", delivererId: self.myId)
                         } else {

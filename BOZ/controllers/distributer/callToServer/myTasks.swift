@@ -14,7 +14,6 @@ extension DistributerVC {
         Alamofire.request(url, method: HTTPMethod.post , parameters: parameters ,
                           encoding: JSONEncoding.default, headers: [:])
             .validate(contentType: ["application/json"]).responseJSON { response in
-                print("response: \(response)")
                 switch response.result {
                 case .success:
                     print("sucess response from server")
@@ -55,7 +54,7 @@ extension DistributerVC {
                             self.myTasks.append(package)
                         }  // outer loop of docs
                         print("---------------------")
-                        print(self.donations)
+                        print("self.myTasks retrived")
                         self.collectionView.reloadData()
                     } else {
                         // status != "ok"

@@ -60,7 +60,7 @@ extension DistributerVC {
                             self.donations.append(package)
                         }  // outer loop of docs
                         print("---------------------")
-                        print(self.donations)
+                        print("self.donations retrived")
                         self.collectionView.reloadData()
                     } else {
                         // status != "ok"

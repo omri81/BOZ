@@ -1,4 +1,4 @@
-//
+	//
 //  DistributerViewController.swift
 //  BOZ
 //
@@ -9,7 +9,8 @@
 import UIKit
 import Alamofire
 
-class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate  {
+class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate ,UIGestureRecognizerDelegate
+{
     
     var myId:String = ""
     var donations:[Package] = []
@@ -99,10 +100,34 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
         
         let prefs = UserDefaults.standard
         myId = prefs.string(forKey: DONATOR_IDNUMBER)!
+        let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(longPressGR:)))
+        lpgr.minimumPressDuration = 0.5
+        lpgr.delaysTouchesBegan = true
+        self.collectionView.addGestureRecognizer(lpgr)
         
         getAllEmptyDestributer(bookmark: "")
     }
-    
+    @objc
+    func handleLongPress(longPressGR: UILongPressGestureRecognizer) {
+        if longPressGR.state != .ended {
+            return
+        }
+        
+        let point = longPressGR.location(in: self.collectionView)
+        let indexPath = self.collectionView.indexPathForItem(at: point)
+        
+        if let indexPath = indexPath {
+            var cell = self.collectionView.cellForItem(at: indexPath) as! DistributerCell
+            
+            print(indexPath.row)
+            let next = storyboard?.instantiateViewController(withIdentifier: "PakageDetails") as! PakageDetailsVC
+            let p = personalView ? myTasks[indexPath.row].phoneNumber : donations[indexPath.row].phoneNumber
+            next.setDetails(name: cell.nameLB.text!, address: cell.addressLB.text!, phone: p )
+            show(next, sender: self)
+        } else {
+            print("Could not find index path")
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
