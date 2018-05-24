@@ -18,6 +18,7 @@ public struct Package {
     let latitude:Double
     let longitude:Double
     var itemList:[Item]
+    var _rev:String
     init (
         idNumber:String,
         _id:String,
@@ -27,7 +28,8 @@ public struct Package {
         address:String,
         latitude:Double,
         longitude:Double,
-        itemList:[Item])
+        itemList:[Item],
+        _rev:String)
     {
         self.idNumber = idNumber
         self._id = _id
@@ -38,6 +40,7 @@ public struct Package {
         self.latitude = latitude
         self.longitude = longitude
         self.itemList = itemList
+        self._rev = _rev
     }
 }
 public struct Item {

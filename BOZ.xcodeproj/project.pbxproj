@@ -10,6 +10,7 @@
 		6D0B84C72057C361007FE670 /* Data1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B84C62057C361007FE670 /* Data1.swift */; };
 		82D92A8D8665A59C66E4D45C /* Pods_BOZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56D87A6385A089C9D413F05 /* Pods_BOZ.framework */; };
 		9A121A7E2059A4BA00B6368C /* HelplessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A121A7D2059A4BA00B6368C /* HelplessVC.swift */; };
+		9A5A6AAC20B6E3A100B220D6 /* deleteTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5A6AAB20B6E3A100B220D6 /* deleteTask.swift */; };
 		9A99C894203C93FA0057D607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C893203C93FA0057D607 /* AppDelegate.swift */; };
 		9A99C896203C93FA0057D607 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C895203C93FA0057D607 /* BaseViewController.swift */; };
 		9A99C899203C93FA0057D607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A99C897203C93FA0057D607 /* Main.storyboard */; };
@@ -99,6 +100,7 @@
 		6D0B84C62057C361007FE670 /* Data1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data1.swift; sourceTree = "<group>"; };
 		989B71E47CDE8A953A937D13 /* Pods-BOZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOZ/Pods-BOZ.debug.xcconfig"; sourceTree = "<group>"; };
 		9A121A7D2059A4BA00B6368C /* HelplessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelplessVC.swift; sourceTree = "<group>"; };
+		9A5A6AAB20B6E3A100B220D6 /* deleteTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deleteTask.swift; sourceTree = "<group>"; };
 		9A99C890203C93FA0057D607 /* BOZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A99C893203C93FA0057D607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A99C895203C93FA0057D607 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				AD706D612097006600AAFBEC /* waitingToDelivery.swift */,
 				AD706D632097007E00AAFBEC /* myTasks.swift */,
 				AD9B9734209CDD36002936AC /* updateMyTasks.swift */,
+				9A5A6AAB20B6E3A100B220D6 /* deleteTask.swift */,
 			);
 			path = callToServer;
 			sourceTree = "<group>";
@@ -695,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD52B66220AF08D0007F8711 /* PakageDetailsVC.swift in Sources */,
+				9A5A6AAC20B6E3A100B220D6 /* deleteTask.swift in Sources */,
 				9A99C89C203C93FA0057D607 /* BOZ.xcdatamodeld in Sources */,
 				FCC458392045C6B900A89CDE /* MainVC.swift in Sources */,
 				FCC458372045B5D300A89CDE /* GifImageView.swift in Sources */,

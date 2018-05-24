@@ -8,15 +8,22 @@
 
 import UIKit
 import Alamofire
+    protocol DistributerVCDelegate{
+        func collectionViewReload()
+    }
 
-class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate ,UIGestureRecognizerDelegate
+class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate ,UIGestureRecognizerDelegate, DistributerVCDelegate
 {
+   
+    
     
     var myId:String = ""
     var donations:[Package] = []
     var myTasks:[Package] = []
     var personalView:Bool = false
     var selectedItems:[String] = [] //  idNumber of each product
+    
+    
     
     @IBOutlet weak var actionBtn: UIButton!
     @IBAction func filterBtn(_ sender: UIButton) {
@@ -44,6 +51,10 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
         }
     }
     
+    func collectionViewReload() {
+        collectionView.reloadData()
+    }
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBAction func logout(_ sender: Any) {
         let mainVC = storyboard!.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
@@ -66,6 +77,11 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             myTasks[indexPath.item].address : donations[indexPath.item].address
         cell.nameLB.text = personalView ?
             myTasks [indexPath.item].famelyName : donations[indexPath.item].famelyName
+        cell._id = personalView ? myTasks[indexPath.item]._id :
+            donations[indexPath.item]._id
+        cell._rev = personalView ? myTasks[indexPath.item]._rev :
+            donations[indexPath.item]._rev
+        
         cell.layer.borderWidth = 100
         cell.layer.borderColor = UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 0).cgColor
         
@@ -111,6 +127,7 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
         self.collectionView.addGestureRecognizer(lpgr)
         
         getAllEmptyDestributer(bookmark: "")
+        print("view did load")
     }
     @objc
     func handleLongPress(longPressGR: UILongPressGestureRecognizer) {
@@ -118,16 +135,16 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             return
         }
         
+        
         let point = longPressGR.location(in: self.collectionView)
         let indexPath = self.collectionView.indexPathForItem(at: point)
         
         if let indexPath = indexPath {
             var cell = self.collectionView.cellForItem(at: indexPath) as! DistributerCell
-            
-            print(indexPath.row)
             let next = storyboard?.instantiateViewController(withIdentifier: "PakageDetails") as! PakageDetailsVC
+            next.delegate = self
             let p = personalView ? myTasks[indexPath.row].phoneNumber : donations[indexPath.row].phoneNumber
-            next.setDetails(name: cell.nameLB.text!, address: cell.addressLB.text!, phone: p )
+            next.setDetails(name: cell.nameLB.text!, address: cell.addressLB.text!, phone: p, personalView: personalView,_id: cell._id, _rev: cell._rev )
             show(next, sender: self)
         } else {
             print("Could not find index path")
@@ -137,6 +154,7 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 }
 
@@ -156,4 +174,7 @@ extension DistributerVC {
         present(alert, animated: true, completion: nil)
         return
     }
-}
+    
+    }
+    
+

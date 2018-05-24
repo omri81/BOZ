@@ -13,6 +13,8 @@ private let reuseIdentifier = "Cell"
 class DistributerCell: UICollectionViewCell {
     var lat:Double = 0, lon : Double = 0
     var phone:String = ""
+    var _id: String = ""
+    var _rev: String = ""
     
     @IBAction func phoneCall() {
         Methods.makePhoneCall(toNumber: phone)

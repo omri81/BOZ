@@ -11,15 +11,25 @@ import UIKit
 class PakageDetailsVC: UIViewController, UICollectionViewDataSource {
     private var  name = "",
     address = "" ,
-    phone = ""
+    phone = "", _id = "", _rev = ""
+    var personalView: Bool!
+    var delegate: DistributerVCDelegate?
+    
+    
     var donations:[String] = []
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nameLB: UILabel!
     @IBOutlet weak var addressLB: UITextView!
     @IBOutlet weak var phoneLB: UILabel!
+    @IBOutlet var mine: UIButton!
+    
     @IBAction func wazeBTN() {
     }
-    @IBAction func doneBtn() {
+    @IBAction func deletBtn() {
+        //deleting from DB
+        deleteTask(_id: _id, _rev: _rev)
+        
+        
     }
     @IBAction func notMineBtn() {
     }
@@ -28,11 +38,17 @@ class PakageDetailsVC: UIViewController, UICollectionViewDataSource {
         nameLB.text = name
         addressLB.text = address
         phoneLB.text = phone
+        
+        mine.setTitle(personalView ? "בטל שיבוץ" : "שיבוץ", for: .normal)
+        
     }
-    public func setDetails(name:String,address:String,phone:String) {
+    public func setDetails(name:String,address:String,phone:String,personalView:Bool,_id:String,_rev:String) {
         self.name = name
         self.address = address
         self.phone = phone
+        self.personalView = personalView
+        self._id = _id
+        self._rev = _rev
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return donations.count
@@ -45,5 +61,21 @@ class PakageDetailsVC: UIViewController, UICollectionViewDataSource {
         
         return cell
     }
+    func alertMsg(title ttl:String,msg:String) {
+        let alert = UIAlertController(
+            title: ttl,
+            message: msg,
+            preferredStyle: UIAlertControllerStyle.alert)
+        
+        let OKAction = UIAlertAction(title: "בסדר", style: .default) { (action) in
+            // do something when user press OK button, like deleting text in both fields or do nothing
+        }
+        
+        alert.addAction(OKAction)
+        
+        present(alert, animated: true, completion: nil)
+        return
+    }
+    
 
 }
