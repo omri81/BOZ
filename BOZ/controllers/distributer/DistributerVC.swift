@@ -55,8 +55,13 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DistributerCell
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DistributerCell        
+        cell.phone = personalView ?
+            myTasks[indexPath.item].phoneNumber : donations[indexPath.item].phoneNumber
+        cell.lat = personalView ?
+        myTasks[indexPath.item].latitude : donations[indexPath.item].latitude
+        cell.lon = personalView ?
+            myTasks[indexPath.item].longitude : donations[indexPath.item].longitude
         cell.addressLB.text = personalView ?
             myTasks[indexPath.item].address : donations[indexPath.item].address
         cell.nameLB.text = personalView ?

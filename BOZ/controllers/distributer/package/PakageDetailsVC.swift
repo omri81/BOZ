@@ -19,8 +19,6 @@ class PakageDetailsVC: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var phoneLB: UILabel!
     @IBAction func wazeBTN() {
     }
-    @IBAction func callBTN() {
-    }
     @IBAction func doneBtn() {
     }
     @IBAction func notMineBtn() {

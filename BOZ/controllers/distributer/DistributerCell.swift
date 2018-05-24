@@ -8,37 +8,23 @@
 
 import UIKit
 
+private let reuseIdentifier = "Cell"
+
 class DistributerCell: UICollectionViewCell {
+    var lat:Double = 0, lon : Double = 0
+    var phone:String = ""
     
     @IBAction func phoneCall() {
-        
+        Methods.makePhoneCall(toNumber: phone)
     }
     @IBAction func gotoWaze() {
+        Methods.tryNavigateWithWaze(lat: lat, lon: lon)
     }
     
-    @IBAction func myTasksBtn(_ sender: UIButton) {
-        
-    }
-    @IBAction func assigBtn(_ sender: UIButton) {
-    }
+    
     @IBOutlet weak var nameLB: UILabel!
     @IBOutlet weak var addressLB: UILabel!
     @IBOutlet weak var dayLB: UILabel!
     @IBOutlet weak var hourLB: UILabel!
-  /*
-     override var isSelected: Bool{
-        didSet{
-            if self.isSelected
-            {
-                self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-                self.contentView.backgroundColor = UIColor.red
-            }
-            else
-            {
-                self.transform = CGAffineTransform.identity
-                self.contentView.backgroundColor = UIColor.gray
-            }
-        }
-    }
-   */
+    
 }
