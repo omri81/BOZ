@@ -1,4 +1,4 @@
-//
+	//
 //  DistributerViewController.swift
 //  BOZ
 //
@@ -9,105 +9,135 @@
 import UIKit
 import Alamofire
 
-class DistributerVC: UIViewController,UICollectionViewDataSource  {
+class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate ,UIGestureRecognizerDelegate
+{
     
+    var myId:String = ""
+    var donations:[Package] = []
+    var myTasks:[Package] = []
+    var personalView:Bool = false
+    var selectedItems:[String] = [] //  idNumber of each product
     
+    @IBOutlet weak var actionBtn: UIButton!
+    @IBAction func filterBtn(_ sender: UIButton) {
+        personalView = !personalView
+        if personalView {
+            sender.setTitle("פנוי", for: UIControlState.normal)
+            actionBtn.setTitle("שיחרור", for: .normal)
+        } else {
+            sender.setTitle("שלי", for: UIControlState.normal)
+            actionBtn.setTitle("שיבוץ", for: .normal)
+        }
+        navigationItem.title = personalView ? "המשימות שלי" : "תרומות ממתינות לשיבוץ"
+        if personalView {
+            getMyTasks(bookmark: "", delivererId: myId )
+        } else {
+            getAllEmptyDestributer(bookmark: "")
+        }
+    }
+    @IBAction func assignBtn() {
+        if selectedItems.isEmpty {
+            alertMsg(title: "שיבוץ", msg: "בחר יעדים לשיבוץ")
+        } else {
+            //call to server , pass selected array and set it to []
+            updateTasks(delivererId: myId,donations: selectedItems)
+        }
+    }
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBAction func logout(_ sender: Any) {
         let mainVC = storyboard!.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
         UIApplication.shared.keyWindow?.rootViewController = mainVC
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return donations.count
+        return personalView ? myTasks.count : donations.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-       let cell = UICollectionViewCell()
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DistributerCell        
+        cell.phone = personalView ?
+            myTasks[indexPath.item].phoneNumber : donations[indexPath.item].phoneNumber
+        cell.lat = personalView ?
+        myTasks[indexPath.item].latitude : donations[indexPath.item].latitude
+        cell.lon = personalView ?
+            myTasks[indexPath.item].longitude : donations[indexPath.item].longitude
+        cell.addressLB.text = personalView ?
+            myTasks[indexPath.item].address : donations[indexPath.item].address
+        cell.nameLB.text = personalView ?
+            myTasks [indexPath.item].famelyName : donations[indexPath.item].famelyName
+        cell.layer.borderWidth = 100
+        cell.layer.borderColor = UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 0).cgColor
+        
         return cell
     }
-    
 
-    var donations:[Package] = []
-    
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        if cell?.layer.borderWidth == 100 {
+        //if this is the first time:
+        //mark it and add it to the selectedTasks
+            cell?.layer.borderWidth = 200.0
+            cell?.layer.borderColor = UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.4).cgColor
+            addSelectedItem(item: indexPath.item)
+        } else {
+        //if this cell already been selected,
+        //unmark it and remove it from selectedTasks
+            cell?.layer.borderWidth = 100.0
+            cell?.layer.borderColor = UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 0).cgColor
+            removeSelectedItem(item: indexPath.item)
+        }
+    }
+    func addSelectedItem (item:Int) {
+        personalView ?
+            selectedItems.append(myTasks[item]._id) :
+            selectedItems.append(donations[item]._id)
+    }
+    func removeSelectedItem (item:Int) {
+        if let index = personalView ?
+            selectedItems.index(where: {$0 == myTasks[item]._id}) :
+            selectedItems.index(where: {$0 == donations[item]._id})
+        { selectedItems.remove(at: index) }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0, green: 0.9921568627, blue: 1, alpha: 0.1793931935)
         
-        getAllEmptyDestributer(bookmark: "")
         let prefs = UserDefaults.standard
-        let myId = prefs.string(forKey: DONATOR_IDNUMBER)
-        // zohar: call to server getMy tasks(ID)
-        // Do any additional setup after loading the view.
+        myId = prefs.string(forKey: DONATOR_IDNUMBER)!
+        let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(longPressGR:)))
+        lpgr.minimumPressDuration = 0.5
+        lpgr.delaysTouchesBegan = true
+        self.collectionView.addGestureRecognizer(lpgr)
+        
+        getAllEmptyDestributer(bookmark: "")
     }
-    
+    @objc
+    func handleLongPress(longPressGR: UILongPressGestureRecognizer) {
+        if longPressGR.state != .ended {
+            return
+        }
+        
+        let point = longPressGR.location(in: self.collectionView)
+        let indexPath = self.collectionView.indexPathForItem(at: point)
+        
+        if let indexPath = indexPath {
+            var cell = self.collectionView.cellForItem(at: indexPath) as! DistributerCell
+            
+            print(indexPath.row)
+            let next = storyboard?.instantiateViewController(withIdentifier: "PakageDetails") as! PakageDetailsVC
+            let p = personalView ? myTasks[indexPath.row].phoneNumber : donations[indexPath.row].phoneNumber
+            next.setDetails(name: cell.nameLB.text!, address: cell.addressLB.text!, phone: p )
+            show(next, sender: self)
+        } else {
+            print("Could not find index path")
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func getAllEmptyDestributer(bookmark:String)
-    {
-        let parameters : Parameters = [
-            "bookmark": bookmark
-        ]
-        print(parameters)
-        let url = "https://zeevtesthu.mybluemix.net/api/DeliverDonation/GetAllWaitingToDelevery"
-        Alamofire.request(url, method: HTTPMethod.post , parameters: parameters ,
-                          encoding: JSONEncoding.default, headers: [:])
-            .validate(contentType: ["application/json"]).responseJSON { response in
-                print("response: \(response)")
-                switch response.result {
-                case .success:
-                    print("sucess response from server")
-                    guard let responseJSON = response.result.value as? [String: Any],
-                        let status = responseJSON["status"] as? String,
-                        let statusMsg = responseJSON["statusMsg"] as? String
-                        else {
-                            // self.alertServerProblem()
-                            // make alert
-                            return
-                    }
-                    if status == "OK" {
-                        print("retrived success")
-                        guard let docs = responseJSON["docs"] as? [[String:Any]]
-                        else {return}
-                        for d in docs{
-                            guard let idNumber = d["idNumber"] as? String ,
-                                let name = d["name"] as? String ,
-                                let famelyName = d["famelyName"] as? String ,
-                                let phoneNumber = d["phoneNumber"] as? String ,
-                                let address = d["address"] as? String ,
-                                let latitude = d["latitude"] as? Double ,
-                                let longitude = d["longitude"] as? Double
-                                else{return}
-                            guard let productList = d["productList"] as? [[String:Any]]
-                                else{return}
-                            // initiate Donatordetails
-                            var package = Package(idNumber: idNumber, name: name, famelyName: famelyName, phoneNumber: phoneNumber, address: address, latitude: latitude, longitude: longitude, itemList: [])
-                            for _ in productList {
-                                let title = ""
-                                let amount = 2
-                                let item = Item(title: title, amount: amount)
-                                package.itemList.append(item)
-                            }
-                            self.donations.append(package)
-                        }  // outer loop of docs
-                        print("---------------------")
-                        print(self.donations)
-                      //  self.collectionView?.reloadData()
-                    } else {
-                        // status != "ok"
-                        self.alertMsg(title: "בעיה בשרת", msg: "סליחה, קרתה שגיאה, נא לנסות שנית בבקשה.")
-                    }
-                    
-                case .failure(let error):
-                    self.alertMsg(title: "בעיה בשרת", msg: "סליחה, קרתה שגיאה, נא לנסות שנית בבקשה.")
-                }
-        }
-    }
-
 }
 
 extension DistributerVC {
