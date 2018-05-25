@@ -146,6 +146,7 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             let itemList = personalView ? myTasks[indexPath.row].itemList : donations[indexPath.row].itemList
             let p = personalView ? myTasks[indexPath.row].phoneNumber : donations[indexPath.row].phoneNumber
             next.setDetails(name: cell.nameLB.text!, address: cell.addressLB.text!, phone: p, personalView: personalView,_id: cell._id, _rev: cell._rev, itemList: itemList )
+            print(itemList)
             show(next, sender: self)
         } else {
             print("Could not find index path")

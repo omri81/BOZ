@@ -46,10 +46,10 @@ extension DistributerVC {
                             // initiate Donatordetails
                             
                             var package = Package(idNumber: idNumber, _id: _id, name: name, famelyName: famelyName, phoneNumber: phoneNumber, address: address, latitude: latitude, longitude: longitude, itemList: [], _rev: _rev)
-                            print("id = \(_id) rev = \(_rev)")
-                            for _ in productList {
-                                let title = ""
-                                let amount = 2
+                            for p in productList {
+                                guard let title = p["title"] as? String,
+                                    let amount = p["amount"] as? Int
+                                    else {return}
                                 let item = Item(title: title, amount: amount)
                                 package.itemList.append(item)
                             }
