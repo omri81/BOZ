@@ -143,8 +143,9 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             var cell = self.collectionView.cellForItem(at: indexPath) as! DistributerCell
             let next = storyboard?.instantiateViewController(withIdentifier: "PakageDetails") as! PakageDetailsVC
             next.delegate = self
+            let itemList = personalView ? myTasks[indexPath.row].itemList : donations[indexPath.row].itemList
             let p = personalView ? myTasks[indexPath.row].phoneNumber : donations[indexPath.row].phoneNumber
-            next.setDetails(name: cell.nameLB.text!, address: cell.addressLB.text!, phone: p, personalView: personalView,_id: cell._id, _rev: cell._rev )
+            next.setDetails(name: cell.nameLB.text!, address: cell.addressLB.text!, phone: p, personalView: personalView,_id: cell._id, _rev: cell._rev, itemList: itemList )
             show(next, sender: self)
         } else {
             print("Could not find index path")

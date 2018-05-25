@@ -11,4 +11,6 @@ import UIKit
 
 class PakageCell: UICollectionViewCell {
     
+    @IBOutlet weak var amountLB: UILabel!
+    @IBOutlet weak var itemLB: UILabel!
 }

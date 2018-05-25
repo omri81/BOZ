@@ -16,7 +16,7 @@ class PakageDetailsVC: UIViewController, UICollectionViewDataSource {
     var delegate: DistributerVCDelegate?
     
     
-    var donations:[String] = []
+    var donations:[Item] = []
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nameLB: UILabel!
     @IBOutlet weak var addressLB: UITextView!
@@ -42,13 +42,14 @@ class PakageDetailsVC: UIViewController, UICollectionViewDataSource {
         mine.setTitle(personalView ? "בטל שיבוץ" : "שיבוץ", for: .normal)
         
     }
-    public func setDetails(name:String,address:String,phone:String,personalView:Bool,_id:String,_rev:String) {
+    public func setDetails(name:String,address:String,phone:String,personalView:Bool,_id:String,_rev:String,itemList:[Item]) {
         self.name = name
         self.address = address
         self.phone = phone
         self.personalView = personalView
         self._id = _id
         self._rev = _rev
+        self.donations = itemList
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return donations.count
@@ -56,9 +57,8 @@ class PakageDetailsVC: UIViewController, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PakageCell
-        
-        // enter all cell.donation name , amount etc...
-        
+        cell.itemLB.text =  donations[indexPath.row].title
+        cell.amountLB.text = "\(donations[indexPath.row].amount)"
         return cell
     }
     func alertMsg(title ttl:String,msg:String) {
