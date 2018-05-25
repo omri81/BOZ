@@ -51,6 +51,17 @@ class PakageDetailsVC: UIViewController, UICollectionViewDataSource {
         self._rev = _rev
         self.donations = itemList
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        // TODO: Self-sizing
+        return CGSize(width: collectionView.frame.width, height: 60)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderID2", for: indexPath as IndexPath)
+        
+        return headerView
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return donations.count
     }

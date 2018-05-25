@@ -1047,13 +1047,13 @@
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uSY-jh-bsi">
                                     <size key="itemSize" width="375" height="35"/>
-                                    <size key="headerReferenceSize" width="200" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="A0T-h7-R4K" customClass="DistributerCell" customModule="BOZ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
@@ -1113,9 +1113,34 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Oiu-rV-fwS">
-                                    <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="headerId" id="Rg3-PM-Nra">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="שם" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5s-3Y-pAs">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="110" id="rhe-LD-2yL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="כתובת" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhV-PX-i3e">
+                                            <rect key="frame" x="118" y="0.0" width="139" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="l5s-3Y-pAs" firstAttribute="firstBaseline" secondItem="LhV-PX-i3e" secondAttribute="firstBaseline" id="NxJ-Am-YgA"/>
+                                        <constraint firstItem="l5s-3Y-pAs" firstAttribute="baseline" secondItem="LhV-PX-i3e" secondAttribute="baseline" id="R6i-9D-LXa"/>
+                                        <constraint firstItem="LhV-PX-i3e" firstAttribute="leading" secondItem="l5s-3Y-pAs" secondAttribute="trailing" constant="8" symbolic="YES" id="TJG-R1-y1r"/>
+                                        <constraint firstItem="l5s-3Y-pAs" firstAttribute="leading" secondItem="Rg3-PM-Nra" secondAttribute="leadingMargin" constant="-8" id="cmP-6Z-Tpb"/>
+                                        <constraint firstItem="l5s-3Y-pAs" firstAttribute="top" secondItem="Rg3-PM-Nra" secondAttribute="top" id="qEB-Ym-L7U"/>
+                                        <constraint firstItem="LhV-PX-i3e" firstAttribute="centerX" secondItem="Rg3-PM-Nra" secondAttribute="centerX" id="vrR-JJ-zgU"/>
+                                    </constraints>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="Jxx-A7-nof" id="HlA-M5-Z2e"/>
@@ -1229,13 +1254,13 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dJK-2U-LNi">
                                     <size key="itemSize" width="376" height="69"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Fsf-dN-oDx" customClass="PakageCell" customModule="BOZ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="376" height="69"/>
+                                        <rect key="frame" x="0.0" y="50" width="376" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="69"/>
@@ -1263,6 +1288,38 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeaderID2" id="JzT-XY-k2s">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="תרומה" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oq-z5-D4B">
+                                            <rect key="frame" x="270" y="-3" width="106" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="106" id="05I-5x-BF5"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="כמות" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn2-d8-Slo">
+                                            <rect key="frame" x="20" y="0.0" width="104" height="39"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="104" id="OFL-cg-ksO"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="zn2-d8-Slo" secondAttribute="bottom" constant="11" id="8ae-BA-O5H"/>
+                                        <constraint firstItem="9Oq-z5-D4B" firstAttribute="top" secondItem="JzT-XY-k2s" secondAttribute="topMargin" constant="-3" id="JyI-xO-zNw"/>
+                                        <constraint firstItem="zn2-d8-Slo" firstAttribute="leading" secondItem="JzT-XY-k2s" secondAttribute="leadingMargin" constant="4" id="PZg-Qr-tA6"/>
+                                        <constraint firstAttribute="trailing" secondItem="9Oq-z5-D4B" secondAttribute="trailing" id="Toj-VH-bo6"/>
+                                        <constraint firstItem="zn2-d8-Slo" firstAttribute="top" secondItem="JzT-XY-k2s" secondAttribute="top" id="cXz-oF-rk7"/>
+                                        <constraint firstItem="zn2-d8-Slo" firstAttribute="baseline" secondItem="9Oq-z5-D4B" secondAttribute="baseline" id="naN-YB-jNO"/>
+                                    </constraints>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="LqD-RI-mji" id="dH0-sH-U6t"/>
                                 </connections>
