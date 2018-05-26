@@ -228,7 +228,10 @@
 		7BBB0EC220B9954D00643B58 /* callToServer */ = {
 			isa = PBXGroup;
 			children = (
+				AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */,
+				AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */,
 				7BBB0EC320B9959A00643B58 /* getAllEmployees.swift */,
+				AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */,
 			);
 			path = callToServer;
 			sourceTree = "<group>";
@@ -393,16 +396,6 @@
 			path = productCollection;
 			sourceTree = "<group>";
 		};
-		AD9DFBCF20525AF900E4FE5B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */,
-				AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */,
-				AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		ADAAF38720518A7000F3883B /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,7 +413,6 @@
 				AD5B0311205DE20200E740FE /* distributer */,
 				9A121A7C2059A48C00B6368C /* helpless */,
 				ADAAF38720518A7000F3883B /* Login */,
-				AD9DFBCF20525AF900E4FE5B /* Helpers */,
 				9AA2B38A20508BB00042E03E /* Admin */,
 				ADC67FE1204DA6AC009BD328 /* registration */,
 				FC9FB370204866A500A3B508 /* oldControllers */,

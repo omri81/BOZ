@@ -12,15 +12,9 @@
 import Foundation
 import Alamofire
 
-extension AddWorkerController {
-    
-    /*UpdateAdminUser([FromBody] AdminModel.item updaterUser)
-     UpdateStoreManagerUser([FromBody] StoreManagerModel.item updaterUser)
-     UpdateHelplessUser([FromBody] DistributerModel.item updaterUser)
-     UpdateHelplessUser([FromBody] HelplessModel.item updaterUser)
-     UpdateDonatorUser([FromBody] DonatorsModel.item updaterUser)*/
-    
-    func updateUser(user:role,lastBookmark:String) -> ()
+extension CrewEditCVVC {
+   
+    func getUsers(user:role,lastBookmark:String) -> ()
     {
         let URL_SERVER = "https://zeevtesthu.mybluemix.net"
         var url = ""
@@ -66,7 +60,6 @@ extension AddWorkerController {
     }
     
 }
-
 
 
 
