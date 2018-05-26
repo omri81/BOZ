@@ -3,7 +3,7 @@ import Foundation
 import Alamofire
 
 extension DistributerVC {
-    func updateTasks(delivererId:String, donations:[String])
+    func updateTasks(delivererId:String, donations:[String], completion: @escaping (_ result: String) -> Void )
     {
         let free:Bool = personalView //if it personal, free = tru so the request from server is to free the selected items
         let parameters : Parameters = [
@@ -25,23 +25,21 @@ extension DistributerVC {
                         let statusMsg = responseJSON["statusMsg"] as? String
                         else {
                             self.alertMsg(title: "בעיה בשרת", msg: "סליחה, קרתה שגיאה, נא לנסות שנית בבקשה.")
+                            completion("Fail")
                             return
                     }
                     if status == "OK" {
-                        // cleare selected items and reload tasks to ui
-                        self.selectedItems = []
-                        if self.personalView {
-                            self.getMyTasks(bookmark: "", delivererId: self.myId)
-                        } else {
-                            self.getAllEmptyDestributer(bookmark: "") 
-                        }
+                        // clear selected items and reload tasks to ui
+                        completion("OK")
                     } else {
                         // status != "ok"
                         self.alertMsg(title: "בעיה בשרת", msg: "סליחה, קרתה שגיאה, נא לנסות שנית בבקשה.")
+                        completion("Fail")
                     }
                     
                 case .failure(let error):
                     self.alertMsg(title: "בעיה בשרת", msg: "סליחה, קרתה שגיאה, נא לנסות שנית בבקשה.")
+                    completion("Fail")
                 }
         }
     }

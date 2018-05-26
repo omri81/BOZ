@@ -45,7 +45,7 @@
 		AD81FFBD20407706001CBFDA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFBC20407706001CBFDA /* DataStore.swift */; };
 		AD89F4AD2057230D00E96174 /* jsonMilkSubst.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89F4AC2057230D00E96174 /* jsonMilkSubst.swift */; };
 		AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */; };
-		AD9B9735209CDD36002936AC /* updateMyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B9734209CDD36002936AC /* updateMyTasks.swift */; };
+		AD9B9735209CDD36002936AC /* updateTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B9734209CDD36002936AC /* updateTasks.swift */; };
 		AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */; };
 		AD9DFBCE205259FC00E4FE5B /* GetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */; };
 		AD9DFBD120525E4800E4FE5B /* EnableUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */; };
@@ -141,7 +141,7 @@
 		AD81FFBC20407706001CBFDA /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		AD89F4AC2057230D00E96174 /* jsonMilkSubst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonMilkSubst.swift; sourceTree = "<group>"; };
 		AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web2HelpViewController.swift; sourceTree = "<group>"; };
-		AD9B9734209CDD36002936AC /* updateMyTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateMyTasks.swift; sourceTree = "<group>"; };
+		AD9B9734209CDD36002936AC /* updateTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateTasks.swift; sourceTree = "<group>"; };
 		AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorker.swift; sourceTree = "<group>"; };
 		AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsers.swift; sourceTree = "<group>"; };
 		AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableUsers.swift; sourceTree = "<group>"; };
@@ -354,7 +354,7 @@
 			children = (
 				AD706D612097006600AAFBEC /* waitingToDelivery.swift */,
 				AD706D632097007E00AAFBEC /* myTasks.swift */,
-				AD9B9734209CDD36002936AC /* updateMyTasks.swift */,
+				AD9B9734209CDD36002936AC /* updateTasks.swift */,
 				9A5A6AAB20B6E3A100B220D6 /* deleteTask.swift */,
 			);
 			path = callToServer;
@@ -712,7 +712,7 @@
 				AD420EFE2091E526006FC183 /* DistributerCell.swift in Sources */,
 				ADFA43B02056787D00D164F5 /* TakeVC.swift in Sources */,
 				6D0B84C72057C361007FE670 /* Data1.swift in Sources */,
-				AD9B9735209CDD36002936AC /* updateMyTasks.swift in Sources */,
+				AD9B9735209CDD36002936AC /* updateTasks.swift in Sources */,
 				AD706D622097006600AAFBEC /* waitingToDelivery.swift in Sources */,
 				FC9FB3722048670600A3B508 /* ProductListCVVC.swift in Sources */,
 				ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */,

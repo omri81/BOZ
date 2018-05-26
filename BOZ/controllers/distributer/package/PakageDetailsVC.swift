@@ -14,7 +14,7 @@ class PakageDetailsVC: UIViewController, UICollectionViewDataSource {
     phone = "", _id = "", _rev = ""
     var personalView: Bool!
     var delegate: DistributerVCDelegate?
-    
+    var packageID:String = ""
     
     var donations:[Item] = []
     @IBOutlet weak var collectionView: UICollectionView!
@@ -28,10 +28,12 @@ class PakageDetailsVC: UIViewController, UICollectionViewDataSource {
     @IBAction func deletBtn() {
         //deleting from DB
         deleteTask(_id: _id, _rev: _rev)
-        
-        
     }
     @IBAction func notMineBtn() {
+        var tasks:[String] = []
+        tasks.append(packageID)
+        delegate?.updateTask(tasks: tasks)
+        navigationController?.popToRootViewController(animated: true)        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +44,8 @@ class PakageDetailsVC: UIViewController, UICollectionViewDataSource {
         mine.setTitle(personalView ? "בטל שיבוץ" : "שיבוץ", for: .normal)
         
     }
-    public func setDetails(name:String,address:String,phone:String,personalView:Bool,_id:String,_rev:String,itemList:[Item]) {
+    public func setDetails(packageID: String, name:String,address:String,phone:String,personalView:Bool,_id:String,_rev:String,itemList:[Item]) {
+        self.packageID = packageID
         self.name = name
         self.address = address
         self.phone = phone

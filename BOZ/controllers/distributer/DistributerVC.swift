@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
     protocol DistributerVCDelegate{
         func collectionViewReload()
+        func updateTask(tasks:[String])
     }
 
 class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate ,UIGestureRecognizerDelegate, DistributerVCDelegate
@@ -47,7 +48,22 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             alertMsg(title: "שיבוץ", msg: "בחר יעדים לשיבוץ")
         } else {
             //call to server , pass selected array and set it to []
-            updateTasks(delivererId: myId,donations: selectedItems)
+            updateTask(tasks: selectedItems)
+        }
+    }
+    
+    func updateTask(tasks:[String]){
+        updateTasks(delivererId: myId,donations: tasks) {
+            (result:String) in
+            print(result)
+            if result == "OK" {
+                self.selectedItems = []
+                if self.personalView {
+                    self.getMyTasks(bookmark: "", delivererId: self.myId)
+                } else {
+                    self.getAllEmptyDestributer(bookmark: "")
+                }
+            }
         }
     }
     
@@ -156,7 +172,9 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             next.delegate = self
             let itemList = personalView ? myTasks[indexPath.row].itemList : donations[indexPath.row].itemList
             let p = personalView ? myTasks[indexPath.row].phoneNumber : donations[indexPath.row].phoneNumber
-            next.setDetails(name: cell.nameLB.text!, address: cell.addressLB.text!, phone: p, personalView: personalView,_id: cell._id, _rev: cell._rev, itemList: itemList )
+            let packageID = personalView ?
+                myTasks[indexPath.row]._id : donations[indexPath.row]._id
+            next.setDetails(packageID: packageID,name: cell.nameLB.text!, address: cell.addressLB.text!, phone: p, personalView: personalView,_id: cell._id, _rev: cell._rev, itemList: itemList )
             print(itemList)
             show(next, sender: self)
         } else {
