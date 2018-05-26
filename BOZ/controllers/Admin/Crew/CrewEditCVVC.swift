@@ -20,7 +20,7 @@ class CrewEditCVVC: UICollectionViewController {
         super.viewDidLoad()
         getAllEmployees(user: role.Admin){
             (result) in
-            print("result : \(result)")
+            print(result)
         }        
     }
 

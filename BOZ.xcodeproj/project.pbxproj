@@ -21,7 +21,6 @@
 		9A99C8AC203C93FA0057D607 /* BOZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8AB203C93FA0057D607 /* BOZTests.swift */; };
 		9A99C8B7203C93FA0057D607 /* BOZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8B6203C93FA0057D607 /* BOZUITests.swift */; };
 		9AA126CF205D490C0044B832 /* DonationCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA126CE205D490C0044B832 /* DonationCellController.swift */; };
-		9AA2B38C20508C080042E03E /* AddWorkerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38B20508C080042E03E /* AddWorkerController.swift */; };
 		9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */; };
 		9AA2B39020508E030042E03E /* SystemChangesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38F20508E030042E03E /* SystemChangesController.swift */; };
 		9AFB82A82057F5A30099ABD5 /* BarCodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */; };
@@ -118,7 +117,6 @@
 		9A99C8B6203C93FA0057D607 /* BOZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOZUITests.swift; sourceTree = "<group>"; };
 		9A99C8B8203C93FA0057D607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AA126CE205D490C0044B832 /* DonationCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationCellController.swift; sourceTree = "<group>"; };
-		9AA2B38B20508C080042E03E /* AddWorkerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkerController.swift; sourceTree = "<group>"; };
 		9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyAprovalController.swift; sourceTree = "<group>"; };
 		9AA2B38F20508E030042E03E /* SystemChangesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemChangesController.swift; sourceTree = "<group>"; };
 		9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerController.swift; sourceTree = "<group>"; };
@@ -314,7 +312,6 @@
 				AD6C475E204F477500C9A115 /* AdminVC.swift */,
 				9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */,
 				9AA2B38F20508E030042E03E /* SystemChangesController.swift */,
-				9AA2B38B20508C080042E03E /* AddWorkerController.swift */,
 				ADCFBBAE2070A380009EB6E8 /* AdminNC.swift */,
 			);
 			path = Admin;
@@ -754,7 +751,6 @@
 				FC9FB36D2047196500A3B508 /* Branch.swift in Sources */,
 				ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */,
 				AD5105C8208C5B45003FFA66 /* StorageNC.swift in Sources */,
-				9AA2B38C20508C080042E03E /* AddWorkerController.swift in Sources */,
 				9A121A7E2059A4BA00B6368C /* HelplessVC.swift in Sources */,
 				ADCFBBAF2070A380009EB6E8 /* AdminNC.swift in Sources */,
 				AD81FFB4204067A2001CBFDA /* ProductListViewController.swift in Sources */,
