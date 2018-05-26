@@ -18,9 +18,10 @@ class CrewEditCVVC: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        
+        getAllEmployees(user: role.Admin){
+            (result) in
+            print("result : \(result)")
+        }        
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

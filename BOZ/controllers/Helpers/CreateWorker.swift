@@ -9,8 +9,6 @@
 import Foundation
 import Alamofire
 
-extension AddWorkerController {
-   
     enum role {
         case Admin
         case Store
@@ -19,7 +17,8 @@ extension AddWorkerController {
         case Donators
         case AllWorkers
     }
-    
+extension AddWorkerController {
+
     func createWorker(user:role,
         userNameInput idNumberInput:String,
         nameInput:String,
