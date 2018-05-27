@@ -68,7 +68,11 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionViewReload() {
-        collectionView.reloadData()
+        if personalView {
+            getMyTasks(bookmark: "", delivererId: myId)
+        } else {
+            getAllEmptyDestributer(bookmark: "")
+        }
     }
     
     @IBOutlet weak var collectionView: UICollectionView!

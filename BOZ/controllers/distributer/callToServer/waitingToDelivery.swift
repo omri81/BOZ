@@ -40,7 +40,7 @@ extension DistributerVC {
                         for d in docs{
                             guard let idNumber = d["idNumber"] as? String ,
                                 let _id = d["_id"] as? String,
-                                let _rev = d["_id"] as? String,
+                                let _rev = d["_rev"] as? String,
                                 let name = d["name"] as? String ,
                                 let famelyName = d["famelyName"] as? String ,
                                 let phoneNumber = d["phoneNumber"] as? String ,

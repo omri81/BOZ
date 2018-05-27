@@ -23,6 +23,7 @@
 		9AA126CF205D490C0044B832 /* DonationCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA126CE205D490C0044B832 /* DonationCellController.swift */; };
 		9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */; };
 		9AA2B39020508E030042E03E /* SystemChangesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38F20508E030042E03E /* SystemChangesController.swift */; };
+		9AD673FF20BABE4500A19FBC /* ToScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD673FE20BABE4500A19FBC /* ToScannerVC.swift */; };
 		9AFB82A82057F5A30099ABD5 /* BarCodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */; };
 		AD02E8D5204E93D5004D8DFC /* push.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D4204E93D5004D8DFC /* push.swift */; };
 		AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */; };
@@ -119,6 +120,7 @@
 		9AA126CE205D490C0044B832 /* DonationCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationCellController.swift; sourceTree = "<group>"; };
 		9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyAprovalController.swift; sourceTree = "<group>"; };
 		9AA2B38F20508E030042E03E /* SystemChangesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemChangesController.swift; sourceTree = "<group>"; };
+		9AD673FE20BABE4500A19FBC /* ToScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToScannerVC.swift; sourceTree = "<group>"; };
 		9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerController.swift; sourceTree = "<group>"; };
 		AD02E8D4204E93D5004D8DFC /* push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = push.swift; sourceTree = "<group>"; };
 		AD02E8D6204EA500004D8DFC /* Login_Push_Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Push_Init.swift; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 				ADFA43B520567C8000D164F5 /* AddressVC.swift */,
 				AD89F4AC2057230D00E96174 /* jsonMilkSubst.swift */,
 				9AA126CE205D490C0044B832 /* DonationCellController.swift */,
+				9AD673FE20BABE4500A19FBC /* ToScannerVC.swift */,
 			);
 			path = Donator;
 			sourceTree = "<group>";
@@ -723,6 +726,7 @@
 				AD9B9735209CDD36002936AC /* updateTasks.swift in Sources */,
 				AD706D622097006600AAFBEC /* waitingToDelivery.swift in Sources */,
 				FC9FB3722048670600A3B508 /* ProductListCVVC.swift in Sources */,
+				9AD673FF20BABE4500A19FBC /* ToScannerVC.swift in Sources */,
 				ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */,
 				AD2AFD7E203F3F77006B93A5 /* QuickDonationViewController.swift in Sources */,
 				AD81FFB920407495001CBFDA /* MilkSubst.swift in Sources */,
