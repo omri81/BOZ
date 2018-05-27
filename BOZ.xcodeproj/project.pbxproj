@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D0B84C72057C361007FE670 /* Data1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B84C62057C361007FE670 /* Data1.swift */; };
+		7BBB0EC420B9959A00643B58 /* getAllEmployees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBB0EC320B9959A00643B58 /* getAllEmployees.swift */; };
 		82D92A8D8665A59C66E4D45C /* Pods_BOZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56D87A6385A089C9D413F05 /* Pods_BOZ.framework */; };
 		9A121A7E2059A4BA00B6368C /* HelplessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A121A7D2059A4BA00B6368C /* HelplessVC.swift */; };
 		9A5A6AAC20B6E3A100B220D6 /* deleteTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5A6AAB20B6E3A100B220D6 /* deleteTask.swift */; };
@@ -20,7 +21,6 @@
 		9A99C8AC203C93FA0057D607 /* BOZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8AB203C93FA0057D607 /* BOZTests.swift */; };
 		9A99C8B7203C93FA0057D607 /* BOZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99C8B6203C93FA0057D607 /* BOZUITests.swift */; };
 		9AA126CF205D490C0044B832 /* DonationCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA126CE205D490C0044B832 /* DonationCellController.swift */; };
-		9AA2B38C20508C080042E03E /* AddWorkerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38B20508C080042E03E /* AddWorkerController.swift */; };
 		9AA2B38E20508CE60042E03E /* FamilyAprovalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */; };
 		9AA2B39020508E030042E03E /* SystemChangesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2B38F20508E030042E03E /* SystemChangesController.swift */; };
 		9AFB82A82057F5A30099ABD5 /* BarCodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */; };
@@ -45,7 +45,7 @@
 		AD81FFBD20407706001CBFDA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81FFBC20407706001CBFDA /* DataStore.swift */; };
 		AD89F4AD2057230D00E96174 /* jsonMilkSubst.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89F4AC2057230D00E96174 /* jsonMilkSubst.swift */; };
 		AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */; };
-		AD9B9735209CDD36002936AC /* updateMyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B9734209CDD36002936AC /* updateMyTasks.swift */; };
+		AD9B9735209CDD36002936AC /* updateTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B9734209CDD36002936AC /* updateTasks.swift */; };
 		AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */; };
 		AD9DFBCE205259FC00E4FE5B /* GetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */; };
 		AD9DFBD120525E4800E4FE5B /* EnableUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */; };
@@ -98,6 +98,7 @@
 
 /* Begin PBXFileReference section */
 		6D0B84C62057C361007FE670 /* Data1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data1.swift; sourceTree = "<group>"; };
+		7BBB0EC320B9959A00643B58 /* getAllEmployees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getAllEmployees.swift; sourceTree = "<group>"; };
 		989B71E47CDE8A953A937D13 /* Pods-BOZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOZ/Pods-BOZ.debug.xcconfig"; sourceTree = "<group>"; };
 		9A121A7D2059A4BA00B6368C /* HelplessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelplessVC.swift; sourceTree = "<group>"; };
 		9A5A6AAB20B6E3A100B220D6 /* deleteTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deleteTask.swift; sourceTree = "<group>"; };
@@ -116,7 +117,6 @@
 		9A99C8B6203C93FA0057D607 /* BOZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOZUITests.swift; sourceTree = "<group>"; };
 		9A99C8B8203C93FA0057D607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AA126CE205D490C0044B832 /* DonationCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationCellController.swift; sourceTree = "<group>"; };
-		9AA2B38B20508C080042E03E /* AddWorkerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkerController.swift; sourceTree = "<group>"; };
 		9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyAprovalController.swift; sourceTree = "<group>"; };
 		9AA2B38F20508E030042E03E /* SystemChangesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemChangesController.swift; sourceTree = "<group>"; };
 		9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerController.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		AD81FFBC20407706001CBFDA /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		AD89F4AC2057230D00E96174 /* jsonMilkSubst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonMilkSubst.swift; sourceTree = "<group>"; };
 		AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web2HelpViewController.swift; sourceTree = "<group>"; };
-		AD9B9734209CDD36002936AC /* updateMyTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateMyTasks.swift; sourceTree = "<group>"; };
+		AD9B9734209CDD36002936AC /* updateTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateTasks.swift; sourceTree = "<group>"; };
 		AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorker.swift; sourceTree = "<group>"; };
 		AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsers.swift; sourceTree = "<group>"; };
 		AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableUsers.swift; sourceTree = "<group>"; };
@@ -212,6 +212,26 @@
 				C3385E772ACECB2377B52A22 /* Pods-BOZ.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7BBB0EC120B9951F00643B58 /* Crew */ = {
+			isa = PBXGroup;
+			children = (
+				FC12A1F32052A51C002912AD /* CrewEditCVVC.swift */,
+				FC12A1F52052AC1A002912AD /* CrewCell.swift */,
+			);
+			path = Crew;
+			sourceTree = "<group>";
+		};
+		7BBB0EC220B9954D00643B58 /* callToServer */ = {
+			isa = PBXGroup;
+			children = (
+				AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */,
+				AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */,
+				7BBB0EC320B9959A00643B58 /* getAllEmployees.swift */,
+				AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */,
+			);
+			path = callToServer;
 			sourceTree = "<group>";
 		};
 		9A121A7C2059A48C00B6368C /* helpless */ = {
@@ -287,10 +307,11 @@
 		9AA2B38A20508BB00042E03E /* Admin */ = {
 			isa = PBXGroup;
 			children = (
+				7BBB0EC220B9954D00643B58 /* callToServer */,
+				7BBB0EC120B9951F00643B58 /* Crew */,
 				AD6C475E204F477500C9A115 /* AdminVC.swift */,
 				9AA2B38D20508CE60042E03E /* FamilyAprovalController.swift */,
 				9AA2B38F20508E030042E03E /* SystemChangesController.swift */,
-				9AA2B38B20508C080042E03E /* AddWorkerController.swift */,
 				ADCFBBAE2070A380009EB6E8 /* AdminNC.swift */,
 			);
 			path = Admin;
@@ -354,7 +375,7 @@
 			children = (
 				AD706D612097006600AAFBEC /* waitingToDelivery.swift */,
 				AD706D632097007E00AAFBEC /* myTasks.swift */,
-				AD9B9734209CDD36002936AC /* updateMyTasks.swift */,
+				AD9B9734209CDD36002936AC /* updateTasks.swift */,
 				9A5A6AAB20B6E3A100B220D6 /* deleteTask.swift */,
 			);
 			path = callToServer;
@@ -370,16 +391,6 @@
 				AD81FFBC20407706001CBFDA /* DataStore.swift */,
 			);
 			path = productCollection;
-			sourceTree = "<group>";
-		};
-		AD9DFBCF20525AF900E4FE5B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */,
-				AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */,
-				AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		ADAAF38720518A7000F3883B /* Login */ = {
@@ -399,7 +410,6 @@
 				AD5B0311205DE20200E740FE /* distributer */,
 				9A121A7C2059A48C00B6368C /* helpless */,
 				ADAAF38720518A7000F3883B /* Login */,
-				AD9DFBCF20525AF900E4FE5B /* Helpers */,
 				9AA2B38A20508BB00042E03E /* Admin */,
 				ADC67FE1204DA6AC009BD328 /* registration */,
 				FC9FB370204866A500A3B508 /* oldControllers */,
@@ -407,7 +417,6 @@
 				ADB9EC48203E0B6900457A61 /* basecontroller */,
 				FCC458382045C6B900A89CDE /* MainVC.swift */,
 				FC9FB3712048670600A3B508 /* ProductListCVVC.swift */,
-				FC12A1F32052A51C002912AD /* CrewEditCVVC.swift */,
 				9AFB82A72057F5A30099ABD5 /* BarCodeScannerController.swift */,
 			);
 			path = controllers;
@@ -475,7 +484,6 @@
 			children = (
 				FC9FB36620470F3F00A3B508 /* BranchCell.swift */,
 				FC9FB3772049904200A3B508 /* MyTextField.swift */,
-				FC12A1F52052AC1A002912AD /* CrewCell.swift */,
 			);
 			path = customViews;
 			sourceTree = "<group>";
@@ -712,7 +720,7 @@
 				AD420EFE2091E526006FC183 /* DistributerCell.swift in Sources */,
 				ADFA43B02056787D00D164F5 /* TakeVC.swift in Sources */,
 				6D0B84C72057C361007FE670 /* Data1.swift in Sources */,
-				AD9B9735209CDD36002936AC /* updateMyTasks.swift in Sources */,
+				AD9B9735209CDD36002936AC /* updateTasks.swift in Sources */,
 				AD706D622097006600AAFBEC /* waitingToDelivery.swift in Sources */,
 				FC9FB3722048670600A3B508 /* ProductListCVVC.swift in Sources */,
 				ADC9823E203F2F74004BD58B /* AboutViewController.swift in Sources */,
@@ -743,7 +751,6 @@
 				FC9FB36D2047196500A3B508 /* Branch.swift in Sources */,
 				ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */,
 				AD5105C8208C5B45003FFA66 /* StorageNC.swift in Sources */,
-				9AA2B38C20508C080042E03E /* AddWorkerController.swift in Sources */,
 				9A121A7E2059A4BA00B6368C /* HelplessVC.swift in Sources */,
 				ADCFBBAF2070A380009EB6E8 /* AdminNC.swift in Sources */,
 				AD81FFB4204067A2001CBFDA /* ProductListViewController.swift in Sources */,
@@ -757,6 +764,7 @@
 				FC9FB37A2049990F00A3B508 /* LoginVC.swift in Sources */,
 				FC12A1F82052B1D1002912AD /* Crew.swift in Sources */,
 				AD52B66420AF231A007F8711 /* PakageCell.swift in Sources */,
+				7BBB0EC420B9959A00643B58 /* getAllEmployees.swift in Sources */,
 				AD6C475F204F477500C9A115 /* AdminVC.swift in Sources */,
 				AD81FFBD20407706001CBFDA /* DataStore.swift in Sources */,
 				FC9FB3642045F69200A3B508 /* DonationVC.swift in Sources */,

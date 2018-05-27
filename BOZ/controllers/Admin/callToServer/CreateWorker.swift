@@ -9,8 +9,6 @@
 import Foundation
 import Alamofire
 
-extension AddWorkerController {
-   
     enum role {
         case Admin
         case Store
@@ -19,7 +17,8 @@ extension AddWorkerController {
         case Donators
         case AllWorkers
     }
-    
+extension CrewEditCVVC {
+
     func createWorker(user:role,
         userNameInput idNumberInput:String,
         nameInput:String,
@@ -29,7 +28,8 @@ extension AddWorkerController {
         addressInput:String,
         latitudeInput:Double,
         longitudeInput:Double ,
-        vehicleInput :String
+        vehicleInput :String,
+        completion: @escaping (_ resutl:String)->()
         ) -> ()
     {
         let URL_SERVER = "https://zeevtesthu.mybluemix.net"
@@ -63,22 +63,30 @@ extension AddWorkerController {
                 print("response: \(response)")
                 switch response.result {
                 case .success:
-                    guard let responseJSON = response.result.value as? [String: Any] else { return }
-                    guard let status = responseJSON["Status"] as? String else {return}
-                    guard let statusMsg = responseJSON["StatusMsg"] as? String else {return}
-                    guard let id = responseJSON["id"] as? String else {return}
-                    guard let rev = responseJSON["rev"] as? String else {return}
-                    print("status:\(status),                     statusMsg: \(statusMsg),                     id:\(id) , rev:\(rev)")
+                    guard let responseJSON = response.result.value as? [String: Any]
+                    else
+                    {
+                        completion("Fail , no json")
+                        return
+                    }
+                    guard let status = responseJSON["Status"] as? String,
+                     let statusMsg = responseJSON["StatusMsg"] as? String,
+                     let id = responseJSON["id"] as? String,
+                     let rev = responseJSON["rev"] as? String
+                    else
+                    {
+                        completion("Fail , no Status/StatusMsg/id/rev")
+                        return
+                    }
                     if (status == "OK") {
                         print("sucess response from server")
-                        // store in core something ??
+                        completion("OK")
                     } else {
                         print("error: \(statusMsg)")
-                        // error what do you want to do ?
-                    }
+                        completion("Fail")                    }
                 case .failure(let error):
                     print("error:\(error)")
-                    // error what do you want to do ?
+                    completion("Error: \(error)")
                 }
                 
         }

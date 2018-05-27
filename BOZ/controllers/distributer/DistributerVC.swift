@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
     protocol DistributerVCDelegate{
         func collectionViewReload()
+        func updateTask(tasks:[String])
     }
 
 class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate ,UIGestureRecognizerDelegate, DistributerVCDelegate
@@ -47,7 +48,22 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             alertMsg(title: "שיבוץ", msg: "בחר יעדים לשיבוץ")
         } else {
             //call to server , pass selected array and set it to []
-            updateTasks(delivererId: myId,donations: selectedItems)
+            updateTask(tasks: selectedItems)
+        }
+    }
+    
+    func updateTask(tasks:[String]){
+        updateTasks(delivererId: myId,donations: tasks) {
+            (result:String) in
+            print(result)
+            if result == "OK" {
+                self.selectedItems = []
+                if self.personalView {
+                    self.getMyTasks(bookmark: "", delivererId: self.myId)
+                } else {
+                    self.getAllEmptyDestributer(bookmark: "")
+                }
+            }
         }
     }
     
@@ -59,6 +75,17 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
     @IBAction func logout(_ sender: Any) {
         let mainVC = storyboard!.instantiateViewController(withIdentifier: "toMainVC") as! MainVC
         UIApplication.shared.keyWindow?.rootViewController = mainVC
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        // TODO: Self-sizing
+        return CGSize(width: collectionView.frame.width, height: 60)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerId", for: indexPath as IndexPath)
+               
+        return headerView
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -143,8 +170,12 @@ class DistributerVC: UIViewController,UICollectionViewDataSource, UICollectionVi
             var cell = self.collectionView.cellForItem(at: indexPath) as! DistributerCell
             let next = storyboard?.instantiateViewController(withIdentifier: "PakageDetails") as! PakageDetailsVC
             next.delegate = self
+            let itemList = personalView ? myTasks[indexPath.row].itemList : donations[indexPath.row].itemList
             let p = personalView ? myTasks[indexPath.row].phoneNumber : donations[indexPath.row].phoneNumber
-            next.setDetails(name: cell.nameLB.text!, address: cell.addressLB.text!, phone: p, personalView: personalView,_id: cell._id, _rev: cell._rev )
+            let packageID = personalView ?
+                myTasks[indexPath.row]._id : donations[indexPath.row]._id
+            next.setDetails(packageID: packageID,name: cell.nameLB.text!, address: cell.addressLB.text!, phone: p, personalView: personalView,_id: cell._id, _rev: cell._rev, itemList: itemList )
+            print(itemList)
             show(next, sender: self)
         } else {
             print("Could not find index path")
