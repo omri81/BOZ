@@ -47,7 +47,7 @@
 		AD8C1E6C203F0A2C0006BFC5 /* Web2HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */; };
 		AD9B9735209CDD36002936AC /* updateTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B9734209CDD36002936AC /* updateTasks.swift */; };
 		AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */; };
-		AD9DFBCE205259FC00E4FE5B /* GetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */; };
+		AD9DFBCE205259FC00E4FE5B /* GetNotApprovedUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBCD205259FC00E4FE5B /* GetNotApprovedUsers.swift */; };
 		AD9DFBD120525E4800E4FE5B /* EnableUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */; };
 		ADB9EC4A203E0BDC00457A61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9EC49203E0BDC00457A61 /* MainViewController.swift */; };
 		ADB9EC52203E310A00457A61 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB9EC51203E310A00457A61 /* logo.gif */; };
@@ -143,7 +143,7 @@
 		AD8C1E6B203F0A2C0006BFC5 /* Web2HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web2HelpViewController.swift; sourceTree = "<group>"; };
 		AD9B9734209CDD36002936AC /* updateTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateTasks.swift; sourceTree = "<group>"; };
 		AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorker.swift; sourceTree = "<group>"; };
-		AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsers.swift; sourceTree = "<group>"; };
+		AD9DFBCD205259FC00E4FE5B /* GetNotApprovedUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotApprovedUsers.swift; sourceTree = "<group>"; };
 		AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableUsers.swift; sourceTree = "<group>"; };
 		ADB9EC49203E0BDC00457A61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB9EC51203E310A00457A61 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 		7BBB0EC220B9954D00643B58 /* callToServer */ = {
 			isa = PBXGroup;
 			children = (
-				AD9DFBCD205259FC00E4FE5B /* GetUsers.swift */,
+				AD9DFBCD205259FC00E4FE5B /* GetNotApprovedUsers.swift */,
 				AD9DFBD020525E4800E4FE5B /* EnableUsers.swift */,
 				7BBB0EC320B9959A00643B58 /* getAllEmployees.swift */,
 				AD9DFBCB2052530B00E4FE5B /* CreateWorker.swift */,
@@ -731,7 +731,7 @@
 				FC9FB36A2047102D00A3B508 /* Methods.swift in Sources */,
 				ADF25C1D20B6A894006613B4 /* DonationDetailsVC.swift in Sources */,
 				AD9DFBD120525E4800E4FE5B /* EnableUsers.swift in Sources */,
-				AD9DFBCE205259FC00E4FE5B /* GetUsers.swift in Sources */,
+				AD9DFBCE205259FC00E4FE5B /* GetNotApprovedUsers.swift in Sources */,
 				ADC67FE5204DB54E009BD328 /* RegistrationViewController.swift in Sources */,
 				AD9DFBCC2052530B00E4FE5B /* CreateWorker.swift in Sources */,
 				AD02E8D7204EA500004D8DFC /* Login_Push_Init.swift in Sources */,

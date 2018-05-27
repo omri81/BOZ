@@ -14,7 +14,7 @@ import Alamofire
 
 extension CrewEditCVVC {
    
-    func getUsers(user:role,lastBookmark:String) -> ()
+    func GetNotApprovedUsers(user:role,lastBookmark:String) -> ()
     {
         let URL_SERVER = "https://zeevtesthu.mybluemix.net"
         var url = ""
